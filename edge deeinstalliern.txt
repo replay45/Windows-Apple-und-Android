@@ -1,9 +1,9 @@
 
-Edge deeinstallieren:
+Microsoft Edge deeinstallieren:
 
-1. anderen browser installieren (Firefox)
+1. anderen browser installieren (z.B. Firefox)
 
-2.Explorer öffnen  
+2.Explorer öffnen
 
 a)auf Laufwerk C gehen
 b)Programme (x86)
@@ -12,7 +12,7 @@ d)Edge
 e)Application
 f)den Ordner mit der Versionierung öffnen (z.B.90.0.818.62)
 g)Installer
-h)oben links auf Datei (blaues Kästchen) 
+h)oben links auf Datei (blaues Kästchen)
 i)mit Windows Powershell als Administrator ausführen
 
 
@@ -22,14 +22,12 @@ Deinstallations-Befehl:
 .\setup.exe --uninstall --system-level --verbose-logging –force-uninstall
 
 
-Video auf you tube: https://youtu.be/WT-Pg8nnrZI
-
 
 
 Microsoft Edges Automatische Installation blocken:
 
 
-1. Edge Blocker herunter laden: 
+1. Edge Blocker herunter laden:
 
 
 https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnJfNVA5cmpfWG5wY2lBQl
@@ -50,7 +48,7 @@ b)Datei als Block.reg speichern und Dateityp als "alle Datein" auswählen
 
 c) zusätzlich auf desktop speichern
 
-d) doppelklick auf die "Block.reg" Datei bestätigen mit JA 
+d) doppelklick auf die "Block.reg" Datei bestätigen mit JA
 
 e)den runtergeladenen Blocker ausführen und Ordner auswählen
 
