@@ -26,6 +26,7 @@ Deinstallations-Befehl:
 
 Microsoft Edges Automatische Installation blocken:
 
+WICHTIG: Optionaler Teil, nicht für die eigentliche Deinstallation erforderlich ! -> verhindert, dass Edge erneut installiert wird !
 
 1. Edge Blocker herunter laden:
 
