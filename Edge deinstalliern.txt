@@ -1,5 +1,5 @@
 
-Microsoft Edge deeinstallieren:
+Microsoft Edge deinstallieren:
 
 1. anderen browser installieren (z.B. Firefox)
 
@@ -16,7 +16,7 @@ h)oben links auf Datei (blaues Kästchen)
 i)mit Windows Powershell als Administrator ausführen
 
 
-3. In Windows Powershell Edge deeinstallieren:
+3. In Windows Powershell Edge deinstallieren:
 
 Deinstallations-Befehl:
 .\setup.exe --uninstall --system-level --verbose-logging –force-uninstall
