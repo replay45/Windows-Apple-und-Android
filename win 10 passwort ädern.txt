@@ -1,9 +1,15 @@
-1. 
+
+erste Option
 a) um in die erweiterten optionen zu kommen: shift Taste drücken während auf den neustart Knopf unten links im Anmeldefenster gedrückt wird
 b) in den erweiterten optionen zu "Problembehandlung" gehen, dann zu "erweiterte optionen" und dann die "Eingabeaufforderung" öffnen
 
-FUNKTIONIERT BEI MIR NICHT
- 
+FUNKTIONIERT NICHT IMMER
+
+
+zweite Option
+
+Für diese Optin wird vorausgesetzt, dass ein USB-Stick mit einem Media Creation Tool vorliegt !
+
 1. 
 a) Daher ein "win 10 Boot USB Stick mit dem Media creation tool" verwenden um zu Booten und dort mit der Tastenkombination "Shift und F10"
 b) das Laufwerk wo windows installiert ist muss angesprochen werden also z.B. "c:" (meisens ist es das Laufwerk c )
