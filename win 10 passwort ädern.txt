@@ -1,0 +1,64 @@
+1. 
+a) um in die erweiterten optionen zu kommen: shift Taste drücken während auf den neustart Knopf unten links im Anmeldefenster gedrückt wird
+b) in den erweiterten optionen zu "Problembehandlung" gehen, dann zu "erweiterte optionen" und dann die "Eingabeaufforderung" öffnen
+
+FUNKTIONIERT BEI MIR NICHT
+ 
+1. 
+a) Daher ein "win 10 Boot USB Stick mit dem Media creation tool" verwenden um zu Booten und dort mit der Tastenkombination "Shift und F10"
+b) das Laufwerk wo windows installiert ist muss angesprochen werden also z.B. "c:" (meisens ist es das Laufwerk c )
+  
+  erster command der eingegeben werden muss ist:	c:
+
+							cd Windows\System32
+							
+							rename utilman.exe utilman.exe.lol
+
+							copy cmd.exe utilman.exe
+
+
+c) Komandozeile (cmd) mit "exit"oder dem Kreuz 
+   oben rechtsin der Ecke schließen.
+
+d) Installation beenden (abbrechen)
+
+e) der PC wird sich neu starten dabei den USB Stick entfernen damit man auf dem Sperrbildschirm landet
+
+2.
+a) In die Automatischen Reperatureinstellungen von win 10 kommen: Shift Taste und neustart Knopf unten rechts auf dem Sperbildschirm gleichzeitig drücken
+
+  zuerst zu "Problembehandlung" dann zu "erweiterten Optionen" und "Starteinstellungen" auswählen 
+
+b) anschließend auf "Neu starten" klicken
+
+c) Option 8 auswählen (Schutz des Antischadsoftware-Frühstarts deaktivieren)
+
+d) unten rechts auf die erleichterte Bedienung klicken und es solle sich die Kommandozeile öffnen
+
+3.
+a) um das passwort zu ändern den Befehl net user " (hier kommt der name des benutzers rein und die anführungszeichen nicht vergessen) " *
+   (Beispiel: net user "test" * )
+
+b) neues Passwort eingeben
+
+
+4. UM EIN NEUEN BENUTZER ANZULEGEN 
+a) net user DEN BENUTZERNAMEN HIER REIN SCHREIBEN HIER PASSWORT SCHREIBEN /add    (Beispiel: net user Hacker 1234 /add)
+
+b)zum admin machen: net localgroup administrators HIER DER BENUTZERNAME /add
+
+
+
+Videos:  (Video 1 und 2 sind sehr hilfreich)
+
+1. Windows 10 Passwort vergessen: Passwort knacken mit einfachen Tricks
+https://www.youtube.com/watch?v=M8KxiP36mUo&list=PLirsAA4F32QEoDMjluD2ZHDxmjymuIQvj&index=90
+
+2.Windows 10 - Benutzer Account knacken bzw. Passwort zurücksetzen
+https://www.youtube.com/watch?v=cPgq9_gq8vI&list=PLirsAA4F32QEoDMjluD2ZHDxmjymuIQvj&index=89&t=1s
+
+3.Login-Passwort umgehen | Windows
+https://www.youtube.com/watch?v=O47vee2YtjE&list=PLirsAA4F32QEoDMjluD2ZHDxmjymuIQvj&index=91
+
+4.Windows Passwort zurücksetzen / hacken / knacken
+https://www.youtube.com/watch?v=fQCwbuR3DzY&list=PLirsAA4F32QEoDMjluD2ZHDxmjymuIQvj&index=92
