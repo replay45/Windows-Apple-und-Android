@@ -1,0 +1,16 @@
+Den Sprachassisten "Cortana", per PowerShell vollständig entfernen:
+
+In die Windows Suche “PowerShell” eigeben und als Administrator mit Rechtsklick öffnen.
+
+Bestätigen der Frage, ob durch diese App Änderungen an dem Gerät vorgenommen werden dürfen, mit “Ja”.
+
+Hier nun hinter der Information zum System (z.B.” \system32>”) den folgenden Befehl
+„Get-AppxPackage -allusers Microsoft.549981C3F5F10 | Remove-AppxPackage“ 
+eingeben.
+
+Bestätigen mit der Return-Taste – "Cortana" wird daraufhin für alle Benutzer des PCs deinstalliert.
+
+Kurz erscheint eine grün hinterlegte Statusmeldung, die anzeigt, dass PowerShell arbeitet.
+Dann erscheint wieder die vorherige Anzeige.
+
+"Cortana" ist nun erfolgreich deinstalliert.
