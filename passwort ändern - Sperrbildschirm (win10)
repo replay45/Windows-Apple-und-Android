@@ -5,6 +5,9 @@ Die Nutzung der Anleitung ist auf eigene Gefahr, denn der Autor übernimmt keine
 
 
 
+Die Anleitung wurde ausschließlich auf Windows 10 getestet !
+
+
 Option 1.
 a) um in die erweiterten optionen zu kommen: shift Taste drücken während auf den neustart Knopf unten links im Anmeldefenster gedrückt wird
 b) in den erweiterten optionen zu "Problembehandlung" gehen, dann zu "erweiterte optionen" und dann die "Eingabeaufforderung" öffnen
@@ -54,5 +57,5 @@ b) neues Passwort eingeben
 2.4. UM EINEN NEUEN BENUTZER ANZULEGEN 
 a) net user DEN BENUTZERNAMEN HIER REIN SCHREIBEN HIER PASSWORT SCHREIBEN /add    (Beispiel: net user Hacker 1234 /add)
 
-b)zum admin machen: net localgroup administrators HIER DER BENUTZERNAME /add
+b) zum admin machen: net localgroup administrators HIER DER BENUTZERNAME /add
 
