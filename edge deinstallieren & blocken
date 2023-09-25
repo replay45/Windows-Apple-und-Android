@@ -29,9 +29,10 @@ Deinstallations-Befehl:
 
 
 
-Microsoft Edges Automatische Installation blocken:
 
-WICHTIG: Optionaler Teil, nicht für die eigentliche Deinstallation erforderlich ! -> verhindert, dass Edge erneut installiert wird !
+Microsoft Edges automatische Installation blocken:
+
+WICHTIG: Optionaler Teil, nicht für die eigentliche Deinstallation erforderlich ! -> Verhindert, dass Edge erneut installiert wird !
 
 1. Edge Blocker herunter laden:
 
@@ -66,12 +67,12 @@ cd c:\edge Blocker
 
 dir 
 
-h)als nächstes in cmd eingeben:
+h) als nächstes in cmd eingeben:
 (zur eventuellen Überprüfung in cmd eingeben um zu erfahren was der richtige Befehl ist:EdgeChromium_Blocker.cmd \? )
 EdgeChromium_Blocker.cmd /b
 
 
-i) Wenn alles richtig ist sollte dort stehen: "Der Vorgang wurde erfolgreich beendet."
+i) Wenn alles richtig ist, sollte dort stehen: "Der Vorgang wurde erfolgreich beendet."
 
 
 
