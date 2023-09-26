@@ -9,8 +9,8 @@ Die Anleitung wurde ausschließlich auf Windows 10 getestet !
 
 
 Option 1.
-a) um in die erweiterten optionen zu kommen: shift Taste drücken während auf den neustart Knopf unten links im Anmeldefenster gedrückt wird
-b) in den erweiterten optionen zu "Problembehandlung" gehen, dann zu "erweiterte optionen" und dann die "Eingabeaufforderung" öffnen
+a) Um in die erweiterten Optionen zu gelangen: Shift Taste drücken, während auf den neustart Knopf unten links im Anmeldefenster gedrückt wird.
+b) In den erweiterten Optionen zu "Problembehandlung" navigieren, dann zu "erweiterte Optionen" und die "Eingabeaufforderung" öffnen.
 
 FUNKTIONIERT NICHT IMMER
 
@@ -18,7 +18,7 @@ FUNKTIONIERT NICHT IMMER
 
 Option 2.
 a) Daher ein "win 10 Boot USB Stick mit dem Media creation tool" verwenden um zu Booten und dort mit der Tastenkombination "Shift und F10"
-b) das Laufwerk wo windows installiert ist muss angesprochen werden also z.B. "c:" (meisens ist es das Laufwerk c )
+b) Das Laufwerk wo windows installiert ist, muss angesprochen werden also z.B. "c:" (meisens ist es das installations Laufwerk c ).
   
   erster command der eingegeben werden muss ist:	c:
 
@@ -29,33 +29,32 @@ b) das Laufwerk wo windows installiert ist muss angesprochen werden also z.B. "c
 							copy cmd.exe utilman.exe
 
 
-c) Komandozeile (cmd) mit "exit"oder dem Kreuz 
-   oben rechtsin der Ecke schließen.
+c) Komandozeile (cmd) mit "exit"oder dem Kreuz oben rechts in der Ecke schließen.
 
 d) Installation beenden (abbrechen)
 
-e) der PC wird sich neu starten dabei den USB Stick entfernen damit man auf dem Sperrbildschirm landet
+e) Der PC wird neu starten, dabei den USB Stick entfernen, damit man auf dem Sperrbildschirm landet.
 
 2.2.
-a) In die Automatischen Reperatureinstellungen von win 10 kommen: Shift Taste und neustart Knopf unten rechts auf dem Sperbildschirm gleichzeitig drücken
+a) In die Automatischen Reperatureinstellungen von win 10 kommen: Shift Taste und neustart Knopf unten rechts auf dem Sperbildschirm gleichzeitig drücken.
 
-  zuerst zu "Problembehandlung" dann zu "erweiterten Optionen" und "Starteinstellungen" auswählen 
+  Zuerst zu "Problembehandlung" dann zu "erweiterten Optionen" und "Starteinstellungen" auswählen.
 
-b) anschließend auf "Neu starten" klicken
+b) Anschließend auf "Neu starten" klicken.
 
 c) Option 8 auswählen (Schutz des Antischadsoftware-Frühstarts deaktivieren)
 
-d) unten rechts auf die erleichterte Bedienung klicken und es solle sich die Kommandozeile öffnen
+d) Unten rechts auf die erleichterte Bedienung klicken und es solle sich die Kommandozeile öffnen.
 
 2.3.
-a) um das passwort zu ändern den Befehl net user " (hier kommt der name des benutzers rein und die anführungszeichen nicht vergessen) " *
+a) Um das passwort zu ändern, den Befehl net user " (hier kommt der name des benutzers rein und die anführungszeichen nicht vergessen) " *
    (Beispiel: net user "test" * )
 
-b) neues Passwort eingeben
+b) nun das neue Passwort eingeben !
 
 
 2.4. UM EINEN NEUEN BENUTZER ANZULEGEN 
 a) net user DEN BENUTZERNAMEN HIER REIN SCHREIBEN HIER PASSWORT SCHREIBEN /add    (Beispiel: net user Hacker 1234 /add)
 
-b) zum admin machen: net localgroup administrators HIER DER BENUTZERNAME /add
+b) Den hinzugefügten Nutzer zum admin machen: net localgroup administrators HIER DER BENUTZERNAME /add
 
