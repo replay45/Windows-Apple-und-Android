@@ -8,7 +8,7 @@ Microsoft Edge deinstallieren:
 
 1. anderen browser installieren (z.B. Firefox)
 
-2.Explorer öffnen
+2. Explorer öffnen
 
 a)auf Laufwerk C gehen
 b)Programme (x86)
@@ -43,7 +43,7 @@ WJ3N2U5dzgyWndpNWdCSGIyb2Z3QU9EdFJ0WkEtOFhQSE9oYjF1dEtQRHlyRDdDMExGS1plcWp6Yw&q=
 eblockertoolkit.blob.core.windows.net%2Fblockertoolkit%2FMicrosoftEdgeChromiumBlockerToolkit.exe
 
 
-2. a) Editor öffnen und den eintrag rein kopieren:
+2. a) Editor öffnen und den Eintrag einfügen:
 
 
 Windows Registry Editor Version 5.00
@@ -51,24 +51,25 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\EdgeUpdate]
 “DoNotUpdateToEdgeWithChromium”=dword:00000001
 
-b)Datei als Block.reg speichern und Dateityp als "alle Datein" auswählen
+b) Datei als Block.reg speichern und Dateityp als "alle Datein" auswählen.
 
-c) zusätzlich auf desktop speichern
+c) Zusätzlich auf desktop speichern.
 
-d) doppelklick auf die "Block.reg" Datei bestätigen mit JA
+d) Doppelklick auf die "Block.reg" Datei bestätigen mit JA.
 
-e)den runtergeladenen Blocker ausführen und Ordner auswählen
+e) Den runtergeladenen Blocker ausführen und Ordner auswählen.
 
 f)cmd in start öffnen als administrator ausführen !!!
 
-g)Ordnerverzeichnis in cmd eingeben:
+g) Ordnerverzeichnis in cmd eingeben:
 
 cd c:\edge Blocker
 
 dir 
 
+
 h) als nächstes in cmd eingeben:
-(zur eventuellen Überprüfung in cmd eingeben um zu erfahren was der richtige Befehl ist:EdgeChromium_Blocker.cmd \? )
+(zur eventuellen Überprüfung in cmd eingeben, um zu erfahren was der richtige Befehl ist: EdgeChromium_Blocker.cmd \? )
 EdgeChromium_Blocker.cmd /b
 
 
