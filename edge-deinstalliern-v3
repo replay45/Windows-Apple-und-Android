@@ -10,9 +10,9 @@
 
 Microsoft Edge deinstallieren:
 
-1. anderen browser installieren (z.B. Firefox)
+1. anderen Browser installieren (z.B. Firefox)
 
-2. Explorer öffnen
+2. Explorer öffnen  
 
 a)auf Laufwerk C gehen
 b)Programme (x86)
@@ -21,14 +21,15 @@ d)Edge
 e)Application
 f)den Ordner mit der Versionierung öffnen (z.B.90.0.818.62)
 g)Installer
-h)oben links auf Datei (blaues Kästchen)
+h)oben links auf Datei (blaues Kästchen) 
 i)mit Windows Powershell als Administrator ausführen
 
 
 3. In Windows Powershell Edge deinstallieren:
 
 Deinstallations-Befehl:
-.\setup.exe --uninstall --system-level --verbose-logging –force-uninstall
+$ .\setup.exe --uninstall --system-level --verbose-logging –force-uninstall
+
 
 
 
@@ -36,9 +37,13 @@ Deinstallations-Befehl:
 
 Microsoft Edges automatische Installation blocken:
 
-WICHTIG: Optionaler Teil, nicht für die eigentliche Deinstallation erforderlich ! -> Verhindert, dass Edge erneut installiert wird !
 
-1. Edge Blocker herunter laden:
+WICHTIG: 
+Optionaler Teil, nicht für die eigentliche Deinstallation erforderlich ! -> Verhindert, dass Edge erneut installiert wird !
+
+
+
+1. Edge Blocker herunterladen:
 
 
 https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnJfNVA5cmpfWG5wY2lBQl
@@ -63,7 +68,7 @@ d) Doppelklick auf die "Block.reg" Datei bestätigen mit JA.
 
 e) Den runtergeladenen Blocker ausführen und Ordner auswählen.
 
-f)cmd in start öffnen als administrator ausführen !!!
+f) cmd in start öffnen als administrator ausführen !!!
 
 g) Ordnerverzeichnis in cmd eingeben:
 
@@ -72,12 +77,11 @@ cd c:\edge Blocker
 dir 
 
 
-h) als nächstes in cmd eingeben:
-(zur eventuellen Überprüfung in cmd eingeben, um zu erfahren was der richtige Befehl ist: EdgeChromium_Blocker.cmd \? )
-EdgeChromium_Blocker.cmd /b
+h) Als nächstes in CMD eingeben:
+(zur eventuellen Überprüfung in cmd eingeben, um zu erfahren was der richtige Befehl ist: $ EdgeChromium_Blocker.cmd \? )
+
+$ EdgeChromium_Blocker.cmd /b
 
 
 i) Wenn alles richtig ist, sollte dort stehen: "Der Vorgang wurde erfolgreich beendet."
-
-
 
