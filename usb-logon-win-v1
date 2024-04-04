@@ -1,0 +1,15 @@
+Einen gewöhnlichen USB-Stick als Schlüssel zur Windows-Anmeldung nutzen:
+
+
+Dafür kann z.B. das Tool "USB-LOGON" verwendet werden.
+
+
+Ein handelsüblicher USB-Stick kann zu einem Schlüssel, für die Anmeldung an einem Windows PC konfiguriert werden.
+Nach der Konfiguration kann der USB-Stick als alternative Anmeldemethode zum Passwort in Windows verwendet werden.
+Zudem kann eingestellt werden, ob beim Einsetzen des USB-Sticks zusätzlich ein Passwort abgefragt werden soll, 
+oder das Einsetzen des konfigurierten USB-Sticks ausreicht.
+Außerdem kann separat eingestellt werden, was passieren soll, wenn der USB-Stick entfernt wird.
+
+
+
+https://usblogon.quadsoft.org/de/
