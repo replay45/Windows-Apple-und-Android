@@ -1,6 +1,6 @@
 # Windows
 
-Unter diesem Repository sind Anleitungen für Windows, primär zu Windows 10, zu finden.
+- Unter diesem Repository sind Anleitungen für Windows, primär zu Windows 10, und Apple zu finden.
 
 
 ### Disclaimer
@@ -11,6 +11,24 @@ Der Autor übernimmt keine Garantie auf Richtigkeit und haftet nicht für entsta
 
 
 ### Links
+
+### Windows
 > Microsoft
 
 [Microsoft](https://www.microsoft.com/de-de)
+
+------------------------------------------------------------------------------------------------------------------------
+
+### Apple
+> Apple
+
+[Apple](https://www.apple.com/de/)
+
+[MacOS Version ermitteln](https://support.apple.com/de-de/109033)
+
+
+> nützliche Links
+
+[HomeBrew - Paketmanager](https://brew.sh/)
+
+[OpenCore Legacy Patcher](https://dortania.github.io/OpenCore-Legacy-Patcher/)
