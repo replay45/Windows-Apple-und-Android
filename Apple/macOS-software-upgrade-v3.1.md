@@ -44,7 +44,7 @@ ausgeschlossen ist, dass es zu einem Datenverlust kommen könnte.
 Das Upgrade erfolgt auf eigene Gefahr und der Autor der Anleitung haftet nicht für entstandene Schäden !
 Es ist nicht ausgeschlossen, dass es zu Datenverlust, Fehlern in MacOS oder Kompatibilitätsproblemen kommen könnte, 
 da das Upgrade inoffiziell durchgeführt wird.
-Daher empfiehlt es sich das Upgrade nur durchzuführen, wenn jeglicher Support & Garantie für das entsprechende Gerät abgelaufen sind.
+Daher empfiehlt es sich, das Upgrade nur durchzuführen, wenn jeglicher Support & Garantie für das entsprechende Gerät abgelaufen sind.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -53,12 +53,12 @@ Daher empfiehlt es sich das Upgrade nur durchzuführen, wenn jeglicher Support &
 ## Software Updates & Upgrades
 
 ### Software Upgrades
-Wenn ein weiteres MacOS-Upgrade durchgefüghrt werden soll (z.B. von MacOS 14 auf 15), muss dies wieder mit dem OpenCore-Legacy-Patcher
+Wenn ein weiteres MacOS-Upgrade durchgeführt werden soll (z.B. von MacOS 14 auf 15), muss dies wieder mit dem OpenCore-Legacy-Patcher
 geschehen. Dieser muss davor jedoch auch geupdatet werden.
 
 ### Software Updates
 Auch wenn Software Updates innerhalb einer Version (z.B. von MacOS 14.1 auf 14.2.) in den meisten Fällen keine Probleme bereiten sollten,
-`empfiehlt` es sich jedoch trotzdem diese `nur gewissenhaft zu installieren` und `automatische Updates in den Einstellungen auszuschalten`.
+`empfiehlt` es sich jedoch trotzdem, diese `nur gewissenhaft zu installieren` und `automatische Updates in den Einstellungen auszuschalten`.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -150,7 +150,8 @@ SEHR WICHTIG:
 
 6.  (optional)
 
-Bootauswahl (Boot-Picker) abschalten, um direkt ins gewünschte System zu booten.
+
+- Bootauswahl (Boot-Picker) abschalten, um direkt ins gewünschte System zu booten:
 
 	- OpenCore legacy Patcher öffnen und in die Einstellungen gehen.
 	- Unter "Build" den Hacken bei "Show Boot-Picker" entfernen.
