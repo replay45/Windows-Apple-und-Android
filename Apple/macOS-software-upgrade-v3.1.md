@@ -1,10 +1,10 @@
 # MacOS Upgrade (nicht mehr von Apple unterstützte Macs)
 
-- Das neueste Mac OS auf einem älteren Mac installieren, um auch auf nicht mehr 
+- Das neueste MacOS auf einem älteren Mac installieren, um auch auf nicht mehr 
 von Apple unterstützten Macs die aktuellste MacOS Version nutzen zu können.
 
 
-`Getestet suf einem MacBook 6,1 - 13,3" (2013) mit MacOS BigSur als letzte offiziell unterstützte Version.
+`Getestet auf einem MacBook 6,1 - 13,3" (2013) mit MacOS BigSur als letzte offiziell unterstützte Version.
 Upgrade auf MacOS Sonoma erfolgreich durchgeführt.`
 
 
@@ -163,12 +163,3 @@ Bootauswahl (Boot-Picker) abschalten, um direkt ins gewünschte System zu booten
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-Videos, die zum Zeitpunkt der Ausführung verwendet wurden:
-
-https://youtu.be/gxu2h9BffgI?si=E-O9oFZ5YP-OtPcu
-
-https://youtu.be/BUQp_KA9aPE?si=lm-tikkmLJHC828F
