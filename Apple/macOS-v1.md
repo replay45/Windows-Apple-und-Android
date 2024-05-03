@@ -8,9 +8,9 @@
 1. In den Wiederherstellungsmodus gelangen
 
 - a) über einen Neustart:
-	- den Mac ausschalten
-	- Ein/Aus-Taste drücken und Befehl-R gedrückt halten
-	- warten, bis das Apple-Logo erscheint und dann Befehl-R los lassen
+	- den Mac ausschalten,
+	- Ein/Aus-Taste drücken und "Befehl-R" gedrückt halten,
+	- warten, bis das Apple-Logo erscheint und dann "Befehl-R" los lassen.
 	- Nun sollte das Fenster macOS-Dienstprogrammen zu sehen sein.
 
 
@@ -28,14 +28,14 @@
 
 2. SIP deaktivieren:
 
-	- über die obere Leiste auf "Dienstprogramme" klicken und das Terminal öffnen
-	- nun den folgenden Befehl im Terminal einfügen:
+	- Über die obere Leiste auf "Dienstprogramme" klicken und das Terminal öffnen.
+	- Nun den folgenden Befehl im Terminal einfügen:
 
 	```
 	$ csrutil disable
 	```
 
-	- Mac neu starten
+	- Mac neu starten.
 
 
 
@@ -52,14 +52,14 @@
 
 4. SIP wieder aktivieren:
 
-	- erneut in den Wiederherstellungsmodus und das Terminal öffnen
-	- dann folgenden Befehl im Terminal einfügen:
+	- erneut in den Wiederherstellungsmodus und das Terminal öffnen.
+	- Dann folgenden Befehl im Terminal einfügen:
 
 	```
 	$ csrutil enable
 	```
 
-	- Mac neu starten
+	- Mac neu starten.
 
 
 ---------------------------------------------------------------------------------------------
@@ -67,7 +67,7 @@
 
 # Dateien/Ordner auf MacOS über das Terminal löschen:
 
-Terminal öffnen
+Terminal öffnen und Befehl eingeben:
 
 	
 	$ rm -rf PFAD-DER-DATEI
@@ -77,7 +77,7 @@ Terminal öffnen
 ---------------------------------------------------------------------------------------------
 
 
-# Systemdateien in macOS Finder anzeigen lassen
+# Systemdateien in MacOS Finder anzeigen lassen
 
 1.
 - Finder öffnen,
@@ -218,10 +218,10 @@ $ brew install mas
 ```
 $ brew install midnight-commander
 ```
+```
+$ sudo mc
+```
+
 
 ---------------------------------------------------------------------------------------------
-
-
-
-
 
