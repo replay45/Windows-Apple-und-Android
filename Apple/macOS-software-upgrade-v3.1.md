@@ -81,9 +81,9 @@ Version kopieren und auf der verlinkten Kompatibilitätsliste prüfen.
 2. Download und Installer
 
 	- Der OpenCore legacy Patcher muss zunächst [heruntergeladen](https://dortania.github.io/OpenCore-Legacy-Patcher/START.html) werden.
-	- Nach dem öffnen zu "Creating the Installer" gehen,
-	- danach auf "OpenCore Legacy Patcher Release Apps" klicken und von Github die 
-	"GUI.app.zip" herunterladen, entpacken und installieren.
+	- Nach dem öffnen zu `Creating the Installer` gehen,
+	- danach auf `OpenCore Legacy Patcher Release Apps` klicken und von Github die 
+	`GUI.app.zip` herunterladen, entpacken und installieren.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -91,8 +91,8 @@ Version kopieren und auf der verlinkten Kompatibilitätsliste prüfen.
 3. Download und Flashing
 
 	- USB Stick einstecken und OpenCore Patcher - App öffnen.
-	- Nun auf "create MacOS Installer" klicken,
-	- falls dieser Vorgang noch nie durchgeführt wurde, auf "Download macOS Installer" klicken
+	- Nun auf `create MacOS Installer` klicken,
+	- falls dieser Vorgang noch nie durchgeführt wurde, auf `Download MacOS Installer` klicken
 	- und anschließend eine Version auswählen (Am besten die aktuellste OS-Version, sollten Zweifel bestehen,
 	oder das neuste MacOS gerade erst releast worden sein, empfielt es sich, zur Sicherheit die vorletzte
 	Version zu nutzen, um sicherzustellen, dass das gewünschte Ergebnis erzielt wird.) 
@@ -102,13 +102,13 @@ Version kopieren und auf der verlinkten Kompatibilitätsliste prüfen.
 Der Download kann eine Weile dauern !
 
 
-	- Die Frage, ob der Installer erstellt werden soll, mit "Ja" beantworten.
+	- Die Frage, ob der Installer erstellt werden soll, mit `Ja` beantworten.
 	- Einen bootbaren USB-Stick erstellen, dabei das Speichermedium achten !
-	- Die Frage, ob das Medium überschrieben werden soll, mit "Ja" beantworten.
+	- Die Frage, ob das Medium überschrieben werden soll, mit `Ja` beantworten.
 	- Passwort eingeben.
 
-	- Neustart bestätigen und "alt" - Taste gedrückt halten, um in das Boot-Menü zu kommen.
-	- Dort "EFI Boot" aus dem Menü auswählen und den Schritten nach "Install MacOS *version*" folgen.
+	- Neustart bestätigen und `alt - Taste` gedrückt halten, um in das Boot-Menü zu kommen.
+	- Dort `EFI Boot` aus dem Menü auswählen und den Schritten nach `Install MacOS *version*` folgen.
 
 	- Installationsassistenten folgen (auf installieren klicken),
 	- die Installation kann einige Zeit in Anspruch nehmen und der Bildschirm kann den  Anschein haben, eingefroren zu sein, obwohl der Vorgang im Hintergrund weiter läuft.
@@ -124,7 +124,7 @@ SEHR WICHTIG:
 4. Überprüfung
 
 	- Nach der Installation prüfen, ob diese erfolgreich war:
-	- Dafür auf "über diesen Mac" klicken und Software Version prüfen.
+	- Dafür auf `über diesen Mac` klicken und Software Version prüfen.
 
 
 ---------------------------------------------------------------------------------------------------------------------------------------------
@@ -133,12 +133,12 @@ SEHR WICHTIG:
 5. OpenCore nun auf der internen Festplatte installieren
 
 	- Nun das kann das Popup beachtet werden (auf OK klicken),
-	- dann "Install to disk" klicken,
+	- dann `Install to disk` klicken,
 	- das Apple Speichermedium auswählen.
 
-	- Neustart bestätigen und "alt" - Taste gedrückt halten, um in das Boot-Menu zu kommen.
+	- Neustart bestätigen und `alt - Taste` gedrückt halten, um in das Boot-Menu zu kommen.
 
-	- Im Boot Menü "EFI-Boot" mit dem Flash-Speicher Symbol auswählen und booten.
+	- Im Boot Menü `EFI-Boot` mit dem Flash-Speicher Symbol auswählen und booten.
 
 
 
@@ -154,12 +154,12 @@ SEHR WICHTIG:
 - Bootauswahl (Boot-Picker) abschalten, um direkt ins gewünschte System zu booten:
 
 	- OpenCore legacy Patcher öffnen und in die Einstellungen gehen.
-	- Unter "Build" den Hacken bei "Show Boot-Picker" entfernen.
-	- Auf "Return" klicken.
+	- Unter `Build` den Haken bei `Show Boot-Picker` entfernen.
+	- Auf `Return` klicken.
 
 
 - Diese Einstellung anwenden:
-	- auf "Build and Install" gehen,
+	- auf `Build and Install` gehen,
 	- erneut rebooten.
 
 
