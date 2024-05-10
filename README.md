@@ -1,4 +1,4 @@
-# Windows
+# Windows & Apple
 
 - Unter diesem Repository sind Anleitungen für Windows, primär zu Windows 10, und Apple zu finden.
 
