@@ -1,111 +1,7 @@
 # Windows
 
 
-# 1. nützliche CMD Befehle
-
-Hilfe:
-```
-$ help
-```
-
-Hilfe für einen Befehl: 
-```
-$ PLATZHALTER-BEFEHL /?
-```
-
-Clear:
-```
-$ cls
-```
-
-Benutzer anzeigen:
-```
-$ whoami
-```
-
-Abbrechen - Tastenkombinaton: 
-```
-ctrl + C
-```
-
-Farbe ändern:
-```
-$ color /?
-```
-```
-$ color 0a
-```
-
-Herunterfahren/Neustart:
-```
-$ shutdown
-```
-```
-$ reboot
-```
-
-Systeminformationen:
-```
-$ systeminfo
-```
-
-GPU-Info:
-```
-$ wmic path win32_VideoController get name
-```
-
-Netzwekeinstellungen:
-```
-$ ipconfig
-```
-```
-$ ipconfig /all
-```
-
-Traceroute:
-```
-$ tracert
-```
-```
-$ tracert www.google.de
-```
-
-Liste aller Geräte im Netzwerk:
-```
-$ arp -a
-```
-Hintergrundprogramme, die Pakete senden überprüfen:
-```
-$ netstat
-```
-```
-$ netstat -b -t
-```
-
-Dateien in einem Verzeichniss anzeigen:
-```
-$ dir
-```
-
-neuen Ordner erstellen:
-```
-$ mkdir ORDNER
-```
-
-Verzeichniss wechseln:
-```
-$ cd /PFAD/zum/VERZEICHNIS
-```
-```
-$ cd ..
-```
-
-
------------------------------------------------------------------------------
-
-
-
-# 2. Windows-Sperrbildschirm hacken
+# 1. Windows-Sperrbildschirm hacken
 
 ## Passwort eines Windows-Benutzerkontos vom Sperrbildschirm aus ändern, um Zugang zum Account zu erhalten.
 
@@ -115,6 +11,8 @@ $ cd ..
 Online-Benutzerkonten oder Geräte, die Benutzerkonten aus einer Domäne nutzen, könnten zu Problemen führen.
 Außerdem schützen Sicherheitsmaßnahmen, wie z.B. das Verschlüsseln der Fesplatte über den [Windows-BitLocker](https://de.wikipedia.org/wiki/BitLocker#:~:text=BitLocker%20ist%20eine%20propriet%C3%A4re%20Festplattenverschl%C3%BCsselung,mit%20dieser%20Software%20Daten%20gesch%C3%BCtzt.), vor diesem "Hack".
 Auch ein BIOS/UEFI Passwort schützt u.a. davor, die "Bootreihenfolge" zu ändern, womit die Möglichkeiten, über USB-Stick zu booten, verringert werden.
+
+
 Die Anleitung wurde ausschließlich auf Windows 10 getestet !
 
 
@@ -123,8 +21,8 @@ Die Anleitung wurde ausschließlich auf Windows 10 getestet !
 
 1. erste Option
 
-- 1.1) Um in die `"erweiterten Optionen"` zu gelangen: `Shift Taste drücken`, während auf den `Neustart-Knopf` unten links im Anmeldefenster gedrückt wird.
-- 1.2) In den "erweiterten Optionen" zu `"Problembehandlung"` navigieren, dann zu `"erweiterte Optionen"` und die `"Eingabeaufforderung"` öffnen.
+- 1.1) Um in die `erweiterten Optionen` zu gelangen: `Shift Taste drücken`, während auf den `Neustart-Knopf` unten links im Anmeldefenster gedrückt wird.
+- 1.2) In den `erweiterten Optionen` zu `Problembehandlung` navigieren, dann zu `erweiterte Optionen` und die `Eingabeaufforderung` öffnen.
 
 
 ### Die erste Option ist leider nicht immer möglich, daher kann auch Option 2 genutzt werden.
@@ -132,16 +30,16 @@ Die Anleitung wurde ausschließlich auf Windows 10 getestet !
 
 2. zweite Option
 
-- 2.1) Daher über einen `"win10 Boot USB Stick"` booten, anstatt windows zu installieren, jedoch dort mit der Tastenkombination `"Shift und F10"` CMD öffnen.
+- 2.1) Daher über einen `win10 Boot USB Stick` booten, anstatt windows zu installieren, jedoch dort mit der Tastenkombination `Shift und F10` CMD öffnen.
 - 2.2) Einen Win10-Boot-/ Installations-USB-Stick kann mit dem [Media Creation Tool](https://www.microsoft.com/de-de/software-download/windows10) erstellen werden.
 
 
 -----------------------------------------------------------------------------
 
 
-- Das Laufwerk, wo Windows installiert ist, muss angesprochen werden, also z.B. `"c:/"` (meistens ist es das installations Laufwerk `"c:/"` ).
+- Das Laufwerk, wo Windows installiert ist, muss angesprochen werden, also z.B. `c:/` (meistens ist es das installations Laufwerk `c:/`).
   
-	- Befehle, die nacheinander eingegeben werden müssen:		
+- Befehle, die nacheinander eingegeben werden müssen:		
 								
 								c:
 
@@ -166,9 +64,9 @@ Die Anleitung wurde ausschließlich auf Windows 10 getestet !
 
 - In die automatischen Reparatureinstellungen von win 10 kommen: `Shift Taste und Neustart-Knopf unten rechts auf dem Sperbildschirm gleichzeitig drücken.`
 
-- Zuerst zu `"Problembehandlung"` dann zu `"erweiterten Optionen"` und `"Starteinstellungen"` auswählen.
+- Zuerst zu `Problembehandlung` dann zu `erweiterten Optionen` und `Starteinstellungen` auswählen.
 
-- Anschließend auf `"Neu starten"` klicken.
+- Anschließend auf `Neu starten` klicken.
 
 - `Option 8` auswählen (Schutz des Antischadsoftware-Frühstarts deaktivieren)
 
@@ -211,7 +109,7 @@ $ net localgroup administrators HIER DER BENUTZERNAME /add
 -----------------------------------------------------------------------------
 
 
-# 3. Einen gewöhnlichen USB-Stick als Schlüssel zur Windows-Anmeldung nutzen:
+# 2. Einen gewöhnlichen USB-Stick als Schlüssel zur Windows-Anmeldung nutzen:
 
 ## Dafür kann z.B. das Tool [USB-LOGON](https://usblogon.quadsoft.org/de/) verwendet werden.
 
@@ -227,10 +125,34 @@ Außerdem kann separat eingestellt werden, was passieren soll, wenn der USB-Stic
 -----------------------------------------------------------------------------
 
 
+# 3. Windows PC in eine Domäne hinzufügen
 
-# 4. Cortana deinstallieren
 
-## Den Sprachassistenten [Cortana](), per PowerShell vollständig entfernen:
+Um einen Windows PC in eine Domäne hinzufügen zu können, muss dieser natürlich im gleichen Netzwerk wie der Domäne-Server sein.
+Bevor die Einstellungen vorgenommen werden, sollte daher geprüft werden, ob der PC in dem richtigen Netzwerk ist.
+
+
+- Folgende Schritte durchführen:
+	- Windows Einstellungen öffnen
+	- System
+	- Info
+	- rechts unter `Verwandte Einstellungen`
+	- auf `Diesen PC umbenennen (fortgeschritten)` klicken
+
+- Nun öffnet sich ein neues Fenster
+	- Unter dem Punkt Domäne/Arbeitsgruppe auf `Ändern` gehen.
+	- Von `Arbeitsgruppe` auf `Domäne` wechseln und diese eingeben sowie bestätigen.
+
+
+Nach einem Neustart sollte der PC erfolgreich in die Domäne hinzugefügt worden sein.
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+# 4. Cortana über PowerShell deinstallieren
+
+## Den Sprachassistenten [Cortana](https://support.microsoft.com/de-de/topic/was-ist-cortana-953e648d-5668-e017-1341-7f26f7d0f825), per PowerShell vollständig entfernen:
 
 
 - In die Windows-Suche `PowerShell` eigeben und als Administrator mit Rechtsklick öffnen.
@@ -256,41 +178,41 @@ Danach erscheint wieder die vorherige Anzeige.
 - "Cortana" ist nun erfolgreich deinstalliert.
 
 
-
 -----------------------------------------------------------------------------
-
 
 
 # 5. Microsoft Edge deinstallieren
 
 
 ## WICHTIG !
+
 ## Update-1: Microsoft hat ein Update veröffentlicht, mit dem der Edge-Browser trotz Deinstallation und Blockung zurückkehrt und sich NICHT mehr mit dem Befehl entfernen lässt !!!
+
 ## Update-2: Dank eines neuen EU Gesetzes muss der Edge Browser nun jedoch auch benutzerfreundlich deinstalliert werden können. Dies ist jedoch nur möglich, wenn bei der Ersteinrichtung von Windows auch die Region eines EU Landes ausgewählt wurde, da zum aktuellen Zeitpunkt dieses Updates nur in der EU das Gesetz gilt.
 
 
 
-1. anderen Browser installieren (z.B. Firefox, oder Brave)
+1. anderen Browser installieren (z.B. Firefox oder Brave)
 
 2. Explorer öffnen  
 
-a) auf Laufwerk C gehen
+        a) auf Laufwerk C gehen
 
-b) Programme (x86)
+        b) Programme (x86)
 
-c) Microsoft
+        c) Microsoft
 
-d) Edge
+        d) Edge
 
-e) Application
+        e) Application
 
-f) den Ordner mit der Versionierung öffnen (z.B.90.0.818.62)
+        f) den Ordner mit der Versionierung öffnen (z.B.90.0.818.62)
 
-g) Installer
+        g) Installer
 
-h) oben links auf Datei (blaues Kästchen) 
+        h) oben links auf Datei (blaues Kästchen) 
 
-i) mit Windows Powershell als Administrator ausführen
+        i) mit Windows Powershell als Administrator ausführen
 
 
 
@@ -305,10 +227,10 @@ $ .\setup.exe --uninstall --system-level --verbose-logging –force-uninstall
 
 
 
-Microsoft Edges automatische Installation blocken:
+### Microsoft Edges automatische Installation blocken:
 
 
-WICHTIG: 
+__WICHTIG__: 
 Optionaler Teil, nicht für die eigentliche Deinstallation erforderlich ! -> Verhindert, dass Edge erneut installiert wird !
 
 
@@ -326,17 +248,17 @@ Windows Registry Editor Version 5.00
 ```
 
 
-b) Datei als Block.reg speichern und Dateityp als "alle Datein" auswählen.
+        b) Datei als Block.reg speichern und Dateityp als "alle Datein" auswählen.
 
-c) Zusätzlich auf desktop speichern.
+        c) Zusätzlich auf desktop speichern.
 
-d) Doppelklick auf die "Block.reg" Datei bestätigen mit JA.
+        d) Doppelklick auf die "Block.reg" Datei bestätigen mit JA.
 
-e) Den runtergeladenen Blocker ausführen und Ordner auswählen.
+        e) Den runtergeladenen Blocker ausführen und Ordner auswählen.
 
-f) cmd in start öffnen als administrator ausführen !!!
+        f) cmd in start öffnen als administrator ausführen !!!
 
-g) Ordnerverzeichnis in cmd eingeben:
+        g) Ordnerverzeichnis in cmd eingeben:
 
 ```
 cd c:\edge Blocker
@@ -345,14 +267,15 @@ cd c:\edge Blocker
 dir 
 ```
 
-h) Als nächstes in CMD eingeben:
-(zur eventuellen Überprüfung in cmd eingeben, um zu erfahren was der richtige Befehl ist: `$ EdgeChromium_Blocker.cmd \?` )
+        h) Als nächstes in CMD eingeben:
+(zur eventuellen Überprüfung in CMD eingeben, um zu erfahren welcher der richtige Befehl ist: `$ EdgeChromium_Blocker.cmd \?`)
 
 ```
 $ EdgeChromium_Blocker.cmd /b
 ```
 
-i) Wenn alles richtig ist, sollte dort stehen: `"Der Vorgang wurde erfolgreich beendet."`.
+i) Nun sollte dort stehen: `"Der Vorgang wurde erfolgreich beendet."`.
 
 
--------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------
