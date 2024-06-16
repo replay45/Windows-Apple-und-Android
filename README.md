@@ -1,6 +1,6 @@
 # Windows & Apple
 
-- Unter diesem Repository sind Anleitungen für Windows, primär zu Windows 10, und Apple zu finden.
+- Unter diesem Repository sind Anleitungen für Windows, primär zu Windows 10/ Windows 11, und Apple zu finden.
 
 
 ### Disclaimer
