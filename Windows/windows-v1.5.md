@@ -1,6 +1,20 @@
 # Windows
 
 
+## Inhaltsverzeichnis
+### 1. Windows-Sperrbildschirm hacken
+### 2. Einen USB-Stick zur Windows-Anmeldung nutzen
+### 3. Windows PC in eine Domäne hinzufügen
+### 4. Cortana über PowerShell deinstallieren
+### 5. Copilot von Windows 11 deinstallieren
+### 6. Raster auf dem Desktop - Icon Abstände verändern
+### 7. Erstellen eines Systemwiederherstellungspunkts unter Windows 11
+### 8. Microsoft Edge auf Windows 10 deinstallieren
+
+
+-----------------------------------------------------------------------------
+
+
 # 1. Windows-Sperrbildschirm hacken
 
 ## Passwort eines Windows-Benutzerkontos vom Sperrbildschirm aus ändern, um Zugang zum Account zu erhalten.
@@ -155,25 +169,17 @@ Nach einem Neustart sollte der PC erfolgreich in die Domäne hinzugefügt worden
 ## Den Sprachassistenten [Cortana](https://support.microsoft.com/de-de/topic/was-ist-cortana-953e648d-5668-e017-1341-7f26f7d0f825), per PowerShell vollständig entfernen:
 
 
-- In die Windows-Suche `PowerShell` eigeben und als Administrator mit Rechtsklick öffnen.
-
-- Bestätigen der Frage, ob durch diese App Änderungen an dem Gerät vorgenommen werden dürfen, mit `Ja`.
-
-
+- In die Windows-Suche `PowerShell` eigeben und als `Administrator` öffnen.
 
 - Hier nun hinter der Information zum System (z.B.” \system32>”) den folgenden Befehl eingeben:
 ```
 $ Get-AppxPackage -allusers Microsoft.549981C3F5F10 | Remove-AppxPackage
 ```
 
-
-
-
-- Bestätigen mit der Return-Taste – "Cortana" wird daraufhin für alle Benutzer des PCs deinstalliert.
+- Bestätigen mit der Enter-Taste – "Cortana" wird daraufhin für alle Benutzer des PCs deinstalliert.
 
 - Es erscheint kurz eine grün hinterlegte Statusmeldung, die anzeigt, dass Powershell arbeitet.
 Danach erscheint wieder die vorherige Anzeige.
-
 
 - "Cortana" ist nun erfolgreich deinstalliert.
 
@@ -181,7 +187,80 @@ Danach erscheint wieder die vorherige Anzeige.
 -----------------------------------------------------------------------------
 
 
-# 5. Microsoft Edge deinstallieren
+# 5. Copilot von Windows 11 deinstallieren
+
+## Den Microsoft [Copilot](https://copilot.microsoft.com/) von Windows 11 deinstallieren:
+
+Diese Anleitung ist für die Windows 11 23H2 und höher geeignet.
+
+
+- In die Windows-Suche `PowerShell` eigeben und als `Administrator` öffnen.
+
+- Hier nun den folgenden Befehl eingeben.
+
+Für `ALLE Benutzerkonten` Copilot deinstallieren:
+```
+$ Get-AppxPackage -AllUsers -Name "Microsoft.Windows.Ai.Copilot.Provider" | Remove-AppxPackage
+```
+oder
+
+Für den `aktuellen Benutzer` Copilot deinstallieren:
+```
+$ Get-AppxPackage -Name "Microsoft.Windows.Ai.Copilot.Provider" | Remove-AppxPackage
+```
+
+- Bestätigen mit der Enter-Taste – "Copilot" wird daraufhin für alle Benutzer des PCs deinstalliert.
+
+- Es erscheint kurz eine grün hinterlegte Statusmeldung, die anzeigt, dass Powershell arbeitet.
+Danach erscheint wieder die vorherige Anzeige.
+
+- "Copilot" ist nun erfolgreich deinstalliert.
+
+
+-----------------------------------------------------------------------------
+
+
+# 6. Raster auf dem Desktop - Icon Abstände verändern
+
+
+- `regedit` öffnen
+
+- Pfad einfügen:
+```
+HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics
+```
+
+- Die Werte `IconSpacing` und `IconVerticalSpacing` nun anpassen.
+
+- Standartgröße ist `-1125`
+
+- Um Abstand zu verringern einen kleineren negativen Wert eingeben (z.B. -1000) und um den Abstand zu vergrößern einen größeren negativen Wert eintragen (z.B. -1200).
+
+- Damit die Änderungen wirksam werden, Benutzer `abmelden` und erneut anmelden.
+
+
+-----------------------------------------------------------------------------
+
+
+# 7. Erstellen eines Systemwiederherstellungspunkts unter Windows 11
+
+
+- In das Suchfeld auf der Taskleiste `Wiederherstellungspunkt erstellen` eingeben.
+- Enter
+- Nun in den Systemeigenschaften zur Registerkarte `Computerschutz` die Option `Erstellen` auswählen.
+- Eine kurze Beschreibung einfügen und auf `Erstellung` klicken.
+
+- Um die automatische Sicherung einzuschalten, auf `Konfigurieren` gehen.
+- Nun die gewünschten Speicher-Einstellungen treffen, auf `Computerschutz aktivieren` klicken und Einstellungen übernehmen.
+
+
+Sollten Probleme mit Windows auftreten, ist es nun möglich, in den `Erweiterten Startoptionen` auf einen erstellten Systemwiederherstellungspunkt zurückzukehren.
+
+
+-----------------------------------------------------------------------------
+
+
+# 8. Microsoft Edge auf Windows 10 deinstallieren
 
 
 ## WICHTIG !
