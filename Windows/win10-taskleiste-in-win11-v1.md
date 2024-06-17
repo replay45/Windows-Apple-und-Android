@@ -3,6 +3,8 @@
 
 Diese Anleitung wurde verfasst am 10.6.2024
 
+Windows 11 Version: 23H2
+
 
 
 ## Disclaimer
