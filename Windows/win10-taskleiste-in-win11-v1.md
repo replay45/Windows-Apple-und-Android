@@ -1,9 +1,9 @@
 # Windows10 Taskleiste in Windows11 wiederherstellen mit [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher)
 
 
-Diese Anleitung wurde verfasst am 10.6.2024
+`Anleitung verfasst am 10.6.2024`
 
-Windows 11 Version: 23H2
+`Windows 11 Version: 23H2`
 
 
 
@@ -29,7 +29,7 @@ Die Nutzung des Patchers ist auf eigene Gefahr !
 
 - Auf einen freien Bereich der Taskleiste klicken und auf `Eigenschaften` gehen.
 - Um die Kombinierung der Icons in der Taskleiste einzustellen, auf `Kombinierung der Tasksymbole in der primären Taskleiste` klicken und `Immer kombinieren` wählen.
-Bei 2 oder `mehreren Bildschirmen`, die Option darunter mit `sekundären Taskleiste(n)` ebenfalls auf `Immer kombinieren` setzen.
+- Bei 2 oder `mehreren Bildschirmen`, die Option darunter mit `sekundären Taskleiste(n)` ebenfalls auf `Immer kombinieren` setzen.
 - Nun können weitere Anpassungen nach Belieben getätigt werden.
 - Um Änderungen aktiv zu machen, auf `Explorer neustarten *` klicken.
 - Damit man das ausführliche Kontextmenü von Windows10 zurückerhalten kann, muss man unter `Weitere Einstellungen` `Windows11-Kontextmenü deaktivieren` auswählen.
@@ -50,3 +50,4 @@ Um den Patcher nun aufrufen zu können, kann man einfach ein `Rechtsklick` auf d
 
 
 ------------------------------------------------------------------------------------------------------
+
