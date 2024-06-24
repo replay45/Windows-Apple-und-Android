@@ -81,6 +81,7 @@ $ Test-NetConnection localhost -Port 80
 
 
 Wenn der `TcpTestErfolgreich` : `True` ausgibt, ist der Standardport (80) bereits belegt.
+
 Wenn der `TcpTestErfolgreich : `false` ausgibt, ist der Standardport (80) nicht belegt.
 
 Wenn die Ausgabe "failed" erscheint, wurden die Änderungen möglicherweise nicht übernommen und der Port könnte geschlossen sein.
