@@ -2,6 +2,7 @@
 
 
 ## Inhaltsverzeichnis
+
 ### 1. Windows-Sperrbildschirm hacken
 ### 2. Einen USB-Stick zur Windows-Anmeldung nutzen
 ### 3. Windows PC in eine Domäne hinzufügen
@@ -9,7 +10,9 @@
 ### 5. Copilot von Windows 11 deinstallieren
 ### 6. Raster auf dem Desktop - Icon Abstände verändern
 ### 7. Erstellen eines Systemwiederherstellungspunkts unter Windows 11
-### 8. Microsoft Edge auf Windows 10 deinstallieren
+### 8. Schnellstart bei Windows deaktivieren
+### 9. Dienste installierter Programme auf Windows überprüfen
+### 10. Microsoft Edge auf Windows 10 deinstallieren
 
 
 -----------------------------------------------------------------------------
@@ -33,19 +36,19 @@ Die Anleitung wurde ausschließlich auf Windows 10 getestet !
 -----------------------------------------------------------------------------
 
 
-1. erste Option
+1.1. erste Option
 
-- 1.1) Um in die `erweiterten Optionen` zu gelangen: `Shift Taste drücken`, während auf den `Neustart-Knopf` unten links im Anmeldefenster gedrückt wird.
-- 1.2) In den `erweiterten Optionen` zu `Problembehandlung` navigieren, dann zu `erweiterte Optionen` und die `Eingabeaufforderung` öffnen.
+- a) Um in die `erweiterten Optionen` zu gelangen: `Shift Taste drücken`, während auf den `Neustart-Knopf` unten links im Anmeldefenster gedrückt wird.
+- b) In den `erweiterten Optionen` zu `Problembehandlung` navigieren, dann zu `erweiterte Optionen` und die `Eingabeaufforderung` öffnen.
 
 
 ### Die erste Option ist leider nicht immer möglich, daher kann auch Option 2 genutzt werden.
 
 
-2. zweite Option
+1.2. zweite Option
 
-- 2.1) Daher über einen `win10 Boot USB Stick` booten, anstatt windows zu installieren, jedoch dort mit der Tastenkombination `Shift und F10` CMD öffnen.
-- 2.2) Einen Win10-Boot-/ Installations-USB-Stick kann mit dem [Media Creation Tool](https://www.microsoft.com/de-de/software-download/windows10) erstellen werden.
+- a) Daher über einen `win10 Boot USB Stick` booten, anstatt windows zu installieren, jedoch dort mit der Tastenkombination `Shift und F10` CMD öffnen.
+- b) Einen Win10-Boot-/ Installations-USB-Stick kann mit dem [Media Creation Tool](https://www.microsoft.com/de-de/software-download/windows10) erstellen werden.
 
 
 -----------------------------------------------------------------------------
@@ -64,17 +67,17 @@ Die Anleitung wurde ausschließlich auf Windows 10 getestet !
 								copy cmd.exe utilman.exe
 
 
-- a) Komandozeile (cmd) mit `$ exit` oder dem Kreuz oben rechts in der Ecke schließen.
+- c) Komandozeile (cmd) mit `$ exit` oder dem Kreuz oben rechts in der Ecke schließen.
 
-- b) Installation beenden (abbrechen)
+- d) Installation beenden (abbrechen)
 
-- c) Der PC wird neu gestartet, dabei den USB Stick entfernen, damit der Sperrbildschirm erscheint.
+- f) Der PC wird neu gestartet, dabei den USB Stick entfernen, damit der Sperrbildschirm erscheint.
 
 
 -----------------------------------------------------------------------------
 
 
-3. Schutz vor Antischadsoftware-Frühstarts deaktivieren
+1.3. Schutz vor Antischadsoftware-Frühstarts deaktivieren
 
 - In die automatischen Reparatureinstellungen von win 10 kommen: `Shift Taste und Neustart-Knopf unten rechts auf dem Sperbildschirm gleichzeitig drücken.`
 
@@ -90,7 +93,7 @@ Die Anleitung wurde ausschließlich auf Windows 10 getestet !
 -----------------------------------------------------------------------------
 
 
-4. Passwort ändern
+1.4. Passwort ändern
 
 - Um das Passwort nun in CMD auf dem Sperrbildschirm zu ändern:
 ```
@@ -105,7 +108,7 @@ $ net user "(hier kommt der name des Benutzers rein und die Anführungszeichen n
 -----------------------------------------------------------------------------
 
 
-5.  Einen neuen Benutzer anlegen
+1.5.  Einen neuen Benutzer anlegen
 
 ```
 $ net user DEN BENUTZERNAMEN HIER REIN SCHREIBEN HIER PASSWORT SCHREIBEN /add    
@@ -251,6 +254,7 @@ HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics
 - Eine kurze Beschreibung einfügen und auf `Erstellung` klicken.
 
 - Um die automatische Sicherung einzuschalten, auf `Konfigurieren` gehen.
+- Dabei sicherstellen, dass das richtige Speichermedium ausgewählt wurde.
 - Nun die gewünschten Speicher-Einstellungen treffen, auf `Computerschutz aktivieren` klicken und Einstellungen übernehmen.
 
 
@@ -260,10 +264,56 @@ Sollten Probleme mit Windows auftreten, ist es nun möglich, in den `Erweiterten
 -----------------------------------------------------------------------------
 
 
-# 8. Microsoft Edge auf Windows 10 deinstallieren
+# 8. Schnellstart bei Windows deaktivieren
 
 
-## WICHTIG !
+## Was ist der Schnellstart ?
+
+Der Schnellstart ist eine Funktion in Windows, die beim Herunterfahren ein Image des [RAMs](https://de.wikipedia.org/wiki/Random-Access_Memory) auf den Massenspeicher schreibt.
+Beim nächsten Start des PCs wird dieses Abbild in den RAM geladen, was den Boot-Vorgang beschleunigt.
+
+
+## Wieso sollte man ihn deaktivieren ?
+
+Der Schnellstart kann die Fehleranalyse erschweren, da der RAM nur durch einen vollständigen Neustart komplett zurückgesetzt wird, was für eine Fehlerbehebung notwendig ist.
+Wenn man also Fehlerquellen vermeiden möchte, kann man den Schnellstart deaktivieren.
+
+
+## Wie deaktiviert man den Schnellstart ?
+
+- sicherstellen, dass die Ansicht auf `Große Symbole` oder `Kleine Symbole` eingestellt ist
+- `Systemsteuerung` öffnen
+- Zu den `Energieoptionen` navigieren
+- Einstellungen für das Herunterfahren ändern
+- Auf `Einige Einstellungen sind momentan nicht verfügbar.` klicken
+- Schnellstart deaktivieren
+- `Änderungen speichern`
+
+
+-----------------------------------------------------------------------------
+
+
+# 9. Dienste installierter Programme auf Windows überprüfen
+
+
+- Systemkonfiguration
+	- In die Suche `Systemkonfiguration` eingeben und mit Enter bestätigen.
+	- Zu dem Reiter `Dienste` wechseln,
+	- Windows/Microsoft Dienste sollten immer laufen, da diese essenziell für das Betriebssystem sind/ sein könnten.
+	- Daher kann einfach der Haken bei `Alle Microsoft-Dienste ausblenden` gesetzt werden.
+	- Nun können nach Bedarf Dienste aktiviert/deaktiviert werden.
+
+
+Für weniger erfahrene Nutzer, empfiehlt es sich, unbekannte Dienste NICHT zu deaktivieren, da dies zu Problemen führen könnte.
+
+
+-----------------------------------------------------------------------------
+
+
+# 10. Microsoft Edge auf Windows 10 deinstallieren
+
+
+## WICHTIG - Der Beitrag ist nicht mehr aktuell !
 
 ## Update-1: Microsoft hat ein Update veröffentlicht, mit dem der Edge-Browser trotz Deinstallation und Blockung zurückkehrt und sich NICHT mehr mit dem Befehl entfernen lässt !!!
 
@@ -271,9 +321,9 @@ Sollten Probleme mit Windows auftreten, ist es nun möglich, in den `Erweiterten
 
 
 
-1. anderen Browser installieren (z.B. Firefox oder Brave)
+8.1. anderen Browser installieren (z.B. Firefox oder Brave)
 
-2. Explorer öffnen  
+8.2. Explorer öffnen  
 
         a) auf Laufwerk C gehen
 
@@ -295,15 +345,13 @@ Sollten Probleme mit Windows auftreten, ist es nun möglich, in den `Erweiterten
 
 
 
-3. In Windows Powershell Edge deinstallieren:
+8.3. In Windows Powershell Edge deinstallieren:
 ```
 $ .\setup.exe --uninstall --system-level --verbose-logging –force-uninstall
 ```
 
 
-
--------------------------------------------------------------------------------------------------------------
-
+-----------------------------------------------------------------------------
 
 
 ### Microsoft Edges automatische Installation blocken:
@@ -314,10 +362,9 @@ Optionaler Teil, nicht für die eigentliche Deinstallation erforderlich ! -> Ver
 
 
 
-1. [Edge Blocker herunterladen](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnJfNVA5cmpfWG5wY2lBQlhoem9BTWFOS3Ntd3xBQ3Jtc0ttTmJjbTk5VU1UQVY2LU9iR1o1R0J5UWI4cUpyeUhPNU5rcVdQTDEwMG9vMXllVEpaOVdiRFpIOWJ3N2U5dzgyWndpNWdCSGIyb2Z3QU9EdFJ0WkEtOFhQSE9oYjF1dEtQRHlyRDdDMExGS1plcWp6Yw&q=https%3A%2F%2Fmsedgeblockertoolkit.blob.core.windows.net%2Fblockertoolkit%2FMicrosoftEdgeChromiumBlockerToolkit.exe)
+8.4. [Edge Blocker herunterladen](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbnJfNVA5cmpfWG5wY2lBQlhoem9BTWFOS3Ntd3xBQ3Jtc0ttTmJjbTk5VU1UQVY2LU9iR1o1R0J5UWI4cUpyeUhPNU5rcVdQTDEwMG9vMXllVEpaOVdiRFpIOWJ3N2U5dzgyWndpNWdCSGIyb2Z3QU9EdFJ0WkEtOFhQSE9oYjF1dEtQRHlyRDdDMExGS1plcWp6Yw&q=https%3A%2F%2Fmsedgeblockertoolkit.blob.core.windows.net%2Fblockertoolkit%2FMicrosoftEdgeChromiumBlockerToolkit.exe)
 
-
-2. a) Editor öffnen und den Eintrag einfügen:
+a) Editor öffnen und den Eintrag einfügen:
 
 Windows Registry Editor Version 5.00
 
@@ -356,5 +403,4 @@ $ EdgeChromium_Blocker.cmd /b
 i) Nun sollte dort stehen: `"Der Vorgang wurde erfolgreich beendet."`.
 
 
-
-------------------------------------------------------
+-----------------------------------------------------------------------------
