@@ -1,6 +1,6 @@
-# Windows & Apple
+# Windows, Apple & Android
 
-Unter diesem Repository sind Anleitungen für Windows 10, sowie Windows 11 und Apple zu finden.
+Unter diesem Repository sind Anleitungen für Windows 10, Windows 11, Apple und Android zu finden.
 
 
 ### Disclaimer
@@ -14,22 +14,21 @@ Die Nutzung von Funkfrequenzen (RF) unterliegt den Gesetzen des jeweiligen Lande
 ### Links
 
 ### Windows
-> Microsoft
 
 [Microsoft](https://www.microsoft.com/de-de)
 
 ------------------------------------------------------------------------------------------------------------------------
 
 ### Apple
-> Apple
 
 [Apple](https://www.apple.com/de/)
 
 [MacOS Version ermitteln](https://support.apple.com/de-de/109033)
 
+------------------------------------------------------------------------------------------------------------------------
 
-> nützliche Links
+### Android
 
-[HomeBrew - Paketmanager](https://brew.sh/)
+[Android](https://www.android.com/intl/de_de/)
 
-[OpenCore Legacy Patcher](https://dortania.github.io/OpenCore-Legacy-Patcher/)
+[Samsung](https://www.samsung.com/de/)
