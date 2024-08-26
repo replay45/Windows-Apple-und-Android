@@ -6,28 +6,28 @@ Unter diesem Repository sind Anleitungen für Windows 10, Windows 11, Apple und 
 ### Disclaimer
 Alle folgenden Informationen und Anleitungen in diesem Repository sind ausschließlich für ethical Hacking und Bildungszwecke !
 Die Informationen und Anleitungen sind verantwortungsbewusst und nur für legale Zwecke zu nutzen.
-Das Befolgen der Anleitungen, ausführen von Befehlen, von Code, sowie Skripten und das besuchen von verlinkten Seiten Dritter, ist auf eigene Gefahr.
-Der Autor übernimmt keine Garantie auf Richtigkeit und haftet nicht für entstandene Schäden.
+Das Befolgen der Anleitungen, das Ausführen von Befehlen, von Code, sowie Skripten und das Besuchen von verlinkten Webseiten Dritter, erfolgt auf eigene Gefahr.
+Der Autor übernimmt keine Garantie für die Vollständigkeit und Korrektheit der Inhalte und haftet nicht für entstandene Schäden.
 Die Nutzung von Funkfrequenzen (RF) unterliegt den Gesetzen des jeweiligen Landes.
 
 
 ### Links
 
-### Windows
+> Windows
 
 [Microsoft](https://www.microsoft.com/de-de)
 
-------------------------------------------------------------------------------------------------------------------------
 
-### Apple
+
+> Apple
 
 [Apple](https://www.apple.com/de/)
 
 [MacOS Version ermitteln](https://support.apple.com/de-de/109033)
 
-------------------------------------------------------------------------------------------------------------------------
 
-### Android
+
+> Android
 
 [Android](https://www.android.com/intl/de_de/)
 
