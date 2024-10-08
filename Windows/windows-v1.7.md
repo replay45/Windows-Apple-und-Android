@@ -281,8 +281,8 @@ Wenn man also Fehlerquellen vermeiden möchte, kann man den Schnellstart deaktiv
 
 ## Wie deaktiviert man den Schnellstart ?
 
-- sicherstellen, dass die Ansicht auf `Große Symbole` oder `Kleine Symbole` eingestellt ist
 - `Systemsteuerung` öffnen
+- sicherstellen, dass die Ansicht auf `Große Symbole` oder `Kleine Symbole` eingestellt ist
 - Zu den `Energieoptionen` navigieren
 - Einstellungen für das Herunterfahren ändern
 - Auf `Einige Einstellungen sind momentan nicht verfügbar.` klicken
