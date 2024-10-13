@@ -14,7 +14,7 @@
 - Nun anstatt mit einem Konto sich anzumelden, auf `Anmeldeoptionen` gehen und `Stattdessen der Domäne beitreten` auswählen (Es ist nicht nötig einer Domäne beizutreten, die Option ein lokales Konto anzulegen ist lediglich hinter diesem Punkt versteckt).
 
 - Jetzt einfach ein Benutzername vergeben und ein Passwort wählen. Danach wie gewohnt die Sicherheitsfragen beantworten und die Datenschutzoptionen setzen.
-
+(Tipp: Bei den Datenschutzoptionen am besten überall "Nein" auswählen.)
 
 
 
@@ -29,7 +29,12 @@
 - Folgendes in das Terminal eingeben:
 
 ```
-oobe\BypassNRO.cmd
+$ oobe\BypassNRO.cmd
+```
+
+Sollte der Befehl nicht funktionieren, kann alternativ der folgende Befehl genutzt werden:
+```
+$ oobe\BypassNRO
 ```
 
 - Einrichtungsassistenten folgen und bei dem Punkt `Netzwerk verbinden` auf `Ich habe kein Internet` klicken.
@@ -37,5 +42,6 @@ oobe\BypassNRO.cmd
 - Danach `Mit eingeschränkter Ersteinrichtung fortfahren` auswählen.
 
 - Jetzt einfach ein Benutzername vergeben und ein Passwort wählen. Danach wie gewohnt die Sicherheitsfragen beantworten und die Datenschutzoptionen setzen.
+(Tipp: Bei den Datenschutzoptionen am besten überall "Nein" auswählen.)
 
 -----------------------------------------------------------------------------------------------------------------
