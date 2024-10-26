@@ -23,15 +23,15 @@
 
 
 - Disclaimer
-   Die Nutzung des Entwicklermodus unter Android erfolgt auf eigene Gefahr !
-   Die Nutzung kann zu Instabilitäten, Datenverlust oder Sicherheitsrisiken führen.
-   Außerdem kann die Garantieleistungen beeinträchtigt werden.
-   Die Optionen sollten daher unter besonderer Vorsicht genutzt werden.
+Die Nutzung des Entwicklermodus unter Android erfolgt auf eigene Gefahr !
+Die Nutzung kann zu Instabilitäten, Datenverlust oder Sicherheitsrisiken führen.
+Außerdem kann die Garantieleistungen beeinträchtigt werden.
+Die Optionen sollten daher unter besonderer Vorsicht genutzt werden.
 
 
 - Was ist der Entwicklermodus ?
-    Die Entwickleroptionen sind versteckte Einstellungen, die häufig von Entwicklern und Testern genutzt werden.
-    Dort können z.B. Debugging Optionen genutzt werden.
+Die Entwickleroptionen sind versteckte Einstellungen, die häufig von Entwicklern und Testern genutzt werden.
+Dort können z.B. Debugging Optionen genutzt werden.
 
 
 - aktivieren:
@@ -55,14 +55,11 @@
 
 
 - Was ist der [sichere Ordner](https://www.samsungknox.com/de/solutions/personal-apps/secure-folder) ?
-    Der sichere Ordner ist ein Bereich auf Samsung Smartphones, in dem man passwortgeschützt Dateien, Bilder,
-    Videos usw. sicher speichern kann, ohne dass diese in der normalen Galarie oder Dateimanager zu finden sind.
-    Außerdem können auch Apps separat installiert werden, ohne dass diese im App Menü erscheinen.
+Der sichere Ordner ist ein Bereich auf Samsung Smartphones, in dem man passwortgeschützt Dateien, Bilder, Videos usw. sicher speichern kann, ohne dass diese in der normalen Galarie oder Dateimanager zu finden sind.
+Außerdem können auch Apps separat installiert werden, ohne dass diese im App Menü erscheinen.
     
-    Das heißt, dass alle Aktionen, Dateien, sowie Apps keinen Einfluss auf den normalen Bereich des Smartphones
-    haben.
-    Das ist z.B. besonders praktisch, wenn man sich mit zwei Accounts in einer App anmelden möchte, auch wenn 
-    diese die Dual Messenger-Funktion nicht unterstützt.
+Das heißt, dass alle Aktionen, Dateien, sowie Apps keinen Einfluss auf den normalen Bereich des Smartphones haben.
+Das ist z.B. besonders praktisch, wenn man sich mit zwei Accounts in einer App anmelden möchte, auch wenn  diese die Dual Messenger-Funktion nicht unterstützt.
 
 - In den Einstellungen unter `Sicherheit & Datenschutz` -> `Weitere Sicherheitseinstellungen` kann der Sichere Ordner aktiviert werden. Danach ist er im App-Menü zu finden.
 
@@ -75,9 +72,8 @@
 `Anleitung zuletzt getestet unter Android 14`
 
 - Was ist die [Gerätewartung](https://www.samsung.com/de/support/mobile-devices/galaxy-geraetewartung/) ?
-    In der Gerätewartung kann man die `Leistung` des Smartphones `optimieren`, den `RAM-Speicher leeren` und den
-    `Zustanad des Akkus`, sowie die `Nutzung des Speichers` überprüfen.
-    Man findet ebenfalls die Option `App-Schutz` mit der man das Smartphone auf schädliche Apps prüfen kann.
+In der Gerätewartung kann man die `Leistung` des Smartphones `optimieren`, den `RAM-Speicher leeren` und den `Zustanad des Akkus`, sowie die `Nutzung des Speichers` überprüfen.
+Man findet ebenfalls die Option `App-Schutz` mit der man das Smartphone auf schädliche Apps prüfen kann.
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -168,6 +164,7 @@ Dabei sollte beachtet werden, dass einige Funktionen, wie z.B. "Bildschirm drehe
 
 
 - Überprüfen ob die `Sensors Off` Funktion aktiv ist:
+
 Wenn man also nach der Deaktivierung der Sensoren versucht die Kamera App zu öffnen, wird man feststellen, dass diese sich nicht mehr öffnen lässt.
 
 
