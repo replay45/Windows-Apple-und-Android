@@ -22,14 +22,14 @@
 `zuletzt verwendete Android-Version: 14`
 
 
-- Disclaimer
+### Disclaimer
 Die Nutzung des Entwicklermodus unter Android erfolgt auf eigene Gefahr !
 Die Nutzung kann zu Instabilitäten, Datenverlust oder Sicherheitsrisiken führen.
 Außerdem kann die Garantieleistungen beeinträchtigt werden.
 Die Optionen sollten daher unter besonderer Vorsicht genutzt werden.
 
 
-- Was ist der Entwicklermodus ?
+### Was ist der Entwicklermodus ?
 Die Entwickleroptionen sind versteckte Einstellungen, die häufig von Entwicklern und Testern genutzt werden.
 Dort können z.B. Debugging Optionen genutzt werden.
 
@@ -54,7 +54,8 @@ Dort können z.B. Debugging Optionen genutzt werden.
 `Anleitung zuletzt getestet unter Android 14`
 
 
-- Was ist der [sichere Ordner](https://www.samsungknox.com/de/solutions/personal-apps/secure-folder) ?
+### Was ist der [sichere Ordner](https://www.samsungknox.com/de/solutions/personal-apps/secure-folder) ?
+
 Der sichere Ordner ist ein Bereich auf Samsung Smartphones, in dem man passwortgeschützt Dateien, Bilder, Videos usw. sicher speichern kann, ohne dass diese in der normalen Galarie oder Dateimanager zu finden sind.
 Außerdem können auch Apps separat installiert werden, ohne dass diese im App Menü erscheinen.
     
@@ -71,7 +72,8 @@ Das ist z.B. besonders praktisch, wenn man sich mit zwei Accounts in einer App a
 
 `Anleitung zuletzt getestet unter Android 14`
 
-- Was ist die [Gerätewartung](https://www.samsung.com/de/support/mobile-devices/galaxy-geraetewartung/) ?
+### Was ist die [Gerätewartung](https://www.samsung.com/de/support/mobile-devices/galaxy-geraetewartung/) ?
+
 In der Gerätewartung kann man die `Leistung` des Smartphones `optimieren`, den `RAM-Speicher leeren` und den `Zustanad des Akkus`, sowie die `Nutzung des Speichers` überprüfen.
 Man findet ebenfalls die Option `App-Schutz` mit der man das Smartphone auf schädliche Apps prüfen kann.
 
@@ -129,6 +131,7 @@ Auf älteren Geräten ist die Verschlüsselung möglicherweise nicht oder nur zu
 Es ist sehr wichtig, den Wiedererstellungsschlüssel gut aufzubewahren, um die Daten entschlüsseln zu können.
 Am besten sichert man den Wiederherstellungsschlüssel in einem separaten Passwortmanager, der auch unabhängig von der Samsung Cloud funktioniert.
 
+-----------------------------------------------------------------------------------------------------------------
 
 # b) [Samsung Account](https://v3.account.samsung.com/dashboard/intro) Einstellungen / Funktionen
 
