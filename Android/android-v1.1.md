@@ -19,13 +19,13 @@
 
 # 1. Entwicklermodus in den Einstellungen aktivieren (Samsung)
 
-`zuletzt verwendete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14`
 
 
 ### Disclaimer
 Die Nutzung des Entwicklermodus unter Android erfolgt auf eigene Gefahr !
 Die Nutzung kann zu Instabilitäten, Datenverlust oder Sicherheitsrisiken führen.
-Außerdem kann die Garantieleistungen beeinträchtigt werden.
+Außerdem können die Garantieleistungen beeinträchtigt werden.
 Die Optionen sollten daher unter besonderer Vorsicht genutzt werden.
 
 
@@ -34,16 +34,27 @@ Die Entwickleroptionen sind versteckte Einstellungen, die häufig von Entwickler
 Dort können z.B. Debugging Optionen genutzt werden.
 
 
-- aktivieren:
+- Aktivieren:
     - Einstellungen öffnen.
     - `Telefoninfo`
     - `Softwareinformationen`
-    - auf `Buildnummer` drücken bis zur PIN/Passwort Abfrage 
+    - auf `Buildnummer` drücken bis zur PIN/Passwortabfrage 
     - Unter "Telefoninfo" erscheint nun ein neuer Reiter, der"Entwicklermodus".
 
 
-- deaktivieren:
+- Deaktivieren:
     - Um den Entwicklermodus zu deaktivieren, in die Entwickleroptionen gehen und den Regler auf "Aus" stellen.
+
+
+### nützliche Optionen aus dem EntEntwicklermodus
+
+- ausführliche WLAN Protokollierung & Scan-Drosselung
+    - Mehr Details wie Verbindungsinformationen im WLAN Menü anzeigen.
+    - Scan-Drosselung verbessert die Netzwerkleistung und spart Akkuladung.
+
+- Animationsfaktor (Animationen im System verkürzen/deaktivieren)
+    - unter `Fensteranimationsfaktor`, `Übergangsanimationsfaktor` & `Animationsdauerfaktor` können die Faktoren für die Animationen eingestellt werden. Mit `aus` werden die Animationen deaktiviert, was häufig bei älteren Geräten dafür sorgt, dass sich das Gerät etwas schneller anfühlt.
+
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -51,18 +62,18 @@ Dort können z.B. Debugging Optionen genutzt werden.
 
 # 2. Sicherer Ordner (Samsung)
 
-`Anleitung zuletzt getestet unter Android 14`
+`Zuletzt getestete Android-Version: 14`
 
 
 ### Was ist der [sichere Ordner](https://www.samsungknox.com/de/solutions/personal-apps/secure-folder) ?
 
-Der sichere Ordner ist ein Bereich auf Samsung Smartphones, in dem man passwortgeschützt Dateien, Bilder, Videos usw. sicher speichern kann, ohne dass diese in der normalen Galarie oder Dateimanager zu finden sind.
+Der sichere Ordner ist ein Bereich auf Samsung Smartphones, in dem man passwortgeschützt Dateien, Bilder, Videos usw. sicher speichern kann, ohne dass diese in der normalen Galerie oder im Dateimanager zu finden sind.
 Außerdem können auch Apps separat installiert werden, ohne dass diese im App Menü erscheinen.
     
 Das heißt, dass alle Aktionen, Dateien, sowie Apps keinen Einfluss auf den normalen Bereich des Smartphones haben.
 Das ist z.B. besonders praktisch, wenn man sich mit zwei Accounts in einer App anmelden möchte, auch wenn  diese die Dual Messenger-Funktion nicht unterstützt.
 
-- In den Einstellungen unter `Sicherheit & Datenschutz` -> `Weitere Sicherheitseinstellungen` kann der Sichere Ordner aktiviert werden. Danach ist er im App-Menü zu finden.
+- In den Einstellungen unter `Sicherheit & Datenschutz` -> `Weitere Sicherheitseinstellungen` kann der sichere Ordner aktiviert werden. Danach ist er im App-Menü zu finden.
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -70,7 +81,7 @@ Das ist z.B. besonders praktisch, wenn man sich mit zwei Accounts in einer App a
 
 # 3. Gerätewartung (Samsung)
 
-`Anleitung zuletzt getestet unter Android 14`
+`Zuletzt getestete Android-Version: 14`
 
 ### Was ist die [Gerätewartung](https://www.samsung.com/de/support/mobile-devices/galaxy-geraetewartung/) ?
 
@@ -83,9 +94,9 @@ Man findet ebenfalls die Option `App-Schutz` mit der man das Smartphone auf sch�
 
 # 4. Fenster anheften / App anheften (Samsung)
 
-`Anleitung zuletzt getestet unter Android 14`
+`Zuletzt getestete Android-Version: 14`
 
-- Mit der Funktion App anheften, bei früheren Android Versionen auch als "Fenster anheften" bekannt, kann man eine App anheften und wenn man diese App verlassen will, muss das Gerät erneut entsperren werden. Damit kann man jemand anderes sein Gerät geben, ohne dass dieser die App wieder verlassen kann und das Gerät durchsuchen kann.
+- Mit der Funktion App anheften, bei früheren Android Versionen auch als "Fenster anheften" bekannt, kann man eine App anheften und wenn man diese App verlassen will, muss das Gerät erneut entsperrt werden. Damit kann man jemand anderem sein Gerät geben, ohne dass dieser die App wieder verlassen kann und das Gerät durchsuchen kann.
 Wenn man daher die Funktion nutzt, ist man auf die angeheftete App beschränkt.
 
 - Die Funktion kann unter `Sicherheit und Datenschutz` -> `Weitere Sicherheitseinstelllungen` und `App Anheften` aktiviert werden.
@@ -159,16 +170,17 @@ Am besten sichert man den Wiederherstellungsschlüssel in einem separaten Passwo
 
 ## 6. Spionageschutz: Kamera, Mikrofon & Sensoren vollständig & systemweit blockieren (Sicherheitsrichtlinie)
 
+`Zuletzt getestete Android-Version: 14`
 
 ### Kamera, Mikrofon & andere Sensoren über das QuickPanel nach Belieben deaktivieren und wieder aktivieren
-Wer angst vor Spionage hat, oder verhindern möchte, dass Andrid oder Apps auf die Sensoren zugreifen können, kann `Sensors Off` nutzen, um eine Sicherheitsrichtline zu aktivieren, die den Zugriff auf Sensoren, Mikrofon oder Kamera systemweit blockiert.
+Wer Angst vor Spionage hat, oder verhindern möchte, dass Andrid oder Apps auf die Sensoren zugreifen können, kann `Sensors Off` nutzen, um eine Sicherheitsrichtline zu aktivieren, die den Zugriff auf Sensoren, Mikrofon oder Kamera systemweit blockiert.
 
 Dabei sollte beachtet werden, dass einige Funktionen, wie z.B. "Bildschirm drehen" von der Deaktivierung der Sensoren beeinträchtigt werden können.
 
 
-- Überprüfen ob die `Sensors Off` Funktion aktiv ist:
+- Überprüfen, ob die `Sensors Off` Funktion aktiv ist:
 
-Wenn man also nach der Deaktivierung der Sensoren versucht die Kamera App zu öffnen, wird man feststellen, dass diese sich nicht mehr öffnen lässt.
+Wenn man also nach der Deaktivierung der Sensoren versucht, die Kamera App zu öffnen, wird man feststellen, dass diese sich nicht mehr öffnen lässt.
 
 
 ### Schnelleinstellung aktivieren
@@ -183,26 +195,27 @@ Wenn man also nach der Deaktivierung der Sensoren versucht die Kamera App zu öf
 
 ## 7. Intelligent Wi-Fi - Connectivity labs (Samsung)
 
+`Zuletzt getestete Android-Version: 14`
 
-### Was sind die Connectivity Labs Funktionen in den Intelligent Wi-Fi Optionen ?
+### Was sind die Connectivity Labs Funktionen in den "Intelligent Wi-Fi" Optionen ?
 Die Connectivity Labs Funktionen sind Netzwerkeinstellungen, zur Verbesserung und Analyse der Leistung, sowie Verbindungsqualität.
 Neben dem `weekly report` für die Datennutzung ist `Wi-Fi inspection` eine interessante Option, mit der man die Verbindungsqualität einsehen kann.
 
 
-### aktivieren der Optionen
+### Aktivieren der Optionen
 - Einstellungen öffnen
 - Verbindungen
 - WLAN
 - Auf die 3 Punkte rechts oben klicken
 - Intelligent Wi-Fi
-- Auf den Schriftzug `Intelligent Wi-Fi` mit der Versionsnummer tippen, bis die `Connectivity labs` Option erscheint. 
+- Auf den Schriftzug `Intelligent Wi-Fi` mit der Versionsnummer tippen, bis die `Connectivity labs` Option erscheint.
 
 
 ### Wi-Fi inspection
 - `Wi-Fi inspection`
 - Auf `Start` klicken und `WLAN` auswählen.
 - Durch das Menü klicken und Analyse starten.
-- Nun kann die Verbindungsqualität detalliert eingesehen und der Standort mit der besten Verbindungsqualität bestimmt werden.
+- Nun kann die Verbindungsqualität detailliert eingesehen und der Standort mit der besten Verbindungsqualität bestimmt werden.
 
 
 -----------------------------------------------------------------------------------------------------------------
