@@ -18,7 +18,8 @@
 ### B. Apps für Samsung Smartphones
 1. [Good Lock](https://www.samsung.com/de/support/apps-services/was-ist-samsung-good-lock/) - Galaxy Smartphones & Tablets personalisieren
 2. Taschenrechner App Trick ([Samsung Calculator](https://play.google.com/store/apps/details?id=com.sec.android.app.popupcalculator&hl=de))
-
+3. [Samsung TV](https://www.samsung.com/de/tvs/smart-tv/samsung-tv-plus/)
+4. [Samsung Gallery](https://galaxystore.samsung.com/prepost/000005627043) - Gallery Labs
 
 
 
@@ -39,16 +40,19 @@ Diese dann direkt über den Browser oder über einen APK-Installer installieren.
 Dabei muss ggf. das Installieren von Apps aus `externen Quellen` erlaubt werden.
 
 
+
 ## 2. [NewPipe](https://newpipe.net/)
 
 ### Was ist NewPipe ?
 NewPipe ist eine Open Source App für Android, mit der man YouTube Videos ohne Konto, ohne Werbung und ohne Tracking schauen kann.
 Außerdem kann man Videos als "Video" oder "Audio" herunterladen.
 Neben [YouTube](https://www.youtube.com/) ist auch [Soundcloud](https://soundcloud.com/), [media.ccc.de](https://media.ccc.de/), [PeerTube](https://joinpeertube.org/) und [Bandcamp](https://bandcamp.com/) als Quelle verfügbar.
+Für Windows, MacOS und Linux gibt es als Alternative das Programm [FreeTube](https://freetubeapp.io/).
 
 ### Installation von NewPipe
-Die Installation kann entweder direkt über die APK, oder über den F-Droid Store vorgenommen werden.
-Für Windows, MacOS und Linux gibt es als Alternative das Programm [FreeTube](https://freetubeapp.io/).
+- [APK](https://newpipe.net/)
+- [F-Droid](https://f-droid.org/)
+
 
 
 ## 3. APK-Installer
@@ -58,7 +62,8 @@ Für Windows, MacOS und Linux gibt es als Alternative das Programm [FreeTube](ht
 Häufig kann man APK Dateien auch über einen Browser installieren, sofern man die APK Datei direkt über diesen heruntergeladen hat, allerdings kann es sein, dass dies nicht immer möglich ist.
 
 ### Installation eines APK-Installers
-Ein APK-Installer ist z.B. im Play Store verfügbar: [APK Installer](https://play.google.com/store/apps/details?id=braveheart.apps.apkinstaller&hl=de)
+- Ein APK-Installer ist z.B. im Play Store verfügbar: [APK Installer](https://play.google.com/store/apps/details?id=braveheart.apps.apkinstaller&hl=de)
+
 
 
 ## 4. Fake GPS
@@ -67,8 +72,9 @@ Ein APK-Installer ist z.B. im Play Store verfügbar: [APK Installer](https://pla
 Mit der App Fake GPS kann man seinen GPS Standort virtuell an jeden Ort verschieben, ohne selbst vor Ort sein zu müssen.
 
 ### Installation von Fake GPS
-Fake GPS im [Google Play Store](https://play.google.com/store/apps/details?id=com.blogspot.newapphorizons.fakegps&hl=de)
-Fake GPS [APK](https://www.apkmirror.com/apk/byterev/fake-gps-2/fake-gps-2-5-0-0-release/fake-gps-5-0-0-android-apk-download/)
+- [APK](https://www.apkmirror.com/apk/byterev/fake-gps-2/fake-gps-2-5-0-0-release/fake-gps-5-0-0-android-apk-download/)
+- [Google Play Store](https://play.google.com/store/apps/details?id=com.blogspot.newapphorizons.fakegps&hl=de)
+
 
 
 ## 5. [Total Commander](https://www.ghisler.com/)
@@ -79,10 +85,11 @@ Er zeichnet sich durch eine zweispaltige Ansicht aus, was das Dateimanagement se
 
 Über kostenlose Erweiterungen ist es sogar möglich, z.B. auf SMB, FTP oder SFTP Server zuzugreifen.
 Es sind außerdem Erweiterungen für WebDAV, Dropbox oder Google Drive verfügbar.
+Der Total Commander ist ebenfalls für Windows, MacOS und Linux verfügbar, auf Linux heißt er jedoch [Midnight Commander](https://midnight-commander.org/).
 
 ### Installation vom Total Commander
-Der Total Commander kann aus dem Google [Play Store](https://play.google.com/store/apps/details?id=com.ghisler.android.TotalCommander&hl=de) heruntergeladen werden.
-Der Total Commander ist ebenfalls für Windows, MacOS und Linux verfügbar, auf Linux heißt er jedoch [Midnight Commander](https://midnight-commander.org/).
+- [Play Store](https://play.google.com/store/apps/details?id=com.ghisler.android.TotalCommander&hl=de)
+
 
 
 ## 6. [PC Remote](https://www.monect.com/)
@@ -91,7 +98,9 @@ Der Total Commander ist ebenfalls für Windows, MacOS und Linux verfügbar, auf 
 PC-Remote ist eine Software, mit der man sein Android Smartphone zu einem Touchpad und einer Tastatur für den Computer verwandeln kann.
 
 ### Installation von PC-Remote 
-Software auf dem [Computer installieren](https://www.monect.com/#download) und [mobile App](https://www.monect.com/#download) auf dem Handy entweder über APK oder den Play Store herunterladen.
+- Software auf dem [Computer installieren](https://www.monect.com/#download)
+- [mobile App - APK](https://www.monect.com/#download)  
+- [Play Store](https://play.google.com/store/apps/details?id=com.monect.portable)
 
 
 ## 7. [Warpinator](https://warpinator.com/)
@@ -100,8 +109,11 @@ Software auf dem [Computer installieren](https://www.monect.com/#download) und [
 Warpinator ist ein Tool, womit Dateien und Ordner einfach zwischen Linux Computern und auch an, sowie zwischen Android oder Windows Geräten im selben lokalen Netzwerk, übertragen werden können.
 
 ### Installation von Warpinator
-Für Android gibt es mehrere Möglichkeiten. Entweder man lädt sich die offizielle Version als [APK](https://warpinator.com/) herunter, oder greift auf die unoffizielle Version aus dem [Play-Store](https://play.google.com/store/apps/details?id=slowscript.warpinator) zurück.
-Aber auch im [F-Droid-Store](https://f-droid.org/de/packages/slowscript.warpinator/) ist der Warpinator zu finden.
+Für Android gibt es mehrere Möglichkeiten:
+- offizielle Version als [APK](https://warpinator.com/) 
+- unoffizielle Version aus dem [Play Store](https://play.google.com/store/apps/details?id=slowscript.warpinator)
+- Aber auch im [F-Droid-Store](https://f-droid.org/de/packages/slowscript.warpinator/) ist der Warpinator zu finden.
+
 
 
 ## 8. [K-9-Mail](https://k9mail.app/)
@@ -112,8 +124,8 @@ K-9 unterstützt das Abrufen von E-Mails per POP3 und IMAP von mehreren Konten, 
 Für Desktop Betriebsysteme empfiehlt sich [Thunderbird](https://www.thunderbird.net/) als E-Mail Clients.
 
 ### Installation von K9-Mail
-[F-Droid](https://f-droid.org/packages/com.fsck.k9/)
-[Play-Store](https://play.google.com/store/apps/details?id=com.fsck.k9)
+- [Play Store](https://play.google.com/store/apps/details?id=com.fsck.k9)
+- [F-Droid](https://f-droid.org/packages/com.fsck.k9/)
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -121,45 +133,54 @@ Für Desktop Betriebsysteme empfiehlt sich [Thunderbird](https://www.thunderbird
 
 # B. Apps für Samsung Smartphones
 
+`Anleitung erstellt am 25.8.2024`
+
 `zuletzt getestete Android-Version: 14`
 
 ## 1. [Good Lock](https://www.samsung.com/de/support/apps-services/was-ist-samsung-good-lock/) - Galaxy Smartphones & Tablets personalisieren
 
 Good Lock ist `eine App von Samsung`, die von Good Lock Labs und Samsung entwickelt wurde und eine Art Sammlung von mehreren Apps ist.
 Mit diesen unterschiedlichen Apps kann man sein Samsung Smartphone `noch mehr personalisieren` und `um weitere Funktionen ergänzen`.
-
 Damit kann man auch Bereiche anpassen, die ansonsten keine oder nur wenige Personalisierungsmöglichkeiten bieten.
 
 - Die Good Lock App ist im [Galaxy-Store](https://galaxystore.samsung.com/detail/com.samsung.android.goodlock?langCd=en) verfügbar, alternativ aber auch über APK.
 
 
-### Einige nützliche Apps über Good Lock:
+## Einige nützliche Apps über Good Lock:
 
 - [MultiStar](https://galaxystore.samsung.com/detail/com.samsung.android.multistar?langCd=en)
     - Multi-Window (Splitscreen) & DeX Einstellungen
     - besonders interessant für Galaxy Fold und Flip Geräte
+
 - [CameraAssistant](https://galaxystore.samsung.com/detail/com.samsung.android.app.cameraassistant?langCd=en)
     - zusätzliche Einstellungen für die Kamera App, wie den Auslöser, oder für externe Bildschirme über HDMI
     - Außerdem: Verknüpfung für 2-fachen Zoom, Kamera-Timeout usw.
+
 - [RegiStar](https://galaxystore.samsung.com/detail/com.samsung.android.app.galaxyregistry?langCd=de)
     - BackTap Aktionen & Seiten Tasten Aktionen
+
 - [SoundAssistant](https://galaxystore.samsung.com/detail/com.samsung.android.soundassistant)
     - Lautstärke Panel anpassen, Themes für das Lautstärke Panel & Soundoptionen
     - Musiksteuerung über Lautstärketasten
+
 - [ThemePark](https://galaxystore.samsung.com/detail/com.samsung.android.themedesigner)
     - Themes erstellen, Tastatur anpassen & Quick-Panel Farben & Akzente personalisieren
+
 - [LockStar](https://galaxystore.samsung.com/detail/com.samsung.systemui.lockstar?langCd=en)
     - Sperrbildschirm & AOD bearbeiten
     - Widgets hinzufügen & Wallpaper ändern
     - Lock screen timeout und Helligkeit im AOD bearbeiten
+
 - [NavStar](https://galaxystore.samsung.com/detail/com.samsung.systemui.navillera?langCd=en)
     - Navigationsbuttons / Navigationsleiste in Farbe, Anordnung, Größe, etc. bearbeiten
     - Hintergrund der Navigationsleiste ausblenden, um Inhalte unter der Navigationsleiste anzuzeigen
     - Ausblenden der Navigationsleiste (Einstellung) wieder freischalten
+
 - [Home UP](https://galaxystore.samsung.com/detail/com.samsung.android.app.homestar?langCd=en)
     - Home Screen: Größe der Icons anpassen & Text unter den Icons ausblenden
     - Share Manager: "Teilen" Menü personalisieren
     - Task Changer: Layout in "Aktuelle Anwendungen" anpassen
+
 - [QuickStar](https://galaxystore.samsung.com/detail/com.samsung.android.qstuner?langCd=en)
     - Qick Panel anpassen / Icon Einstellungen aus der Benachrichtigungsleiste wählen
     - Größe der Icons im Qick Panel anpassen
@@ -176,11 +197,50 @@ Allerdings kann die Verfügbarkeit/ Kompatibilität von Apps, die man über Good
 Als Alternative gibt es auch [Fine Lock](https://finelock.app/), jedoch muss dort jede App einzeln als APK heruntergeladen werden. Sollte Good Lock Probleme verursachen, nicht verfügbar sein etc., kann Fine Lock als Alternative gesehen werden, jedoch ist Good Lock für die meisten Nutzer empfehlenswerter.
 
 
+
 ## 2. Taschenrechner App Trick ([Samsung Calculator](https://play.google.com/store/apps/details?id=com.sec.android.app.popupcalculator&hl=de))
 
 - Trinkgeld Prozentberechnung:
     - Samsung Taschenrechner App öffnen und auf das Symbol für den `Einheitenumrechner` klicken.
     - Nach im Menü zu `Trinkgeld` wechseln.
+
+
+
+## 3. [Samsung TV](https://www.samsung.com/de/tvs/smart-tv/samsung-tv-plus/)
+
+Samsung TV ist Samsungs kostenloser Streaming-Dienst und bietet zahlreiche Film, Serien, Live TV und vieles mehr.
+
+- [Galaxy Store](https://galaxystore.samsung.com/detail/com.samsung.android.tvplus)
+- [Play Store](https://play.google.com/store/apps/details?id=com.samsung.android.tvplus&hl=de)
+
+
+
+## 4. [Samsung Gallery](https://galaxystore.samsung.com/prepost/000005627043) - Gallery Labs
+
+`zuletzt getestete Android-Version: 14`
+
+In der Samsung-Galerie kann man viele Einstellungen treffen, wie bestimmte Alben ausblenden oder nur sogenannte "wichtige Alben" anzeigen lassen.
+Allerdings gibt es noch viel mehr versteckte Einstellungen, die man erst über die Labs-Funktion aktivieren muss.
+
+- Disclaimer
+Alle Funktionen in Gallery Labs sind nicht offiziell und können Probleme oder Fehlfunktionen verursachen !
+Daher erfolgt die Nutzung der Gallery Labs auf eigene Verantwortung !
+
+
+- Gallery Labs aktivieren
+    - Einstellungen in der Galerie App
+    - Info zu Galerie
+    - so lange auf die Schrift klicken, bis eine Meldung erscheint, dass "Labs" aktiviert wurde
+    - nun einen Schritt zurück und unter dem Menüpunkt "Info zu Galerie" erscheint nun Gallery Labs
+
+- Um die Labs Funktion zu deaktivieren, die Option `Ein` mit dem Regler ausschalten.
+
+- nützliche Optionen sind z.B.:
+    - `Album entry-locks`: einzelne Ordner mit Fingerabdruck sperren
+    - `Filmstrip in viewer`: `Deafault / None / Legacy` Video Scrolling anpassen
+    - `Hamburger menu(=) in viewer bottom`: Hamburger Menü an untere Leiste zurückbringen
+
+- Um die Optionen nach der Aktivierung nutzen zu können, muss ggf. die Galerie App neu gestartet werden.
 
 
 -----------------------------------------------------------------------------------------------------------------
