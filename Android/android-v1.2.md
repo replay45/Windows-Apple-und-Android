@@ -4,14 +4,16 @@
 
 
 # Inhaltsverzeichnis
-1. Entwicklermodus in den Einstellungen aktivieren (Samsung)
+1. Entwicklermodus in den Einstellungen aktivieren
 2. Sicherer Ordner (Samsung)
-3. Gerätewartung (Samsung)
+3. Gerätewartung & App-Sicherheit (Samsung)
 4. Fenster anheften / App anheften (Samsung)
-5. Samsung Cloud
+5. Samsung Cloud & Samsung Account
 6. Spionageschutz: Kamera, Mikrofon & Sensoren vollständig & systemweit blockieren (Sicherheitsrichtlinie)
 7. Intelligent Wi-Fi - Connectivity labs (Samsung)
 8. Benachrichtigungsverlauf (Samsung)
+9. "Passwörter sichtbar machen" - Funktion deaktivieren
+10. Sperrbildschirm: Verhindern, dass Netzwerk- & Sicherheitseinstellungen geändert werden können (Samsung)
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -39,14 +41,14 @@ Dort können z.B. Debugging Optionen genutzt werden.
     - `Telefoninfo`
     - `Softwareinformationen`
     - auf `Buildnummer` drücken bis zur PIN/Passwortabfrage 
-    - Unter "Telefoninfo" erscheint nun ein neuer Reiter, der"Entwicklermodus".
+    - Unter `Telefoninfo` erscheint nun ein neuer Reiter, der `Entwicklermodus`.
 
 
 - Deaktivieren:
-    - Um den Entwicklermodus zu deaktivieren, in die Entwickleroptionen gehen und den Regler auf "Aus" stellen.
+    - Um den Entwicklermodus zu deaktivieren, in die Entwickleroptionen gehen und den Regler auf `Aus` stellen.
 
 
-### nützliche Optionen aus dem EntEntwicklermodus
+### nützliche Optionen aus dem Entwicklermodus (Samsung)
 
 - ausführliche WLAN Protokollierung & Scan-Drosselung
     - Mehr Details wie Verbindungsinformationen im WLAN Menü anzeigen.
@@ -79,14 +81,18 @@ Das ist z.B. besonders praktisch, wenn man sich mit zwei Accounts in einer App a
 -----------------------------------------------------------------------------------------------------------------
 
 
-# 3. Gerätewartung (Samsung)
+# 3. Gerätewartung & App-Sicherheit (Samsung)
 
 `Zuletzt getestete Android-Version: 14`
 
 ### Was ist die [Gerätewartung](https://www.samsung.com/de/support/mobile-devices/galaxy-geraetewartung/) ?
 
+- Optimierung
 In der Gerätewartung kann man die `Leistung` des Smartphones `optimieren`, den `RAM-Speicher leeren` und den `Zustanad des Akkus`, sowie die `Nutzung des Speichers` überprüfen.
+
+- App Schutz
 Man findet ebenfalls die Option `App-Schutz` mit der man das Smartphone auf schädliche Apps prüfen kann.
+Dabei werden Apps auf Maleware und verdächtigen Aktivitäten gescannt.
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -113,23 +119,46 @@ In dem Menü erscheint nun die Option `Diese App anheften`.
 # a) [Samsung Cloud](https://www.samsung.com/de/apps/samsung-cloud/) Ende-Zu-Ende Verschlüsselung
 
 
-### Warnung:
-Auf die von Samsung angebotene Option zur Verschlüsselung der Cloud sollte man sich niemals verlassen. Da bei proprietären Angeboten nicht garantiert werden kann, dass trotz Verschlüsselung nicht doch eine Hintertür offen bleibt.
+### Warnung vor Cloud-Anbietern:
+Es ist bekannt, dass große Cloud Anbieter Inhalte von Nutzern in der Cloud scannen. Dies tun die Anbieter, mit der Begründung, Inhalte zu filtern, die gegen die Nutzungsbedingungen verstoßen.
+
+Daher sollte man unbedingt über eine Alternative nachdenken. - Welche Alternativen möglich sind, wird im nächsten Punkt "Welche Cloud sollte ich nutzen ?" geklärt.
+
+
+Wenn man jedoch trotzdem unbedingt für den ein oder anderen Dienst die Samsung Cloud nutzen möchte oder man aus irgendeinem Grund auf das Cloud Angebot von Samsung angewiesen ist, sollte man gerade dann die von Samsung angebotene Option zur Verschlüsselung der Cloud in Anspruch nehmen.
+Jedoch sollte man sich niemals auf proprietäre Angebote verlassen, da nicht garantiert werden kann, dass trotz der Verschlüsselung nicht doch eine Hintertür offen bleibt.
+Außerdem können auch unerwünschte Dritte aus unverschlüsselten Metadaten zahlreiche Informationen erhalten.
+
 
 Auch wenn es sich unbedingt empfiehlt, die Verschlüsselung zu aktivieren, sollte man sich dessen bewusst sein, dass man auch nach Aktivierung der Verschlüsselung keine absolute Sicherheit erhält.
 Dies gilt natürlich für alle proprietären Verschlüsselungsoptionen, nicht nur für die Samsung Cloud.
 
 
-### sichere Cloud
-Wer nach einer sicheren Cloud-Lösung sucht, kann sich einen [NAS (Homeserver)](https://de.wikipedia.org/wiki/Network_Attached_Storage) im Heimnetzwerk einrichten, oder wer kein NAS kaufen möchte, kann auch z.B. einen [SFTP-](https://de.wikipedia.org/wiki/SSH_File_Transfer_Protocol) oder [SMB](https://de.wikipedia.org/wiki/Server_Message_Block)-Server auf einem handelsüblichen Computer oder auch auf einem [RaspberryPI](https://www.raspberrypi.com/) installieren und diesen als Homeserver betreiben.
-
-Eine alternative Cloud-Lösung ist die [Nextcloud](https://nextcloud.com/), die man zuhause wahlweise auf einem NAS oder einem handelsüblichen Computer, sowie auch bei einem externen Hosting-Anbieter einrichten kann.
-
-Dabei behält man selbst die Kontrolle über seine Daten und kann sichere Verschlüsselungsmethoden wählen.
-Außerdem kann man ein NAS, einen Homeserver, oder die [Nextcloud](https://nextcloud.com/) für weitaus mehr verwenden, als nur für das Datei-Backup.
+### Welche Cloud sollte ich nutzen ?
+Wer nach einer sicheren Cloud-Lösung sucht, kann sich einen fertigen [NAS (Homeserver)](https://de.wikipedia.org/wiki/Network_Attached_Storage) kaufen und im Heimnetzwerk einrichten, oder wer kein NAS kaufen möchte, kann auch z.B. einen [SFTP-](https://de.wikipedia.org/wiki/SSH_File_Transfer_Protocol) oder [SMB](https://de.wikipedia.org/wiki/Server_Message_Block)-Server auf einem handelsüblichen Computer oder auch auf einem [Raspberry Pi](https://www.raspberrypi.com/) installieren und diesen als Homeserver im eigenen Heimnetzwerk betreiben.
 
 
-### Samsung Cloud Verschlüsselung aktivieren
+- Vorteile - Gründe für das Einrichten eines Homeservers/NAS/Nextcloud etc.
+    - niedrige Kosten, meist günstiger als Cloud-Lösungen (mit Ausnahme von Strom KEINE laufenden Kosten) -> Office Rechner/ Raspberry Pi meist sehr niedriger Verbrauch
+    - alte Hardware kann neue Verwendung finden / alternativ einfache Einrichtung durch fertigen NAS
+    - viel günstiger Speicher
+    - kann sehr individuell konfiguriert werden
+    - datenschutzfreundlich
+    - Kontrolle über eigene Daten
+    - Verschlüsselung möglich (sicherer als bei Cloud-Anbietern)
+    - durch [RAID](https://de.wikipedia.org/wiki/RAID) Optionen und optionaler [USV](https://de.wikipedia.org/wiki/Unterbrechungsfreie_Stromversorgung) hohe Ausfallsicherheit auch zuhause
+    - Homeserver kann auch als [Media Server](https://de.wikipedia.org/wiki/Streaming-Server) verwendet werden
+    - Heimnetzwerk meist deutlich schneller bei der Dateiübertragung als über das Internet
+
+
+Außerdem ist die Einrichtung eines Servers auch auf extern gemieteten Hosting-Anbietern möglich.
+
+
+- `Mehr zur Nextcloud:` [Repository: Linux-Raspberry-PI-Nextcloud /Nextcloud](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/nextcloud)
+- `Mehr zur Einrichtung eines Homeservers` [Repository: Linux-Raspberry-PI-Nextcloud /Linux](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/linux)
+
+
+### Samsung Cloud: Verschlüsselung aktivieren
 Dafür in die Einstellungen gehen und den Reiter `Samsung Account` auswählen.
 Danach unter `Apps und Funktionen` `Samsung Cloud` wählen und auf die 3 Punkte oben rechts klicken und unter dem Punkt `Sicherheit` den `erweiterten Schutz` auswählen.
 Nun kann die Verschlüsselung für die Sicherungsdaten und/oder für die synchronisierten Daten aktiviert werden.
@@ -140,7 +169,7 @@ Auf älteren Geräten ist die Verschlüsselung möglicherweise nicht oder nur zu
 
 ### Wiederherstellungsschlüssel
 Es ist sehr wichtig, den Wiedererstellungsschlüssel gut aufzubewahren, um die Daten entschlüsseln zu können.
-Am besten sichert man den Wiederherstellungsschlüssel in einem separaten Passwortmanager, der auch unabhängig von der Samsung Cloud funktioniert.
+Am besten sichert man den Wiederherstellungsschlüssel in einem separaten Passwortmanager, der auch unabhängig von der Cloud funktioniert.
 
 -----------------------------------------------------------------------------------------------------------------
 
@@ -158,7 +187,7 @@ Am besten sichert man den Wiederherstellungsschlüssel in einem separaten Passwo
 
 
 ### Apps & Funktionen
-- Über den Reiter Samsung Cloud können die Apps, die synchronisiert, verwaltet werden.
+- Über den Reiter "Samsung Cloud" können die Apps mit Synchronisierungsoption, verwaltet werden.
 
 
 ### Hinweis
@@ -187,7 +216,7 @@ Wenn man also nach der Deaktivierung der Sensoren versucht, die Kamera App zu ö
 - In den `Entwicklermodus` gehen - wie dieser aktiviert werden kann, ist in `Punkt 1` beschrieben.
 - Zu `Entwicklerkacheln f. Schnelleinst.` scrollen.
 - Nun die Option `Sensors Off` auswählen.
-- Jetzt sollte eine Verknüpfung im QuickPanel erscheinen.
+- Jetzt sollte eine Verknüpfung im `QuickPanel` erscheinen.
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -230,6 +259,40 @@ Im Benachrichtigungsverlauf werden Benachrichtigungen aufgezeichnet, um sie auch
 
 ### Den Benachrichtigungsverlauf aktivieren / deaktivieren
 In den Einstellungen unter `Erweiterte Einstellungen` kann der `Benachrichtigungsverlauf` aktiviert oder deaktiviert werden.
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+# 9. "Passwörter sichtbar machen" - Funktion deaktivieren
+
+`Zuletzt getestete Android-Version: 14`
+
+### Was ist die "Passwörter sichtbar machen" Option ?
+Wenn die Funktion aktiviert ist, wird bei der Eingabe von Passwörtern die Eingabe kurz angezeigt, bevor sie mit einem Punkt "verdeckt" wird.
+
+
+### Funktion deaktivieren
+In den Einstellungen unter `Sicherheit und Datenschutz`, `Weitere Sicherheitseinstellungen` und nun die Option `Passwörter sichtbar machen` deaktivieren, damit Passwörter bei der Eingabe nicht mehr angezeigt werden und direkt mit dem Punkt "überdeckt" werden. 
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+# 10. Sperrbildschirm: Verhindern, dass Netzwerk- & Sicherheitseinstellungen geändert werden können (Samsung)
+
+`Zuletzt getestete Android-Version: 14`
+
+- Die Funktion ist meistens standartmäßig aktiv.
+
+
+### Netzwerk und Sicherheit Sperren - Funktion für den Sperrbildschirm
+Die Funktion verhindert, dass WLAN, mobile Daten und Standort mit gesperrtem Display ausgeschaltet werden können.
+Das Aktivieren der Funktion ist besonders für den Diebstahlschutz wichtig.
+
+
+### Funktion aktivieren/deaktivieren
+In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sperreinstellungen` überprüfen, ob Funktion aktiv ist und die gewünschte Einstellung setzen.
 
 
 -----------------------------------------------------------------------------------------------------------------
