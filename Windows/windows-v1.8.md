@@ -3,8 +3,8 @@
 
 ## Inhaltsverzeichnis
 
-### 1. Windows-Sperrbildschirm hacken
-### 2. Einen USB-Stick zur Windows-Anmeldung nutzen
+### 1. lokalen Windows 11 Benutzer erstellen - Kontozwang umgehen
+### 2. DNS Server - [Cloudflare DNS](https://www.cloudflare.com/)
 ### 3. Windows PC in eine Domäne hinzufügen
 ### 4. Cortana über PowerShell deinstallieren
 ### 5. Copilot von Windows 11 deinstallieren
@@ -12,138 +12,111 @@
 ### 7. Erstellen eines Systemwiederherstellungspunkts unter Windows 11
 ### 8. Schnellstart bei Windows deaktivieren
 ### 9. Dienste installierter Programme auf Windows überprüfen
-### 10. Microsoft Edge auf Windows 10 deinstallieren
+### 10. Einen USB-Stick zur Windows-Anmeldung nutzen
+### 11. Microsoft Edge auf Windows 10 deinstallieren
 
 
 -----------------------------------------------------------------------------
 
 
-# 1. Windows-Sperrbildschirm hacken
-
-## Passwort eines Windows-Benutzerkontos vom Sperrbildschirm aus ändern, um Zugang zum Account zu erhalten.
+# 1. lokalen Windows 11 Benutzer erstellen - Kontozwang umgehen
 
 
+`Anleitung verfasst am 20.6.2024`
 
-### Wichtig:
-Online-Benutzerkonten oder Geräte, die Benutzerkonten aus einer Domäne nutzen, könnten zu Problemen führen.
-Außerdem schützen Sicherheitsmaßnahmen, wie z.B. das Verschlüsseln der Fesplatte über den [Windows-BitLocker](https://de.wikipedia.org/wiki/BitLocker#:~:text=BitLocker%20ist%20eine%20propriet%C3%A4re%20Festplattenverschl%C3%BCsselung,mit%20dieser%20Software%20Daten%20gesch%C3%BCtzt.), vor diesem "Hack".
-Auch ein BIOS/UEFI Passwort schützt u.a. davor, die "Bootreihenfolge" zu ändern, womit die Möglichkeiten, über USB-Stick zu booten, verringert werden.
+`Windows Version: Win11 23H2`
 
 
-Die Anleitung wurde ausschließlich auf Windows 10 getestet !
+# A. Windows 11 Pro
+
+- Bei der Ersteinrichtung des PCs in dem Ersteinrichtungsassistenten unter `Wie möchten Sie dieses Gerät einrichten?` auf `Für Arbeit oder Schule/Uni einrichten` klicken, um ein lokales Konto erstellen zu können.
+
+- Nun anstatt mit einem Konto sich anzumelden, auf `Anmeldeoptionen` gehen und `Stattdessen der Domäne beitreten` auswählen (Es ist nicht nötig einer Domäne beizutreten, die Option ein lokales Konto anzulegen ist lediglich hinter diesem Punkt versteckt).
+
+- Jetzt einfach ein Benutzername vergeben und ein Passwort wählen. Danach wie gewohnt die Sicherheitsfragen beantworten und die Datenschutzoptionen setzen.
+(Tipp: Bei den Datenschutzoptionen am besten überall "Nein" auswählen.)
 
 
------------------------------------------------------------------------------
 
+# B. Windows 11 Home
 
-1.1. erste Option
+- Internetverbindung trennen (Ethernet Kabel trennen / WLAN Verbindung gar nicht erst herstellen).
 
-- a) Um in die `erweiterten Optionen` zu gelangen: `Shift Taste drücken`, während auf den `Neustart-Knopf` unten links im Anmeldefenster gedrückt wird.
-- b) In den `erweiterten Optionen` zu `Problembehandlung` navigieren, dann zu `erweiterte Optionen` und die `Eingabeaufforderung` öffnen.
+- Bei Windows 11 Home ist ein anderes Vorgehen als bei Windows 11 Pro nötig, da die Home-Versionen keinen Zugang zu einer Domäne ermöglichen.
 
+- Bei der Ersteinrichtung des PCs in dem Ersteinrichtungsassistenten `SHIFT + F10` drücken (auf Notebooks könnte das drücken der FN-Taste zusätzlich nötig sein), um Terminal zu öffnen.
 
-### Die erste Option ist leider nicht immer möglich, daher kann auch Option 2 genutzt werden.
-
-
-1.2. zweite Option
-
-- a) Daher über einen `win10 Boot USB Stick` booten, anstatt windows zu installieren, jedoch dort mit der Tastenkombination `Shift und F10` CMD öffnen.
-- b) Einen Win10-Boot-/ Installations-USB-Stick kann mit dem [Media Creation Tool](https://www.microsoft.com/de-de/software-download/windows10) erstellen werden.
-
-
------------------------------------------------------------------------------
-
-
-- Das Laufwerk, wo Windows installiert ist, muss angesprochen werden, also z.B. `c:/` (meistens ist es das installations Laufwerk `c:/`).
-  
-- Befehle, die nacheinander eingegeben werden müssen:		
-								
-								c:
-
-								cd Windows\System32
-							
-								rename utilman.exe utilman.exe.lol
-
-								copy cmd.exe utilman.exe
-
-
-- c) Komandozeile (cmd) mit `$ exit` oder dem Kreuz oben rechts in der Ecke schließen.
-
-- d) Installation beenden (abbrechen)
-
-- f) Der PC wird neu gestartet, dabei den USB Stick entfernen, damit der Sperrbildschirm erscheint.
-
-
------------------------------------------------------------------------------
-
-
-1.3. Schutz vor Antischadsoftware-Frühstarts deaktivieren
-
-- In die automatischen Reparatureinstellungen von win 10 kommen: `Shift Taste und Neustart-Knopf unten rechts auf dem Sperbildschirm gleichzeitig drücken.`
-
-- Zuerst zu `Problembehandlung` dann zu `erweiterten Optionen` und `Starteinstellungen` auswählen.
-
-- Anschließend auf `Neu starten` klicken.
-
-- `Option 8` auswählen (Schutz des Antischadsoftware-Frühstarts deaktivieren)
-
-- Unten rechts auf die erleichterte Bedienung klicken und es sollte sich die Kommandozeile öffnen.
-
-
------------------------------------------------------------------------------
-
-
-1.4. Passwort ändern
-
-- Um das Passwort nun in CMD auf dem Sperrbildschirm zu ändern:
+- Folgendes in das Terminal eingeben:
 ```
-$ net user "(hier kommt der name des Benutzers rein und die Anführungszeichen nicht vergessen)" *
+$ oobe\BypassNRO.cmd
 ```
-- (Beispiel: `$ net user "User" *` )
 
+Sollte der Befehl nicht funktionieren, kann alternativ der folgende Befehl genutzt werden:
+```
+$ oobe\BypassNRO
+```
 
-- Nun das neue Passwort eingeben !
+- Einrichtungsassistenten folgen und bei dem Punkt `Netzwerk verbinden` auf `Ich habe kein Internet` klicken.
+
+- Danach `Mit eingeschränkter Ersteinrichtung fortfahren` auswählen.
+
+- Jetzt einfach ein Benutzername vergeben und ein Passwort wählen. Danach wie gewohnt die Sicherheitsfragen beantworten und die Datenschutzoptionen setzen.
+(Tipp: Bei den Datenschutzoptionen am besten überall "Nein" auswählen.)
 
 
 -----------------------------------------------------------------------------
 
 
-1.5.  Einen neuen Benutzer anlegen
+# 2. DNS Server - [Cloudflare DNS](https://www.cloudflare.com/)
 
-```
-$ net user DEN BENUTZERNAMEN HIER REIN SCHREIBEN HIER PASSWORT SCHREIBEN /add    
-```
-- (Beispiel: `$ net user Hacker 1234 /add`)
+`Anleitung zu "DNS Server" erstellt am 20.11.2024`
 
-
-Den hinzugefügten Nutzer zum Admin machen:
-```
-$ net localgroup administrators HIER DER BENUTZERNAME /add
-```
-- (Beispiel: `$ net localgroup administrators Hacker /add`)
+- `mehr zu DNS-Servern` in diesem Repository unter [Raspberry-Pi/RaspberryPI-Netzwerk-Projekte](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/raspberry-pi)
 
 
------------------------------------------------------------------------------
+## Was ist ein DNS Server ?
+Ein DNS-Server `übersetzt Domainnamen` wie "google.de" `in IP-Adressen`, denn Domains sind für uns Menschen, im Gegensatz zu IP-Adressen, einfacher zu merken.
+Außerdem gibt es nicht genügend verfügbare IPv4 Adressen, daher können diese sich auch ändern, was jedoch dank der DNS-Server kein Problem ist.
+- [Cloudflare - Was ist ein DNS-Server](https://www.cloudflare.com/de-de/learning/dns/what-is-a-dns-server/)
 
 
-# 2. Einen gewöhnlichen USB-Stick als Schlüssel zur Windows-Anmeldung nutzen:
+## Wieso den DNS Server ändern ?
+- Standardmäßig nutzt man die DNS-Server des Internetanbieters, diese sind jedoch häufig eher langsamer und wenn man `verhindern` möchte, dass der `Internetprovider bzw. Mobilfunkanbieter einsehen kann, welche Domains man aufruft` ist es sehr ratsam, die DNS-Server von [Cloudflare](https://www.cloudflare.com/) zu nutzen.
+- Den DNS-Server kann man auf allen gänigen Desktop-Betriebsystemen, sowie auf dem Smartphone, als auch in vielen gänigen Routern ändern.
 
-## Dafür kann z.B. das Tool [USB-LOGON](https://usblogon.quadsoft.org/de/) verwendet werden.
+- Wie man seinen eigenen kleinen DNS-Server mit Pi-hole erstellen kann, wird unter [Raspberry-Pi/RaspberryPI-Netzwerk-Projekte](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/raspberry-pi) gezeigt.
+
+- [Cloudflare](https://www.cloudflare.com/) legt dabei den `Fokus` auf `Datenschutz & Sicherheit` und bietet dennoch sehr `schnelle DNS-Server`.
+
+## Hier die Vorteile der [Cloudflare](https://www.cloudflare.com/) DNS-Server
+    - empfehlenswerter Anbieter, weite Verbreitung
+    - Geschwindigkeit (schnelle Server)
+    - Server auf der ganzen Welt
+    - Fokus auf Datenschutz & Sicherheit
+    - kein Logging
+    - ideal für private Nutzer & Haushalte
 
 
-Ein handelsüblicher USB-Stick kann zu einem Schlüssel, für die Anmeldung an einem Windows PC konfiguriert werden.
-Nach der Konfiguration kann der USB-Stick als alternative Anmeldemethode zum Passwort in Windows verwendet werden.
-Zudem kann eingestellt werden, ob beim Einsetzen des USB-Sticks zusätzlich ein Passwort abgefragt werden soll,
-oder das Einsetzen des konfigurierten USB-Sticks ausreicht.
-Außerdem kann separat eingestellt werden, was passieren soll, wenn der USB-Stick entfernt wird.
+## DNS Server ändern
 
+- Windows:
+    - Einstellungen öffnen
+    - Unter `Netzwerk und Internet` die gewünschte WLAN / LAN Verbinung auswählen.
+    - Eigenschaften der Verbindung auswählen.
+    - In dem Pop-Up `IPv4` aktivieren und IP-Adresse des DNS-Servers einfügen. ([Cloudflare DNS](https://www.cloudflare.com/): primär: `1.1.1.1`, sekundär: `1.0.0.1`).
+    - Optional `IPv6` aktivieren und DNS-Servers einfügen.
+    - Verschlüsselung über HTTPS (DoH) optional, aber empfohlen, auf `Ein` `(automatische Vorlage)` stellen.
+
+- Router:
+    - Wenn man nicht für jedes Gerät den DNS-Server einzeln einstellen möchte, kann man dies auch im Router tun.
+    - Je nach Hersteller und Modell können die Optionen abweichen (Vodafone Easy-Boxen unterstützen das Ändern des DNS-Servers in der Regel nicht.)
+    - Um den DNS-Server zu ändern, die Option finden, wo der primäre und der sekundäre-DNS-Server festgelegt werden können. Dabei können der primäre- als auch der sekundäre- DNS-Server unterschildliche Server vom gleichen Anbieter sein, oder der sekundäre Server kann wahlweise auch von dem primären Anbieter abweichen, um eine hohe Ausfallsicherheit zu gewährleisten.
 
 
 -----------------------------------------------------------------------------
 
 
 # 3. Windows PC in eine Domäne hinzufügen
-
 
 Um einen Windows PC in eine Domäne hinzufügen zu können, muss dieser natürlich im gleichen Netzwerk wie der Domäne-Server sein.
 Bevor die Einstellungen vorgenommen werden, sollte daher geprüft werden, ob der PC in dem richtigen Netzwerk ist.
@@ -164,7 +137,7 @@ Bevor die Einstellungen vorgenommen werden, sollte daher geprüft werden, ob der
 Nach einem Neustart sollte der PC erfolgreich in die Domäne hinzugefügt worden sein.
 
 
-----------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------
 
 
 # 4. Cortana über PowerShell deinstallieren
@@ -225,7 +198,6 @@ Danach erscheint wieder die vorherige Anzeige.
 
 # 6. Raster auf dem Desktop - Icon Abstände verändern
 
-
 - `regedit` öffnen
 
 - Pfad einfügen:
@@ -247,7 +219,6 @@ HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics
 
 # 7. Erstellen eines Systemwiederherstellungspunkts unter Windows 11
 
-
 - In das Suchfeld auf der Taskleiste `Wiederherstellungspunkt erstellen` eingeben.
 - Enter
 - Nun in den Systemeigenschaften zur Registerkarte `Computerschutz` die Option `Erstellen` auswählen.
@@ -265,7 +236,6 @@ Sollten Probleme mit Windows auftreten, ist es nun möglich, in den `Erweiterten
 
 
 # 8. Schnellstart bei Windows deaktivieren
-
 
 ## Was ist der Schnellstart ?
 
@@ -295,7 +265,6 @@ Wenn man also Fehlerquellen vermeiden möchte, kann man den Schnellstart deaktiv
 
 # 9. Dienste installierter Programme auf Windows überprüfen
 
-
 - Systemkonfiguration
 	- In die Suche `Systemkonfiguration` eingeben und mit Enter bestätigen.
 	- Zu dem Reiter `Dienste` wechseln,
@@ -310,8 +279,21 @@ Für weniger erfahrene Nutzer, empfiehlt es sich, unbekannte Dienste NICHT zu de
 -----------------------------------------------------------------------------
 
 
-# 10. Microsoft Edge auf Windows 10 deinstallieren
+# 10. Einen gewöhnlichen USB-Stick als Schlüssel zur Windows-Anmeldung nutzen:
 
+## Dafür kann z.B. das Tool [USB-LOGON](https://usblogon.quadsoft.org/de/) verwendet werden.
+
+Ein handelsüblicher USB-Stick kann zu einem Schlüssel, für die Anmeldung an einem Windows PC konfiguriert werden.
+Nach der Konfiguration kann der USB-Stick als alternative Anmeldemethode zum Passwort in Windows verwendet werden.
+
+Zudem kann eingestellt werden, ob beim Einsetzen des USB-Sticks zusätzlich ein Passwort abgefragt werden soll, oder das Einsetzen des konfigurierten USB-Sticks ausreicht.
+Außerdem kann separat eingestellt werden, was passieren soll, wenn der USB-Stick entfernt wird.
+
+
+-----------------------------------------------------------------------------
+
+
+# 11. Microsoft Edge auf Windows 10 deinstallieren
 
 ## WICHTIG - Der Beitrag ist nicht mehr aktuell !
 
