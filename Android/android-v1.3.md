@@ -1,19 +1,18 @@
 # Android
 
-`Anleitung erstellt am 20.8.2024, zuletzt bearbeitet am 15.10.2024`
+`Anleitung erstellt am 20.8.2024, zuletzt bearbeitet am 8.12.2024`
 
 
 # Inhaltsverzeichnis
 1. Entwicklermodus in den Einstellungen aktivieren
 2. Sicherer Ordner (Samsung)
 3. Gerätewartung & App-Sicherheit (Samsung)
-4. Fenster anheften / App anheften (Samsung)
-5. Samsung Cloud & Samsung Account
-6. Spionageschutz: Kamera, Mikrofon & Sensoren vollständig & systemweit blockieren (Sicherheitsrichtlinie)
-7. Intelligent Wi-Fi - Connectivity labs (Samsung)
-8. Benachrichtigungsverlauf (Samsung)
-9. "Passwörter sichtbar machen" - Funktion deaktivieren
-10. Sperrbildschirm: Verhindern, dass Netzwerk- & Sicherheitseinstellungen geändert werden können (Samsung)
+4. Akkuschutz
+5. Anzeige-Einstellungen
+6. Fenster anheften / App anheften (Samsung)
+7. Samsung Cloud & Samsung Account
+8. Intelligent Wi-Fi - Connectivity labs (Samsung)
+9. Benachrichtigungsverlauf (Samsung)
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -66,7 +65,6 @@ Dort können z.B. Debugging Optionen genutzt werden.
 
 `Zuletzt getestete Android-Version: 14`
 
-
 ### Was ist der [sichere Ordner](https://www.samsungknox.com/de/solutions/personal-apps/secure-folder) ?
 
 Der sichere Ordner ist ein Bereich auf Samsung Smartphones, in dem man passwortgeschützt Dateien, Bilder, Videos usw. sicher speichern kann, ohne dass diese in der normalen Galerie oder im Dateimanager zu finden sind.
@@ -75,7 +73,8 @@ Außerdem können auch Apps separat installiert werden, ohne dass diese im App M
 Das heißt, dass alle Aktionen, Dateien, sowie Apps keinen Einfluss auf den normalen Bereich des Smartphones haben.
 Das ist z.B. besonders praktisch, wenn man sich mit zwei Accounts in einer App anmelden möchte, auch wenn  diese die Dual Messenger-Funktion nicht unterstützt.
 
-- In den Einstellungen unter `Sicherheit & Datenschutz` -> `Weitere Sicherheitseinstellungen` kann der sichere Ordner aktiviert werden. Danach ist er im App-Menü zu finden.
+### Aktivieren des sicheren Ordners
+In den Einstellungen unter `Sicherheit & Datenschutz` -> `Weitere Sicherheitseinstellungen` kann der sichere Ordner aktiviert werden. Danach ist er im App-Menü zu finden.
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -93,12 +92,60 @@ In der Gerätewartung kann man die `Leistung` des Smartphones `optimieren`, den 
 - App Schutz
 Man findet ebenfalls die Option `App-Schutz` mit der man das Smartphone auf schädliche Apps prüfen kann.
 Dabei werden Apps auf Maleware und verdächtigen Aktivitäten gescannt.
+Auch im GooglePlay-Store können Apps über PlayProtect geprüft werden.
 
 
 -----------------------------------------------------------------------------------------------------------------
 
 
-# 4. Fenster anheften / App anheften (Samsung)
+# 4. Akkuschutz
+
+`Zuletzt getestete Android-Version: 14`
+
+- Mit den Akkuschutz-Optionen, kann der Akku geschont werden.
+- Unter Android 14 kann man zwischen 3 Option auswählen.
+
+- Aktivieren der Funktion:
+    - Einstellugen
+    - Akku
+    - Akkuschutz
+    - Nun den Akkuschutz einschalten
+    - gewünschte Option auswählen
+
+- Einstellungen für das Aufladen
+    - Hier kann das Schnellladen aktiviert/deaktiviert werden.
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+# 5. Anzeige-Einstellungen 
+
+`Zuletzt getestete Android-Version: 14`
+
+- Um die Optionen bearbeiten zu können, die `Einstellungen` öffnen und unter den Reiter `Anzeige` wechseln.
+
+### a) Bildwiederholrate
+- Hier kann die Bildwiederholrate, bei Geräten die 120Hz unterstützen, angepasst werden.
+
+### b) Augenkomfort
+- Der Augenkomfort filtert schädliches Licht. 
+- Es empfiehlt sich besonders den Augenkomfort in dunkler Umgebung zu nutzen.
+- Daher kann man auch einen individuellen Zeitplan einstellen oder die Adaptive Option nutzen.
+
+### c) Navigationsleiste/Schaltflächen
+- Hier kann zwischen der Navigationsleiste bzw. den Schaltflächen gewechselt werden.
+- Auch einige Anpassungen sind möglich.
+- Um die Navigationsleiste und die Schaltflächen individuell bearbeiten zu können muss GoodLock verwendet werden - mehr dazu in diesem Ordner unter [Android-Apps](https://github.com/replay45/Windows-Apple-und-Android/tree/main/Android)
+
+### d) Berührungsempfindlichkeit
+- Die Option ist bei der Verwendung von Panzerglas auf dem Bildschirm hilfreich.
+
+
+-----------------------------------------------------------------------------------------------------------------
+
+
+# 6. Fenster anheften / App anheften (Samsung)
 
 `Zuletzt getestete Android-Version: 14`
 
@@ -114,13 +161,14 @@ In dem Menü erscheint nun die Option `Diese App anheften`.
 -----------------------------------------------------------------------------------------------------------------
 
 
-# 5. Samsung Cloud & Samsung Account
+# 7. Samsung Cloud & Samsung Account
 
-# a) [Samsung Cloud](https://www.samsung.com/de/apps/samsung-cloud/) Ende-Zu-Ende Verschlüsselung
+# 7.a) [Samsung Cloud](https://www.samsung.com/de/apps/samsung-cloud/) Ende-Zu-Ende Verschlüsselung
 
 
 ### Warnung vor Cloud-Anbietern:
 Es ist bekannt, dass große Cloud Anbieter Inhalte von Nutzern in der Cloud scannen. Dies tun die Anbieter, mit der Begründung, Inhalte zu filtern, die gegen die Nutzungsbedingungen verstoßen.
+
 
 Daher sollte man unbedingt über eine Alternative nachdenken. - Welche Alternativen möglich sind, wird im nächsten Punkt "Welche Cloud sollte ich nutzen ?" geklärt.
 
@@ -173,8 +221,9 @@ Am besten sichert man den Wiederherstellungsschlüssel in einem separaten Passwo
 
 -----------------------------------------------------------------------------------------------------------------
 
-# b) [Samsung Account](https://v3.account.samsung.com/dashboard/intro) Einstellungen / Funktionen
+# 7.b) [Samsung Account](https://v3.account.samsung.com/dashboard/intro) Einstellungen / Funktionen
 
+`Zuletzt getestete Android-Version: 14`
 
 ### Profilinfos / Geräte
 - Hier können Informationen angegeben werden und angemeldete Geräte verwaltet werden.
@@ -191,38 +240,13 @@ Am besten sichert man den Wiederherstellungsschlüssel in einem separaten Passwo
 
 
 ### Hinweis
-- Wer eine sichere Cloud für seine Daten sucht, findet unter dem Punkt 5.a) `sichere Cloud` einige Hinweise zu alternativen Möglichkeiten, die sicherer und datenschutzfreundlicher sind.
+- Wer eine sichere Cloud für seine Daten sucht, findet unter dem Punkt 7.a) `sichere Cloud` einige Hinweise zu alternativen Möglichkeiten, die sicherer und datenschutzfreundlicher sind.
 
 
 -----------------------------------------------------------------------------------------------------------------
 
 
-## 6. Spionageschutz: Kamera, Mikrofon & Sensoren vollständig & systemweit blockieren (Sicherheitsrichtlinie)
-
-`Zuletzt getestete Android-Version: 14`
-
-### Kamera, Mikrofon & andere Sensoren über das QuickPanel nach Belieben deaktivieren und wieder aktivieren
-Wer Angst vor Spionage hat, oder verhindern möchte, dass Andrid oder Apps auf die Sensoren zugreifen können, kann `Sensors Off` nutzen, um eine Sicherheitsrichtline zu aktivieren, die den Zugriff auf Sensoren, Mikrofon oder Kamera systemweit blockiert.
-
-Dabei sollte beachtet werden, dass einige Funktionen, wie z.B. "Bildschirm drehen" von der Deaktivierung der Sensoren beeinträchtigt werden können.
-
-
-- Überprüfen, ob die `Sensors Off` Funktion aktiv ist:
-
-Wenn man also nach der Deaktivierung der Sensoren versucht, die Kamera App zu öffnen, wird man feststellen, dass diese sich nicht mehr öffnen lässt.
-
-
-### Schnelleinstellung aktivieren
-- In den `Entwicklermodus` gehen - wie dieser aktiviert werden kann, ist in `Punkt 1` beschrieben.
-- Zu `Entwicklerkacheln f. Schnelleinst.` scrollen.
-- Nun die Option `Sensors Off` auswählen.
-- Jetzt sollte eine Verknüpfung im `QuickPanel` erscheinen.
-
-
------------------------------------------------------------------------------------------------------------------
-
-
-## 7. Intelligent Wi-Fi - Connectivity labs (Samsung)
+## 8. Intelligent Wi-Fi - Connectivity labs (Samsung)
 
 `Zuletzt getestete Android-Version: 14`
 
@@ -250,7 +274,7 @@ Neben dem `weekly report` für die Datennutzung ist `Wi-Fi inspection` eine inte
 -----------------------------------------------------------------------------------------------------------------
 
 
-# 8. Benachrichtigungsverlauf (Samsung)
+# 9. Benachrichtigungsverlauf (Samsung)
 
 
 ### Was ist der Benachrichtigungsverlauf ?
@@ -263,36 +287,3 @@ In den Einstellungen unter `Erweiterte Einstellungen` kann der `Benachrichtigung
 
 -----------------------------------------------------------------------------------------------------------------
 
-
-# 9. "Passwörter sichtbar machen" - Funktion deaktivieren
-
-`Zuletzt getestete Android-Version: 14`
-
-### Was ist die "Passwörter sichtbar machen" Option ?
-Wenn die Funktion aktiviert ist, wird bei der Eingabe von Passwörtern die Eingabe kurz angezeigt, bevor sie mit einem Punkt "verdeckt" wird.
-
-
-### Funktion deaktivieren
-In den Einstellungen unter `Sicherheit und Datenschutz`, `Weitere Sicherheitseinstellungen` und nun die Option `Passwörter sichtbar machen` deaktivieren, damit Passwörter bei der Eingabe nicht mehr angezeigt werden und direkt mit dem Punkt "überdeckt" werden. 
-
-
------------------------------------------------------------------------------------------------------------------
-
-
-# 10. Sperrbildschirm: Verhindern, dass Netzwerk- & Sicherheitseinstellungen geändert werden können (Samsung)
-
-`Zuletzt getestete Android-Version: 14`
-
-- Die Funktion ist meistens standartmäßig aktiv.
-
-
-### Netzwerk und Sicherheit Sperren - Funktion für den Sperrbildschirm
-Die Funktion verhindert, dass WLAN, mobile Daten und Standort mit gesperrtem Display ausgeschaltet werden können.
-Das Aktivieren der Funktion ist besonders für den Diebstahlschutz wichtig.
-
-
-### Funktion aktivieren/deaktivieren
-In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sperreinstellungen` überprüfen, ob Funktion aktiv ist und die gewünschte Einstellung setzen.
-
-
------------------------------------------------------------------------------------------------------------------
