@@ -1,6 +1,6 @@
 # Android
 
-`Anleitung erstellt am 20.8.2024, zuletzt bearbeitet am 12.1.2024`
+`Anleitung erstellt am 20.8.2024, zuletzt bearbeitet am 12.1.2025`
 
 
 # Inhaltsverzeichnis
