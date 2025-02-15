@@ -4,21 +4,24 @@
 
 `zuletzt getestete Android-Version: 14`
 
+
 # Inhaltsverzeichnis
 ### A. Andoid Apps
-1. [F-Droid](https://f-droid.org/)
+1. [F-Droid](https://f-droid.org/) - App Store
 2. [NewPipe](https://newpipe.net/)
 3. APK-Installer
 4. Fake GPS
-5. [Total Commander](https://www.ghisler.com/)
+5. [Total Commander](https://www.ghisler.com/) - Dateimanager
 6. [PC Remote](https://www.monect.com/)
 7. [Warpinator](https://warpinator.com/)
 8. [K-9-Mail](https://k9mail.app/)
+9. [2FA Authenticator (2FAS)](https://2fas.com/) - 2FA App
+10. [KeePassDX](https://www.keepassdx.com/) - Passwortmanager
 
 ### B. Apps für Samsung Smartphones
 1. [Good Lock](https://www.samsung.com/de/support/apps-services/was-ist-samsung-good-lock/) - Galaxy Smartphones & Tablets personalisieren
 2. Taschenrechner App Trick ([Samsung Calculator](https://play.google.com/store/apps/details?id=com.sec.android.app.popupcalculator&hl=de))
-3. [Samsung TV](https://www.samsung.com/de/tvs/smart-tv/samsung-tv-plus/)
+3. [Samsung TV Plus](https://www.samsung.com/de/tvs/smart-tv/samsung-tv-plus/)
 4. [Samsung Gallery](https://galaxystore.samsung.com/prepost/000005627043) - Gallery Labs
 
 
@@ -28,16 +31,16 @@
 
 # A. Android Apps
 
-## 1. [F-Droid](https://f-droid.org/)
+## 1. [F-Droid](https://f-droid.org/)  - App Store
 
 ### Was ist F-Droid ?
 F-Droid ist ein `alternativer App-Store` mit dem Fokus auf `Sicherheit und Privatsphäre`.
 In dem Store findet sich kostenlose und Open Source Software für Android.
 
 ### Installation von F-Droid
-Zunächst muss die [APK heruntergeladen](https://f-droid.org/) werden.
-Diese dann direkt über den Browser oder über einen APK-Installer installieren.
-Dabei muss ggf. das Installieren von Apps aus `externen Quellen` erlaubt werden.
+- Zunächst muss die [APK heruntergeladen](https://f-droid.org/) werden.
+- Diese dann direkt über den Browser oder über einen APK-Installer installieren.
+- Dabei muss ggf. das `Installieren` von Apps aus `externen Quellen` erlaubt werden.
 
 
 
@@ -77,7 +80,7 @@ Mit der App Fake GPS kann man seinen GPS Standort virtuell an jeden Ort verschie
 
 
 
-## 5. [Total Commander](https://www.ghisler.com/)
+## 5. [Total Commander](https://www.ghisler.com/)  - Dateimanager
 
 ### Was ist der Total Commander ?
 Total Commander ist ein `Dateimanager`, mit dem man Dateien/Ordner bearbeiten, kopieren, verschieben und löschen kann.
@@ -103,6 +106,7 @@ PC-Remote ist eine Software, mit der man sein Android Smartphone zu einem Touchp
 - [Play Store](https://play.google.com/store/apps/details?id=com.monect.portable)
 
 
+
 ## 7. [Warpinator](https://warpinator.com/)
 
 ### Was ist Warpinator ?
@@ -121,11 +125,48 @@ Für Android gibt es mehrere Möglichkeiten:
 ### Was ist K-9-Mail ?
 K-9 Mail ist ein kostenloses E-Mail-Programm für Android und gehört zu den wenigen E-Mail Clients, die keine Tracker nutzen.
 K-9 unterstützt das Abrufen von E-Mails per POP3 und IMAP von mehreren Konten, sowie auch Microsoft Exchange 2003/2007.
-Für Desktop Betriebsysteme empfiehlt sich [Thunderbird](https://www.thunderbird.net/) als E-Mail Clients.
+Für Desktop Betriebsysteme empfiehlt sich [Thunderbird](https://www.thunderbird.net/) als E-Mail Client.
 
 ### Installation von K9-Mail
 - [Play Store](https://play.google.com/store/apps/details?id=com.fsck.k9)
 - [F-Droid](https://f-droid.org/packages/com.fsck.k9/)
+
+
+
+# 9. 2FA App - [2FA Authenticator (2FAS)](https://2fas.com/)
+
+[BSI - Was ist 2FA ?](https://www.bsi.bund.de/DE/Themen/Verbraucherinnen-und-Verbraucher/Informationen-und-Empfehlungen/Cyber-Sicherheitsempfehlungen/Accountschutz/Zwei-Faktor-Authentisierung/zwei-faktor-authentisierung_node.html)
+
+### Was ist 2FAS ?
+2FAS ist eine App für die Zwei-Faktor-Authentifizierung (oder Multi-Faktor-Authentifizierung).
+Mit der Zwei-Faktor-Authentifizierung kann man einen `zusätzlichen Schutz` in online-Konten hinzufügen.
+Die App ist `Open-Source` und neben einer IOS-App gibt es auch eine [Browser Extension](https://2fas.com/browser-extension/).
+
+Die App bietet außerdem eine separate `Bildschirmsperre` und die Möglichkeit, ein `verschlüsseltes Backup in die Cloud` zu machen oder ein `manuelles verschlüsseltes Backup`, um die Codes zu sichern. 
+
+### Installation von 2FAS
+- [Play Store](https://play.google.com/store/apps/details?id=com.twofasapp&hl=de)
+
+
+
+# 10. [KeePassDX](https://www.keepassdx.com/) - Passwortmanager 
+
+### Was ist KeePassDX ?
+KeePassDX ist ein Passwortmanager aus der KeePass-Reihe, in dem man Zugangsdaten verschlüsselt speichern kann.
+Die Datenbank wird `lokal` und `verschlüsselt` gespeichert und man kann neben einem `starken Passwort` auch optional eine `Schlüsseldatei` oder einen `Hardwareschlüssel` als zusätzlichen Schutz hinzufügen.
+Außerdem kann man die Datenbank auch von anderen Passwortmanagern aus der KeePass-Reihe bearbeiten.
+Die App ist Open Source und enthält keine Werbung.
+Da die Datenbank nur lokal gespeichert wird, sollte man unbedingt regelmäßig ein Backup erstellen.
+
+Alternativen zu [KeePassDX](https://www.keepassdx.com/), aus der KeePass-Reihe, wären z.B. [Keepass2Android](https://play.google.com/store/apps/details?id=keepass2android.keepass2android) oder [KPass](https://play.google.com/store/apps/details?id=com.korovan.kpass&hl=de).
+
+- Für Desktop-Betriebsysteme (Linux, MacOS, Windows): [KeePassXC](https://keepassxc.org/) oder [KeePass](https://keepass.info/)
+
+
+### Installation von KeePassDX
+- [Play Store](https://play.google.com/store/apps/details?id=com.kunzisoft.keepass.free&hl=de)
+- [F-Droid](https://f-droid.org/packages/com.kunzisoft.keepass.libre/)
+
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -206,10 +247,17 @@ Als Alternative gibt es auch [Fine Lock](https://finelock.app/), jedoch muss dor
 
 
 
-## 3. [Samsung TV](https://www.samsung.com/de/tvs/smart-tv/samsung-tv-plus/)
+## 3. [Samsung TV Plus](https://www.samsung.com/de/tvs/smart-tv/samsung-tv-plus/)
 
-Samsung TV ist Samsungs kostenloser Streaming-Dienst und bietet zahlreiche Film, Serien, Live TV und vieles mehr.
+Samsung TV ist Samsungs kostenloser Streaming-Dienst und bietet zahlreiche Filme, Serien und Live TV.
+- wenig Werbung
+- kostenlos
+- gute Streaming-Qualität
+- Wiedergabegeschwindigkeit kann bei Filmen/Serien angepasst werden
+- keine Downloadmöglichkeiten bei Filmen/Serien
 
+
+### Installation von Samsung TV Plus
 - [Galaxy Store](https://galaxystore.samsung.com/detail/com.samsung.android.tvplus)
 - [Play Store](https://play.google.com/store/apps/details?id=com.samsung.android.tvplus&hl=de)
 
