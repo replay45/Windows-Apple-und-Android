@@ -2,9 +2,8 @@
 
 
 ## Inhaltsverzeichnis
-
-### 1. nützliche [CMD](https://de.wikipedia.org/wiki/Cmd.exe) Befehle
-### 2. nützliche [PowerShell](https://de.wikipedia.org/wiki/PowerShell) Befehle
+1. nützliche [CMD](https://de.wikipedia.org/wiki/Cmd.exe) Befehle
+2. nützliche [PowerShell](https://de.wikipedia.org/wiki/PowerShell) Befehle
 
 
 -----------------------------------------------------------------------------
