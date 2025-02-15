@@ -1,3 +1,13 @@
+# Taskleiste & Startmenü personalisieren
+
+
+## Inhaltsverzeichnis
+1. [Windhawk](https://windhawk.net/) - Windows personalisieren
+2. Windows10 Taskleiste & Startmenü in Windows11 wiederherstellen mit [ExplorerPatcher](https://github.com/valinet/ExplorerPatcher)
+
+
+------------------------------------------------------------------------------------------------
+
 # 1. [Windhawk](https://windhawk.net/) - Windows personalisieren (inkl. Taskleiste & Startmenü)
 
 
