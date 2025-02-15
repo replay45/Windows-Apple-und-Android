@@ -9,7 +9,7 @@ GSM-Codes oder USSD-Codes sind Steuerbefehle, die im Mobilfunknetz genutzt werde
 -----------------------------------------------
 
 
-- Nummer verbergen / Anonym Anrufen:
+- Nummer verbergen / anonym anrufen:
 ```
 #31#
 ```
@@ -18,6 +18,15 @@ GSM-Codes oder USSD-Codes sind Steuerbefehle, die im Mobilfunknetz genutzt werde
 ```
 *#06#
 ```
+
+- SysDump
+    - Akku neu kalibrieren: Akku auf 100% laden, "Batterystats reset" auswählen und danach Gerät neu starten.
+    - Hinweis: Die Option "Batterystats reset" sollte nur bei Problemen mit der Akkulaufzeit genutzt werden.
+```
+*#9900#
+```
+
+
 
 -----------------------------------------------
 
@@ -47,9 +56,18 @@ GSM-Codes oder USSD-Codes sind Steuerbefehle, die im Mobilfunknetz genutzt werde
 *#9090#
 ```
 
-- SamsungKamera Firmware überprüfen und anzeigen
+- Samsung Kamera Firmware überprüfen und anzeigen
 ```
 *#34971539#
 ```
 
+
+- WiFi Version refreshen
+    - Kann bei Verbindungsproblemen mit dem WLAN helfen.
+```
+*#2663#
+```
+
+
 -----------------------------------------------
+
