@@ -1,6 +1,6 @@
 # Sicherheit auf Android
 
-`Anleitung erstellt am 8.12.2024, zuletzt bearbeitet am 12.1.2025`
+`Anleitung erstellt am 8.12.2024, zuletzt bearbeitet am 7.2.2025`
 
 ## Inhaltsverzeichnis
 1. grundlegende Sicherheitstipps
@@ -23,27 +23,43 @@
 
 
 # 1. grundlegende Sicherheitstipps
+- die Grundlagen & allgemeies Verhalten
+    - Absolute Sicherheit gibt es nie ! - Aufklärung ist der beste Schutz !
+    - Man sollte immer den gesunden Menschenverstand einschalten.
+    - Ein gewisses Maß an Skepsis ist immer gut.
+    - Sicherung von Systemen gegen Diebstahl oder Manipulationen.
+    - Keine unbekannten/ vermeindlich gefundenen USB-Sticks verwenden !
 
-- gesunden Menschenverstand mitbringen
-- ein gewisses Maß an Skepsis ist immer gut
-- Datenminimierung: Nur personenbezogene Daten angeben, wenn unbedingt notwendig
-- nur in Online-Accounts einloggen, wenn nötig
-- regelmäßiges Installieren von Updates
-- nicht mehr benötigte Programme deinstallieren
-- keine unbekannten Befehle in einem Terminal (wie [Termux](https://termux.dev/en/)) ausführen
-- Backups erstellen
-- Werbe-ID löschen, um Tracking zu verhindern - Punkt 10.
-- Passwortsperre nutzen (zur automatischen Geräteverschlüsselung bei Android)
-- Passwortmanager mit starken Passwörtern nutzen - empfohlen: [KeePassXC](https://keepassxc.org/) oder [BitWarden](https://bitwarden.com/de-de/)
-- 2‑Faktor-Authentifizierung nutzen - [2FAS](https://2fas.com/)
-- Vorsicht vor Scam-E-Mails und E-Mail Anhänge
-- einen guten E-Mail-Client nutzen - [Thunderbird](https://www.thunderbird.net/de/) & [K-9](https://k9mail.app/)
-- Acht geben, auf was im Internet heruntergeladen wird und welche Seiten besucht werden
-- keine unbekannten/ vermeindlich gefundenen USB-Sticks verwenden
-- einen sicheren Browser, wie [Firefox](https://www.mozilla.org/de/firefox/new/) oder [Brave-Browser](https://brave.com/de/) verwenden
-- Browser datenschutzfreundlich einstellen
-- AdBlocker verwenden - [uBlock Origin](https://ublockorigin.com/de)
-    - mehr zu sicher & anonym im Internet surfen unter [ethical hacking & Cyber Security/ Sicherheit im Internet/ anonym & sicher im Internet surfen](https://github.com/replay45/ethical-hacking-und-cybersecurity/tree/main/browser-%26-sicher-surfen)
+- Datenschutz & Tracking
+    - Datenminimierung: Nur personenbezogene Daten angeben, wenn unbedingt notwendig.
+    - Man sollte sich nur in online-Accounts einloggen, wenn notwendig.
+    - Die `Werbe-ID löschen` & `personalisierte Werbung deaktivieren`, um Tracking zu minimieren und zu erschweren.
+    - Cloud-Dienste meiden - eigene Cloud oder [NAS (Homeserver)](https://de.wikipedia.org/wiki/Network_Attached_Storage) nutzen.
+    - Sichere und datenschutzfreundliche DNS-Server nutzen.
+
+- Browser & Verhalten im Internet
+    - Acht geben, auf was im Internet heruntergeladen wird und welche Webseiten besucht werden.
+    - Einen sicheren Browser, wie [Firefox](https://www.mozilla.org/de/firefox/new/) oder den [Brave-Browser](https://brave.com/de/) verwenden.
+    - Browser datenschutzfreundlich einstellen und Cookies von Dritt-Anbietern blockieren.
+    - AdBlocker verwenden - [uBlock Origin](https://ublockorigin.com/de)
+
+- E-Mail
+    - Vorsicht vor Scam-E-Mails und schädlichen Anhängen.
+    - Einen sicheren E-Mail-Client ohne Tracker nutzen - [Thunderbird](https://www.thunderbird.net/de/) & [K-9](https://k9mail.app/).
+
+- Authentifizierung & Verschlüsselung
+    - Festplatten-/ Geräteverschlüsselung aktivieren & Passwortsperre nutzen.
+    - Passwortmanager mit starken Passwörtern nutzen - empfohlen: [KeePassXC](https://keepassxc.org/) oder [BitWarden](https://bitwarden.com/de-de/)
+    - 2‑Faktor-Authentifizierung nutzen - [2FAS](https://2fas.com/)
+
+- Software & Daten schützen
+    - [Open Source](https://de.wikipedia.org/wiki/Open_Source) Software bevorzugen.
+    - Regelmäßiges Installieren von Updates.
+    - Nicht mehr benötigte Programme entfernen.
+    - Backups erstellen.
+    - Keine unbekannten Befehle in einem Terminal (wie z.B. [Termux](https://termux.dev/en/)) ausführen.
+
+- Mehr zu `sicher & anonym im Internet surfen` unter [ethical hacking & Cyber Security/Cyber-Security/anonym & sicher im Internet surfen](https://github.com/replay45/ethical-hacking-und-cybersecurity/tree/main/cyber-security)
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -54,7 +70,7 @@
 `Zuletzt getestete Android-Version: 14`
 
 - Hinweis: 
-    - Das Ändern des DNS-Servers zu einem sicheren Anbieter, verhindert ohne Implementierung einer Verschlüsselung oder Signierung keine Man in the Middle Angriffe oder Tracking !
+    - Das Ändern des DNS-Servers zu einem sicheren Anbieter, verhindert ohne Implementierung einer Verschlüsselung oder Signierung keine [Man-in-the-Middle-Angriffe](https://de.wikipedia.org/wiki/Man-in-the-Middle-Angriff) oder Tracking !
 
 ### Was ist ein DNS-Server ?
 Ein DNS-Server `übersetzt Domainnamen` wie "google.de" `in IP-Adressen`, denn Domains sind für uns Menschen, im Gegensatz zu IP-Adressen, einfacher zu merken.
@@ -65,13 +81,19 @@ Außerdem gibt es nicht genügend verfügbare IPv4-Adressen, daher können diese
 ### Wieso den DNS-Server ändern ?
 - Standardmäßig nutzt man die DNS-Server des Internetanbieters, diese sind jedoch häufig eher langsamer und wenn man `verhindern` möchte, dass der `Internetprovider bzw. Mobilfunkanbieter einsehen kann, welche Domains man aufruft`, ist es sehr ratsam, die DNS-Server von [Cloudflare](https://www.cloudflare.com/) zu nutzen.
 - Den DNS-Server kann man auf allen gänigen Desktop-Betriebsystemen sowie auf dem Smartphone, als auch in vielen gänigen Routern ändern.
-- Wie man seinen eigenen kleinen DNS-Server mit Pi-hole erstellen kann, wird unter [Raspberry-Pi/RaspberryPI-Netzwerk-Projekte](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/raspberry-pi) gezeigt.
-- [Cloudflare](https://www.cloudflare.com/) legt dabei den `Fokus` auf `Datenschutz & Sicherheit` und bietet dennoch sehr `schnelle DNS-Server`.
+- Wie man seinen eigenen kleinen DNS-Server mit [Pi hole](https://pi-hole.net/) erstellen kann, wird unter [Raspberry-Pi/Pi-hole](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/raspberry-pi) gezeigt.
+- [Cloudflare](https://www.cloudflare.com/) legt dabei den `Fokus` auf `Datenschutz & Sicherheit`, verspricht `kein Logging` von Daten die zur Identifizierung genutzt werden können und bietet dennoch sehr `schnelle DNS-Server`.
 
 
 ### Privates DNS - DNS-Server für alle Verbindungen einstellen & DNS-Verschlüsselung
-- `Bevorzugten DNS-Server` für `alle Verbindungen` (WLAN & mobile Daten) einstellen und `Verschlüsselung(DoT)` nutzen.
-- Diese Einstellungen `überschreibt` alle anderen DNS-Server !
+- `Bevorzugten DNS-Server` für `alle Verbindungen` (WLAN & mobile Daten) einstellen und `Verschlüsselung(DoT) nutzen`.
+- Diese Einstellungen `überschreibt alle anderen Optionen` zu den DNS-Servern !
+
+Für wen eignet sich diese Option ?
+    - Diese Option ist `besonders für wenig erfahrene Nutzer` oder die jenigen `die keinen eigenen DNS-Server wie Pi hole betreiben` `sinnvoll`.
+
+
+- "Privates DNS" - aktivieren
     - `Einstellungen` öffnen
     - `Verbindungen`
     - `Weitere Verbindungseinstellungen`
@@ -82,7 +104,8 @@ Außerdem gibt es nicht genügend verfügbare IPv4-Adressen, daher können diese
 
 
 ### WLAN - DNS-Server manuell für eine bestimmte Verbindung ändern
-- Wenn ein DNS-Server unter der Option `Privates DNS` eingestellt ist, wird diese Option unbrauchbar.
+- Wenn ein DNS-Server unter der Option `Privates DNS` eingestellt ist, wird diese Option `unbrauchbar`.
+- Verschlüsselung der DNS-Anfragen ist hier NICHT möglich.
     - `Einstellungen` öffnen
     - `Verbindungen`
     - `WLAN`
@@ -97,20 +120,29 @@ Außerdem gibt es nicht genügend verfügbare IPv4-Adressen, daher können diese
 ### Mobile Daten
 - Das manuelle Einstellen bevorzugter DNS-Server für mobiles Internet ist nur bei gerooteten Android-Smartphones möglich.
 - Um auch bei mobilem Internet einen beforzugten DNS-Server nutzen zu können, muss `Privates DNS` genutzt werden.
+- Lediglich eine VPN-Verbindung stellt hier eine Ausnahme dar, denn bei einer VPN-Verbindung sollte standardmäßig der bevorzugte DNS-Server des VPN-Servers verwendet werden (sofern diese nicht ggf. von der Option `Privates DNS` überschrieben werden).
+    - Das wären bei einem externen Anbietern die entsprechenden DNS-Servers des VPN-Providers oder bei einer VPN-Verbindung in das eigene Heimnetz die entsprechenden Einstellungen im Router.
 
 
-### Alternative Möglichkeiten - VPN & Pi-Hole
-- Wer selber einen DNS-Server im Heimnetz hosten möchte, kann das z.B. mit [Pi Hole](https://pi-hole.net/) tun.
-- Der [Pi Hole](https://pi-hole.net/) kann u.a. als standard-DNS-Server im Router eingestellt werden und über `VPN` in das Heimnetzwerk, kann dieser auch von überall genutzt werden.
-- Eine VPN-Verbindung bietet u.a. mehrere Vorteile, wie z.B. eine sichere Verbindung in dasd Heimnetzerk, bei unsicheren WLAN-Verbindungen oder Zugriff auf Geräte in Heimnetzwerk, wie ein NAS/Homeserver.
-- Eine weitere Möglichkeit wäre z.B. [Pi Hole](https://pi-hole.net/) über Dyn-DNS aus dem Internet erreichbar zu machen, um Pi-Hole als DNS-Server für die Option `Privates DNS` einzustellen.
+### Alternative Möglichkeiten - VPN & Pi hole
+- Wer selber einen DNS-Server im Heimnetz hosten möchte, kann das z.B. mit [Pi hole](https://pi-hole.net/) tun.
+- Der [Pi hole](https://pi-hole.net/) kann u.a. als standard-DNS-Server im Router eingestellt werden und über `VPN` in das Heimnetzwerk, kann dieser auch von überall genutzt werden.
+- Eine VPN-Verbindung bietet u.a. mehrere Vorteile, wie z.B. eine sichere Verbindung in das Heimnetzwerk, bei unsicheren WLAN-Verbindungen oder Zugriff auf Geräte in Heimnetzwerk, wie ein NAS/Homeserver.
+- Eine weitere Möglichkeit wäre z.B. [Pi hole](https://pi-hole.net/) über Dyn-DNS aus dem Internet erreichbar zu machen/ extern zu hosten, um Pi hole als DNS-Server für die Option `Privates DNS` einzustellen.
 
 
-### Fazit - die optimale Einstellungen treffen
-- Um immer den gewünschten DNS-Server nutzen zu können, die Option `Privates DNS` mit `Hostname des Anbieters des privaten DNS` verwenden (Option überschreibt alle anderen Optionen).
-- Dabei empfehlen sich die DNS-Server von [Cloudflare](https://www.cloudflare.com/): `one.one.one.one`
-- Alternativ kann ein eigener DNS-Server mit Pi-Hole genutzt werden. Dieser kann wahlweise z.B. über einen VPN zum Heimnetzwerk oder über DynDNS-Domain oder auf einem externen Server eingerichtet werden.
-- Mehr zu DNS-Servern und Pi-Hole unter [Linux-RaspberryPI-NextCloud/Raspberry-Pi](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/raspberry-pi)
+### Fazit - die optimalen Einstellungen treffen
+- `weniger erfahrene Nutzer`
+    - Für weniger erfahrene Nutzer ist die Einstellung `Privates DNS` (inkl. Verschlüsselung DoT) mit `Hostname des Anbieters des privaten DNS` die beste Option, um immer den gewünschten DNS-Server nutzen zu können (Option überschreibt alle anderen Optionen).
+    - Dabei empfehlen sich die DNS-Server von [Cloudflare](https://www.cloudflare.com/): `one.one.one.one`
+
+- `erfahrene Nutzer`
+    - Für erfahrene Nutzer empfiehlt sich die Option `Privates DNS` `nur wenn KEIN eigener DNS-Server, wie Pi hole im Heimnetzwerk betrieben` wird.
+    - Wenn ein `eigener DNS-Server` wie [Pi hole](https://pi-hole.net/) betrieben wird, kann `abgewogen werden`, ob `Android Geräte durch "Privates DNS" ausgeschlossen` oder ob z.B. von außerhalb eine `VPN-Verbindung` in das `Heimnetzwerk (bzw. zum DNS-Server)` eine Möglichkeit wäre, dabei muss man sich jedoch bewusst sein, dass nur bei entsprechender VPN-Verbindung auch der gewünschte DNS-Server genutzt wird.
+    - Eine andere Möglichkeit wäre z.B. [Pi hole](https://pi-hole.net/) über Dyn-DNS aus dem Internet erreichbar zu machen/ extern zu hosten, um Pi hole als DNS-Server einzustellen (nur für sehr erfahrene Nutzer geeignet).
+
+
+### Mehr zu DNS-Servern und Pi hole unter [Linux-RaspberryPI-NextCloud/Raspberry-Pi](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/raspberry-pi)
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -346,7 +378,9 @@ In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sp
     - weniger Akkuverbrauch
     - Kontrolle darüber, wann WLAN & Bluetooth ein-/ ausgeschaltet sind
     - Apps das Bestimmen des genauen Standortes erschweren
-    
+
+- Das Deaktivieren der Scan-Optionen hat keine Auswirkung auf die normale Verwenung von WLAN oder Bluetooth Verbindungen !
+
 # Ausschalten der beiden Optionen
 - `Einstellungen` öffnen
 - Standort auswählen
