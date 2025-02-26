@@ -2,12 +2,11 @@
 
 
 ## Inhaltsverzeichnis
-
-### 1. [SIP (System Integrity Protection)](https://support.apple.com/de-de/102149) ein-/ ausschalten
-### 2. Dateien/Ordner auf MacOS über das Terminal löschen
-### 3. Systemdateien in [MacOS Finder](https://de.wikipedia.org/wiki/Finder_(Mac)) anzeigen lassen
-### 4. Icons von MacOS Apps und Ordnern ändern
-### 5. [Home Brew](https://brew.sh/)
+1. [SIP (System Integrity Protection)](https://support.apple.com/de-de/102149) ein-/ ausschalten
+2. Dateien/Ordner auf MacOS über das Terminal löschen
+3. Systemdateien in [MacOS Finder](https://de.wikipedia.org/wiki/Finder_(Mac)) anzeigen lassen
+4. Icons von MacOS Apps und Ordnern ändern
+5. [Home-Brew](https://brew.sh/)
 
 
 ----------------------------------------------
@@ -41,7 +40,7 @@ $ sudo reboot recovery
 
 ### 1.2. SIP deaktivieren:
 
-- Über die obere Leiste auf "Dienstprogramme" klicken und das Terminal öffnen.
+- Über die obere Leiste auf `"Dienstprogramme"` klicken und das Terminal öffnen.
 - Nun den folgenden Befehl im Terminal einfügen:
 
 ```
@@ -65,7 +64,7 @@ $ csrutil status
 
 ### 1.4. SIP wieder aktivieren:
 
-- erneut in den Wiederherstellungsmodus und das Terminal öffnen.
+- Erneut in den `Wiederherstellungsmodus` wechseln und das Terminal öffnen.
 - Dann folgenden Befehl im Terminal einfügen:
 
 ```
@@ -93,7 +92,7 @@ $ rm -rf PFAD-DER-DATEI
 # 3. Systemdateien in [MacOS Finder](https://de.wikipedia.org/wiki/Finder_(Mac)) anzeigen lassen
 
 1.
-- Finder öffnen,
+- [Finder](https://de.wikipedia.org/wiki/Finder_(Mac)) öffnen,
 - auf `Suche` klicken,
 - etwas Beliebiges suchen.
 
@@ -116,10 +115,9 @@ $ rm -rf PFAD-DER-DATEI
 
 # 4. Icons von MacOS Apps und Ordnern ändern
 
-Das Ändern von Icons von Systemapps ist leider nicht mehr möglich, da  die Systemapps auf einem schreibgeschützten System-Volume installiert sind.
-Auch das Mounten des schreibgeschützten Volumes, mit Lese- & Schreibrechten ist nicht mehr möglich.
-Daher können die Icons auf neueren MacOS Versionen `ausschließlich bei Drittanbieter-Apps` geändert werden, die 
-auf einem `System-Volume mit Schreibrechten` installiert sind.
+Das Ändern von Icons von Systemapps ist leider nicht mehr möglich, da die Systemapps auf einem [schreibgeschützten System-Volume](https://de.wikipedia.org/wiki/Schreibschutz) installiert sind.
+Auch das Einhängen des [schreibgeschützten Volumes](https://de.wikipedia.org/wiki/Schreibschutz), mit Lese- & Schreibrechten ist nicht mehr möglich.
+Daher können die Icons auf neueren MacOS Versionen `ausschließlich bei Drittanbieter-Apps` geändert werden, die auf einem `System-Volume mit Schreibrechten` installiert sind.
 
 
 - Icons auf MacOS sind im `icns` Format.
@@ -131,7 +129,7 @@ auf einem `System-Volume mit Schreibrechten` installiert sind.
 
 
 4.2. App-Icon ändern:
-   - Finder öffnen.
+   - [Finder](https://de.wikipedia.org/wiki/Finder_(Mac)) öffnen.
    - `Applications` Ordner aufrufen.
    - Rechtsklick auf eine App und auf `Info` gehen.
    - `icns` Icon auf das zu ersetzende App-Symbol ziehen, bis ein `Plus-Symbol` erscheint.
@@ -152,17 +150,21 @@ auf einem `System-Volume mit Schreibrechten` installiert sind.
 
 
 __Hinweis__:
-Sollte sich das Icon einer App im Dock nicht updaten, einfach die App aus dem Dock entfernen und erneut hinzufügen.
+Sollte sich das Icon einer App im [Dock](https://de.wikipedia.org/wiki/Dock_(Software)) nicht updaten, einfach die App aus dem [Dock](https://de.wikipedia.org/wiki/Dock_(Software)) entfernen und erneut hinzufügen.
 
 
 ---------------------------------------------------------------------------------------------
 
 
-# 5. [Home Brew](https://brew.sh/)
+# 5. [Home-Brew](https://brew.sh/)
 
 `Paketmanager für Linux und MacOS`
 
 `für die Anleitung verwendetes Betriebssystem: MacOS Sonoma`
+
+## Was ist [Home-Brew](https://brew.sh/) ?
+Home-Brew ist ein [Open Source](https://de.wikipedia.org/wiki/Open_Source) Paketmanager, mit dem man Software über das Terminal installieren und verwalten kann.
+Home-Brew kann sowohl für MacOS, als auch für Linux verwendet werden.
 
 
 ## 5.1. Installation:
