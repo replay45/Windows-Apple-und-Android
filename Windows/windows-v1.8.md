@@ -2,25 +2,23 @@
 
 
 ## Inhaltsverzeichnis
-
-### 1. lokalen Windows 11 Benutzer erstellen - Kontozwang umgehen
-### 2. DNS Server - [Cloudflare DNS](https://www.cloudflare.com/)
-### 3. Windows PC in eine Domäne hinzufügen
-### 4. Cortana über PowerShell deinstallieren
-### 5. Copilot von Windows 11 deinstallieren
-### 6. Raster auf dem Desktop - Icon Abstände verändern
-### 7. Erstellen eines Systemwiederherstellungspunkts unter Windows 11
-### 8. Schnellstart bei Windows deaktivieren
-### 9. Dienste installierter Programme auf Windows überprüfen
-### 10. Einen USB-Stick zur Windows-Anmeldung nutzen
-### 11. Microsoft Edge auf Windows 10 deinstallieren
+1. lokalen Windows 11 Benutzer erstellen - Kontozwang umgehen
+2. Die Adminabfrage UAC bei einer Installation eines Programms umgehen
+3. Windows PC in eine Domäne hinzufügen
+4. Cortana über [PowerShell](https://de.wikipedia.org/wiki/PowerShell) deinstallieren
+5. Copilot von Windows 11 deinstallieren
+6. Raster auf dem Desktop - Icon Abstände verändern
+7. Erstellen eines Systemwiederherstellungspunkts unter Windows 11
+8. Schnellstart bei Windows deaktivieren
+9. Dienste installierter Programme auf Windows überprüfen
+10. Einen USB-Stick zur Windows-Anmeldung nutzen
+11. Microsoft Edge auf Windows 10 deinstallieren
 
 
 -----------------------------------------------------------------------------
 
 
 # 1. lokalen Windows 11 Benutzer erstellen - Kontozwang umgehen
-
 
 `Anleitung verfasst am 20.6.2024`
 
@@ -67,50 +65,26 @@ $ oobe\BypassNRO
 -----------------------------------------------------------------------------
 
 
-# 2. DNS Server - [Cloudflare DNS](https://www.cloudflare.com/)
+# 2. Die Adminabfrage UAC bei einer Installation eines Programms umgehen
 
-`Anleitung zu "DNS Server" erstellt am 20.11.2024`
+- Wenn man als Benutzer auf Windows auf dem üblichen Weg ein Programm über eine .exe installieren möchte, benötigt man Administratorrechte.
+- Wenn man keine Administratorrechte hat, erscheint eine Abfrage (UAC), wo man gebeten wird, die Installation als Administrator zu bestätigen.
+- Hier wird gezeigt, wie man diese umgehen kann und eine exe-Datei ausführen kann, um ein Programm für den Benutzer zu installieren.
 
-- `mehr zu DNS-Servern` in diesem Repository unter [Raspberry-Pi/RaspberryPI-Netzwerk-Projekte](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/raspberry-pi)
+### Adminabfrage umgehen
+- exe-Installationsdatei herunterladen
+- Neue Textdatei anlegen.
+- Folgendes in die Textdatei einfügen:
+```
+Set __COMPAT_LAYER=RunAsInvoker
+HIER_DER_NAME_DER_SETUP_DATEI.exe
+```
 
-
-## Was ist ein DNS Server ?
-Ein DNS-Server `übersetzt Domainnamen` wie "google.de" `in IP-Adressen`, denn Domains sind für uns Menschen, im Gegensatz zu IP-Adressen, einfacher zu merken.
-Außerdem gibt es nicht genügend verfügbare IPv4 Adressen, daher können diese sich auch ändern, was jedoch dank der DNS-Server kein Problem ist.
-- [Cloudflare - Was ist ein DNS-Server](https://www.cloudflare.com/de-de/learning/dns/what-is-a-dns-server/)
-
-
-## Wieso den DNS Server ändern ?
-- Standardmäßig nutzt man die DNS-Server des Internetanbieters, diese sind jedoch häufig eher langsamer und wenn man `verhindern` möchte, dass der `Internetprovider bzw. Mobilfunkanbieter einsehen kann, welche Domains man aufruft` ist es sehr ratsam, die DNS-Server von [Cloudflare](https://www.cloudflare.com/) zu nutzen.
-- Den DNS-Server kann man auf allen gänigen Desktop-Betriebsystemen, sowie auf dem Smartphone, als auch in vielen gänigen Routern ändern.
-
-- Wie man seinen eigenen kleinen DNS-Server mit Pi-hole erstellen kann, wird unter [Raspberry-Pi/RaspberryPI-Netzwerk-Projekte](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/raspberry-pi) gezeigt.
-
-- [Cloudflare](https://www.cloudflare.com/) legt dabei den `Fokus` auf `Datenschutz & Sicherheit` und bietet dennoch sehr `schnelle DNS-Server`.
-
-## Hier die Vorteile der [Cloudflare](https://www.cloudflare.com/) DNS-Server
-    - empfehlenswerter Anbieter, weite Verbreitung
-    - Geschwindigkeit (schnelle Server)
-    - Server auf der ganzen Welt
-    - Fokus auf Datenschutz & Sicherheit
-    - kein Logging
-    - ideal für private Nutzer & Haushalte
-
-
-## DNS Server ändern
-
-- Windows:
-    - Einstellungen öffnen
-    - Unter `Netzwerk und Internet` die gewünschte WLAN / LAN Verbinung auswählen.
-    - Eigenschaften der Verbindung auswählen.
-    - In dem Pop-Up `IPv4` aktivieren und IP-Adresse des DNS-Servers einfügen. ([Cloudflare DNS](https://www.cloudflare.com/): primär: `1.1.1.1`, sekundär: `1.0.0.1`).
-    - Optional `IPv6` aktivieren und DNS-Servers einfügen.
-    - Verschlüsselung über HTTPS (DoH) optional, aber empfohlen, auf `Ein` `(automatische Vorlage)` stellen.
-
-- Router:
-    - Wenn man nicht für jedes Gerät den DNS-Server einzeln einstellen möchte, kann man dies auch im Router tun.
-    - Je nach Hersteller und Modell können die Optionen abweichen (Vodafone Easy-Boxen unterstützen das Ändern des DNS-Servers in der Regel nicht.)
-    - Um den DNS-Server zu ändern, die Option finden, wo der primäre und der sekundäre-DNS-Server festgelegt werden können. Dabei können der primäre- als auch der sekundäre- DNS-Server unterschildliche Server vom gleichen Anbieter sein, oder der sekundäre Server kann wahlweise auch von dem primären Anbieter abweichen, um eine hohe Ausfallsicherheit zu gewährleisten.
+- `HIER_DER_NAME_DER_SETUP_DATEI` mit dem Dateinamen des Installationspakets ersetzen.
+- Datei speichern und Text-Editor schließen.
+- Dateiendung in `.bat` ändern, damit die Datei ein ausführbares Skript wird.
+- `Datei.bat` mit einem Doppelklick öffnen.
+- Nun sollte sich der Installationsassistenten des Programms öffnen.
 
 
 -----------------------------------------------------------------------------
@@ -140,7 +114,7 @@ Nach einem Neustart sollte der PC erfolgreich in die Domäne hinzugefügt worden
 -----------------------------------------------------------------------------
 
 
-# 4. Cortana über PowerShell deinstallieren
+# 4. Cortana über [PowerShell](https://de.wikipedia.org/wiki/PowerShell) deinstallieren
 
 ## Den Sprachassistenten [Cortana](https://support.microsoft.com/de-de/topic/was-ist-cortana-953e648d-5668-e017-1341-7f26f7d0f825), per PowerShell vollständig entfernen:
 
@@ -303,7 +277,7 @@ Außerdem kann separat eingestellt werden, was passieren soll, wenn der USB-Stic
 
 
 
-8.1. anderen Browser installieren (z.B. Firefox oder Brave)
+8.1. anderen Browser installieren (z.B. [Firefox](https://www.mozilla.org/de/firefox/new/) oder [Brave-Browser](https://brave.com/de/))
 
 8.2. Explorer öffnen  
 
