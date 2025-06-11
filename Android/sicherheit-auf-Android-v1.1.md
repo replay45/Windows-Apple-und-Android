@@ -1,6 +1,6 @@
 # Sicherheit auf Android
 
-`Anleitung erstellt am 8.12.2024, zuletzt bearbeitet am 7.2.2025`
+`Anleitung erstellt am 8.12.2024, zuletzt bearbeitet am 11.6.2025`
 
 ## Inhaltsverzeichnis
 1. grundlegende Sicherheitstipps
@@ -67,7 +67,7 @@
 
 # 2. DNS-Server auf Android
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 - Hinweis: 
     - Das Ändern des DNS-Servers zu einem sicheren Anbieter, verhindert ohne Implementierung einer Verschlüsselung oder Signierung keine [Man-in-the-Middle-Angriffe](https://de.wikipedia.org/wiki/Man-in-the-Middle-Angriff) oder Tracking !
@@ -79,10 +79,11 @@ Außerdem gibt es nicht genügend verfügbare IPv4-Adressen, daher können diese
 
 
 ### Wieso den DNS-Server ändern ?
-- Standardmäßig nutzt man die DNS-Server des Internetanbieters, diese sind jedoch häufig eher langsamer und wenn man `verhindern` möchte, dass der `Internetprovider bzw. Mobilfunkanbieter einsehen kann, welche Domains man aufruft`, ist es sehr ratsam, die DNS-Server von [Cloudflare](https://www.cloudflare.com/) zu nutzen.
+- Standardmäßig nutzt man die DNS-Server des Internetanbieters, diese sind jedoch häufig eher langsamer und wenn man `verhindern` möchte, dass der `Internetprovider bzw. Mobilfunkanbieter einsehen kann, welche Domains man aufruft`, ist es sehr ratsam, einen datenschutzfreundlichen Anbieter zu wählen (z.B. [Cloudflare](https://www.cloudflare.com/) oder [Quad9](https://www.quad9.net/de/)).
 - Den DNS-Server kann man auf allen gänigen Desktop-Betriebsystemen sowie auf dem Smartphone, als auch in vielen gänigen Routern ändern.
 - Wie man seinen eigenen kleinen DNS-Server mit [Pi hole](https://pi-hole.net/) erstellen kann, wird unter [Raspberry-Pi/Pi-hole](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/raspberry-pi) gezeigt.
 - [Cloudflare](https://www.cloudflare.com/) legt dabei den `Fokus` auf `Datenschutz & Sicherheit`, verspricht `kein Logging` von Daten die zur Identifizierung genutzt werden können und bietet dennoch sehr `schnelle DNS-Server`.
+- Alternativ empfiehlt sich [Quad9](https://www.quad9.net/de/), eine Non-Profit-Organisation aus der Schweiz, ebenfalls mit dem `Fokus` auf `Datenschutz & Sicherheit`.
 
 
 ### Privates DNS - DNS-Server für alle Verbindungen einstellen & DNS-Verschlüsselung
@@ -90,7 +91,7 @@ Außerdem gibt es nicht genügend verfügbare IPv4-Adressen, daher können diese
 - Diese Einstellungen `überschreibt alle anderen Optionen` zu den DNS-Servern !
 
 Für wen eignet sich diese Option ?
-    - Diese Option ist `besonders für wenig erfahrene Nutzer` oder die jenigen `die keinen eigenen DNS-Server wie Pi hole betreiben` `sinnvoll`.
+    - Diese Option ist `besonders für wenig erfahrene Nutzer` oder die jenigen `die keinen eigenen DNS-Server wie Pi hole betreiben`, `sinnvoll`.
 
 
 - "Privates DNS" - aktivieren
@@ -99,7 +100,7 @@ Für wen eignet sich diese Option ?
     - `Weitere Verbindungseinstellungen`
     - `Privates DNS`
     - `Hostname des Anbieters des privaten DNS`
-    - einfügen: `one.one.one.one`
+    - z.B. einfügen: `one.one.one.one`
     - `Speichern` klicken
 
 
@@ -150,7 +151,7 @@ Für wen eignet sich diese Option ?
 
 # 3. Spionageschutz: Kamera, Mikrofon & Sensoren vollständig & systemweit blockieren (Sicherheitsrichtlinie)
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 ### Kamera, Mikrofon & andere Sensoren über das QuickPanel nach Belieben deaktivieren und wieder aktivieren
 - Was bringt die Funktion (Sicherheitsrichtline)
@@ -175,7 +176,7 @@ Für wen eignet sich diese Option ?
 
 # 4. Googles WerbeID löschen & Diagnosedaten deaktivieren (Google auf Android)
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 ## Was ist die Werbe-ID und wieso sollte man sie löschen ?
 - Die Werbe-ID ist eine `ID zur Identifizierung` eines `Android-Smartphones` - "Google Advertising ID" (GAID) und bei Apple „Identifier for Advertisers“ (IDFA), ähnlich wie ein Nummernschild, die für `Werbezwecke` genutzt wird.
@@ -205,7 +206,7 @@ Für wen eignet sich diese Option ?
 
 # 5. Einstellungen: Sicherheit und Datenschutz (Samsung)
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 ### Sicherheit und Datenschutz
 - Unter diesem Reiter können einige Optionen zur Sicherheit und zum Datenschutz in einer Übersicht eingesehen werden.
@@ -243,7 +244,7 @@ Für wen eignet sich diese Option ?
 
 # 6. "Passwörter sichtbar machen" - Funktion deaktivieren
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 ### Was ist die "Passwörter sichtbar machen" Option ?
 Wenn die Funktion aktiviert ist, wird bei der Eingabe von Passwörtern die Eingabe kurz angezeigt, bevor sie mit einem Punkt "verdeckt" wird.
@@ -258,7 +259,7 @@ In den Einstellungen unter `Sicherheit und Datenschutz`, `Weitere Sicherheitsein
 
 # 7. Sperrbildschirm: Verhindern, dass Netzwerk- & Sicherheitseinstellungen geändert werden können (Samsung)
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 - Die Funktion sollte standardmäßig aktiv sein.
 
@@ -298,7 +299,7 @@ In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sp
 
 ### Was muss ich nun tun ?
 - Die dateibasierte Verschlüsselung ist unter Android standardmäßig aktiv.
-- Zum Schutz der Verschlüsselungsschlüssel sollte ein starkes Passwort auf dem Sperrbildschirm verwendet werden.
+- Zum `Schutz` der Verschlüsselungsschlüssel sollte ein `starkes Passwort` auf dem `Sperrbildschirm` verwendet werden.
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -306,7 +307,7 @@ In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sp
 
 # 9. Für Apps zugelassene Netzwerke (WLAN/MOBILE-DATEN) (Samsung)
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 - Hier kann festgelegt werden, welche Netzwerke eine App verwenden darf.
     - `Einstellungen` öffnen
@@ -321,7 +322,7 @@ In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sp
 
 # 10. Spezieller Zugriff & Berechtigungsverwaltung für Apps (Samsung)
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 ### Berechtigungen setzen
 - Allgemein gilt: So `wenige Berechtigung wie möglich` und so `viele wie nötig`.
@@ -349,7 +350,7 @@ In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sp
 
 # 11. App-Sicherheit: auf schädliche Apps prüfen (PlayStore & Gerätewartung)
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 - Man kann sowohl im PlayStore als auch in der Gerätewartung alle Apps auf `"schädliche Apps"` prüfen.
 - `App Schutz` (Gerätewartung):
@@ -370,7 +371,7 @@ In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sp
 
 # 12. Standort: Scan-Optionen ausschalten (WLAN & Bluetooth)
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 # Wieso diese Optionen deaktivieren ?
 - Wenn die Optionen zur Verbesserung der Genauigkeit nicht ausgeschaltet sind, werden WLAN & Bluetooth nie richtig abgeschaltet, auch wenn man sie manuell im Quick-Panel deaktiviert.
@@ -393,12 +394,12 @@ In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sp
 
 # 13. Galaxy-AI - Verarbeitung nur auf dem Gerät (Samsung)
 
-`Zuletzt getestete Android-Version: 14 mit OneUI 6.1.1`
+`getestete Android-Version: 14 mit OneUI 6.1.1  / 15 mit OneUI 7.0`
 
 ### Wieso sollte man die Option "Daten nur auf Gerät verarbeiten" aktivieren ?
 - Beim aktivieren der Option, werden Inhalte nur noch auf dem Gerät, also lokal verarbeitet.
 - Um die Inhalte zu verarbeiten werden diese häufig in die Cloud hochgeladen, was potenziell unwerünscht ist.
-- Auch wenn dadurch manche Funktionen nicht mehr verfügbar sind, sollte der Datenschutz und der Schutz der Privatsphäre unbedingt ernst genommen werden und daher ist es sehr ratsam die Option zu aktivieren. 
+- Auch wenn dadurch manche Funktionen nicht mehr verfügbar sind, sollte der Datenschutz und der Schutz der Privatsphäre unbedingt ernst genommen werden und daher ist es sehr ratsam die Option zu aktivieren.
 
 
 ### Option aktivieren
