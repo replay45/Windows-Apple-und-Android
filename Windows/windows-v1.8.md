@@ -12,7 +12,8 @@
 8. Schnellstart bei Windows deaktivieren
 9. Dienste installierter Programme auf Windows überprüfen
 10. Einen USB-Stick zur Windows-Anmeldung nutzen
-11. Microsoft Edge auf Windows 10 deinstallieren
+11. Nutzer manuell für Remote-Desktop (RDP) erlauben ([Terminal](https://de.wikipedia.org/wiki/Windows_Terminal))
+12. Microsoft Edge auf Windows 10 deinstallieren
 
 
 -----------------------------------------------------------------------------
@@ -197,13 +198,12 @@ HKEY_CURRENT_USER\Control Panel\Desktop\WindowMetrics
 - Enter
 - Nun in den Systemeigenschaften zur Registerkarte `Computerschutz` die Option `Erstellen` auswählen.
 - Eine kurze Beschreibung einfügen und auf `Erstellung` klicken.
-
 - Um die automatische Sicherung einzuschalten, auf `Konfigurieren` gehen.
 - Dabei sicherstellen, dass das richtige Speichermedium ausgewählt wurde.
 - Nun die gewünschten Speicher-Einstellungen treffen, auf `Computerschutz aktivieren` klicken und Einstellungen übernehmen.
 
 
-Sollten Probleme mit Windows auftreten, ist es nun möglich, in den `Erweiterten Startoptionen` auf einen erstellten Systemwiederherstellungspunkt zurückzukehren.
+Sollten zukünftig Probleme mit Windows auftreten, ist es nun möglich, in den `Erweiterten Startoptionen` auf einen erstellten Systemwiederherstellungspunkt zurückzukehren.
 
 
 -----------------------------------------------------------------------------
@@ -262,6 +262,42 @@ Nach der Konfiguration kann der USB-Stick als alternative Anmeldemethode zum Pas
 
 Zudem kann eingestellt werden, ob beim Einsetzen des USB-Sticks zusätzlich ein Passwort abgefragt werden soll, oder das Einsetzen des konfigurierten USB-Sticks ausreicht.
 Außerdem kann separat eingestellt werden, was passieren soll, wenn der USB-Stick entfernt wird.
+
+
+-----------------------------------------------------------------------------
+
+
+# 11. Nutzer manuell für Remote-Desktop (RDP) erlauben ([Terminal](https://de.wikipedia.org/wiki/Windows_Terminal))
+
+`Anleitung verfasst am 10.6.2025`
+
+`getestete Windows Version: Win11 24H2`
+
+- Dafür Terminal als Admin öffnen oder als Admin in Windows anmelden und Terminal öffnen.
+- Systemsprache püfen und entsprechnden Befehl nutzen oder Gruppenname anzeigen lassen und Befehl ggf. anpassen.
+
+
+### Befehle
+- Systemsprache auf `Englisch`:
+```
+$ net localgroup "Remote Desktop Users" "DTP\federico" /add
+```
+- Systemsprache auf `Deutsch`:
+```
+$ net localgroup "Remotedesktopbenutzer" "DTP\federico" /add
+```
+
+
+### Optional: Gruppennamen anzeigen lassen
+- [Terminal](https://de.wikipedia.org/wiki/Windows_Terminal):
+```
+$ net localgroup
+```
+
+- [PowerShell](https://de.wikipedia.org/wiki/PowerShell):
+```
+$ Get-LocalGroup
+```
 
 
 -----------------------------------------------------------------------------
