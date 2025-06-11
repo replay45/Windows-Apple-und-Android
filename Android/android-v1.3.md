@@ -1,6 +1,6 @@
 # Android
 
-`Anleitung erstellt am 20.8.2024, zuletzt bearbeitet am 12.1.2025`
+`Anleitung erstellt am 20.8.2024, zuletzt bearbeitet am 11.6.2025`
 
 
 # Inhaltsverzeichnis
@@ -25,7 +25,7 @@
 
 # 1. Entwicklermodus in den Einstellungen aktivieren (Samsung)
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 ### Disclaimer
 Die Nutzung des Entwicklermodus unter Android erfolgt auf eigene Gefahr !
@@ -66,7 +66,7 @@ Dort können z.B. Debugging Optionen genutzt werden.
 
 # 2. Sicherer Ordner (Samsung)
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 ### Was ist der [sichere Ordner](https://www.samsungknox.com/de/solutions/personal-apps/secure-folder) ?
 Der sichere Ordner ist ein Bereich auf Samsung-Smartphones, in dem man passwortgeschützt Dateien, Bilder, Videos usw. sicher speichern kann, ohne dass diese in der normalen Galerie oder im Dateimanager zu finden sind.
@@ -85,7 +85,7 @@ In den Einstellungen unter `Sicherheit & Datenschutz` -> `Weitere Sicherheitsein
 
 # 3. Gerätewartung & App-Sicherheit (Samsung)
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 ### Was ist die [Gerätewartung](https://www.samsung.com/de/support/mobile-devices/galaxy-geraetewartung/) ?
 
@@ -103,10 +103,32 @@ Auch im Google-Play-Store können Apps über PlayProtect geprüft werden.
 
 # 4. Akkuschutz
 
-`Zuletzt getestete Android-Version: 14 mit OneUI 6.1.1`
+### Android 15
+
+`Zuletzt getestete Android-Version: 15 mit OneUI 7.0`
 
 - Mit den Akkuschutz-Optionen, kann der Akku geschont werden.
-- Unter Android 14 kann man zwischen 3 Option auswählen.
+- Unter Android 15 kann man zwischen 3 Option (Standard, Adaptiv, Maximum) auswählen.
+
+- Aktivieren der Funktion:
+    - `Einstellungen` öffnen
+    - `Akku`
+    - `Akkuschutz`
+    - Nun den `Akkuschutz einschalten`
+    - `gewünschte Option` auswählen
+
+- Unter `Maximum` kann ausgewählt werden, ob das Aufladen bei 80%, 85%, 90% oder 95% beendet werden soll.
+
+- Einstellungen für das Aufladen
+    - Hier kann das `Schnellladen` aktiviert/deaktiviert werden.
+
+
+### Android 14
+
+`getestete Android-Version: 14 mit OneUI 6.1.1`
+
+- Mit den Akkuschutz-Optionen, kann der Akku geschont werden.
+- Unter Android 14 kann man zwischen 3 Option (Standard, Adaptiv, Maximum) auswählen.
 
 - Aktivieren der Funktion:
     - `Einstellungen` öffnen
@@ -124,7 +146,7 @@ Auch im Google-Play-Store können Apps über PlayProtect geprüft werden.
 
 # 5. Anzeige-Einstellungen 
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 - Um die Optionen bearbeiten zu können, die `Einstellungen` öffnen und unter den Reiter `Anzeige` wechseln.
 
@@ -150,7 +172,7 @@ Auch im Google-Play-Store können Apps über PlayProtect geprüft werden.
 
 # 6. Fenster anheften / App anheften (Samsung)
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 - Mit der Funktion App anheften, bei früheren Android Versionen auch als "Fenster anheften" bekannt, kann man eine App anheften und wenn man diese App verlassen will, muss das Gerät erneut entsperrt werden. Damit kann man jemand anderem sein Gerät geben, ohne dass dieser die App wieder verlassen kann und das Gerät durchsuchen kann.
 Wenn man daher die Funktion nutzt, ist man auf die angeheftete App beschränkt.
@@ -224,7 +246,7 @@ Am besten sichert man den Wiederherstellungsschlüssel in einem separaten Passwo
 
 # 7.b) [Samsung Account](https://v3.account.samsung.com/dashboard/intro) Einstellungen / Funktionen
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 ### Profilinfos / Geräte
 - Hier können Informationen angegeben werden und angemeldete Geräte verwaltet werden.
@@ -249,7 +271,7 @@ Am besten sichert man den Wiederherstellungsschlüssel in einem separaten Passwo
 
 ## 8. Intelligent Wi-Fi - Connectivity Labs (Samsung)
 
-`Zuletzt getestete Android-Version: 14`
+`Zuletzt getestete Android-Version: 14 / 15`
 
 ### Was sind die Connectivity Labs Funktionen in den "Intelligent Wi-Fi" Optionen ?
 Die Connectivity Labs Funktionen sind Netzwerkeinstellungen, zur Verbesserung und Analyse der Leistung, sowie Verbindungsqualität.
@@ -307,6 +329,8 @@ Im Benachrichtigungsverlauf werden Benachrichtigungen aufgezeichnet, um sie auch
 
 
 # 11. Animationen des Fingerabdrucksensors ausschalten (Samsung)
+
+`Zuletzt getestete Android-Version: 14 / 15`
 
 - Animationen des Fingerabdrucksensors ausschalten, um das Gerät schneller entsperren zu können.
 
