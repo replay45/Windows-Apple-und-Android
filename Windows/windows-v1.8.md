@@ -280,11 +280,11 @@ Außerdem kann separat eingestellt werden, was passieren soll, wenn der USB-Stic
 ### Befehle
 - Systemsprache auf `Englisch`:
 ```
-$ net localgroup "Remote Desktop Users" "DTP\federico" /add
+$ net localgroup "Remote Desktop Users" "domäne\user" /add
 ```
 - Systemsprache auf `Deutsch`:
 ```
-$ net localgroup "Remotedesktopbenutzer" "DTP\federico" /add
+$ net localgroup "Remotedesktopbenutzer" "domäne\user" /add
 ```
 
 
