@@ -9,7 +9,7 @@
 
 
 ### 1. ADMX/ADML Vorlagen
-- Offizielle Templates: [github.com/mozilla/policy-templates](https://learn.microsoft.com/de-de/windows/client-management/manage-notepad?tabs=intune#download-the-notepad-administrative-template-admx)
+- Offizielle Templates: [learn.microsoft.com](https://learn.microsoft.com/de-de/windows/client-management/manage-notepad?tabs=intune#download-the-notepad-administrative-template-admx)
 - cab-Datei extrhieren, danach zip entpacken
 - folgende Dateien aus dem Pfad werden benötigt:
 	- `WindowsNotepad.admx`
@@ -37,8 +37,12 @@
 	- Es sollte sich der Gruppenrichtlinienverwaltungs-Editor öffnen.
 
 - Im Gruppenrichtlinienverwaltungs-Editor
-	- `Computerkonfiguration` → `Richtlinien` `Administrative Vorlagen` → `Notepad`
+	- `Computerkonfiguration` -> `Richtlinien` -> `Administrative Vorlagen` -> `Notepad`
 	- Hier sind nun alle Vorlagen.
+
+- zurück zur `Gruppenrichtlinienverwaltung`
+	- Unter `Domain.local` -> `Domäne` auswählen, `Rechtsklick` und `vorhandenes Gruppenrichtlinienobjekt verknüpfen`
+	- Zum Verknüpfen das gewünschte Objekt auswählen
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -46,9 +50,7 @@
 
 # KI-Funktionen deaktivieren
 - Im Gruppenrichtlinienverwaltungs-Editor
-	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Editor` → `KI-Funktionen im Windows-Editor deaktivieren`
-	- `Rechtsklick`, `Bearbeiten`
-	- Kommentar hinzufügen
+	- `Computerkonfiguration` -> `Richtlinien` -> `Administrative Vorlagen` -> `Editor` -> `KI-Funktionen im Windows-Editor deaktivieren`
 	- `Aktiviert` auswählen
 	- `Übernehmen`, `OK`
 
