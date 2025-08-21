@@ -1,4 +1,4 @@
-# [Firefox](https://www.mozilla.org/de/firefox/new/) über Active Directory konfigurieren - Computerrichlinie
+# [Firefox](https://www.mozilla.org/de/firefox/new/) über Active Directory konfigurieren - Active Directory
 
 `Anleitung erstellt am 13.2.2025`
 
@@ -16,6 +16,7 @@
 	- Windows/firefox.admx
 	- Windows/de-DE/firefox.adml
 
+
 - Wofür sind die beiden Dateien ?
 	- firefox.admx → Enthält die eigentlichen Richtlinien (Regeln & Einstellungen).
 	- firefox.adml → Enthält die sprachspezifischen Beschreibungen für die Benutzeroberfläche
@@ -26,8 +27,6 @@
 	- Wenn der Ordner `PolicyDefinitions` in dem einzufügenden Pfad fehlt, einfach anlegen und innerhalb des Ordners den Ordner `de-DE` erstellen.
 	- Nach dem Herunterladen die `firefox.admx` in folgenden Pfad kopieren: `\\DomainController\SYSVOL\Domain\Policies\PolicyDefinitions\`
 	- Nach dem Herunterladen die `firefox.adml` in folgenden Pfad kopieren: `\\DomainController\SYSVOL\Domain\Policies\PolicyDefinitions\de-DE\`
-
-
 
 
 # 2. Gruppenrichtlinienverwaltung öffnen
@@ -44,6 +43,10 @@
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox`
 	- Hier sind nun alle Vorlagen.
 
+- zurück zur `Gruppenrichtlinienverwaltung`
+	- Unter `Domain.local` -> `Domäne` auswählen, `Rechtsklick` und `vorhandenes Gruppenrichtlinienobjekt verknüpfen`
+	- Zum Verknüpfen das gewünschte Objekt auswählen
+
 
 -------------------------------------------------------------------------------------------------------------
 
@@ -55,7 +58,6 @@
 - Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Erweiterungen`
 	- `Erweiterungen installieren`
-	- `Rechtsklick`, `Bearbeiten`
 	- Kommentar hinzufügen
 	- `Aktiviert` auswählen
 	- `Anzeigen`
@@ -67,7 +69,6 @@
 - Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Erweiterungen`
 	- `Erweiterungen mit JSON verwalten`
-	- `Rechtsklick`, `Bearbeiten`
 	- Kommentar hinzufügen
 	- `Aktiviert` auswählen
 	- Folgenden JSON Code einfügen und Platzhalter ersetzten
@@ -103,7 +104,7 @@
   }
 }
 ```
-
+- Parameter:
 	- `installation_mode`: `force_installed` erzwingt die Installation
 	- `install_url`: direkte URL zur XPI-Datei
 	- `private_browsing`: `allow` Erweiterung auch im privaten Modus aktiv
@@ -115,9 +116,9 @@
 
 - ID herausfinden
 	- Es gibt mehrere Möglichkeiten, die ID zu finden, nicht immer sind alle Möglichkeiten erfolgreich.
-	- Gesucht wird eine vom Entwickler vorgesehene feste ID, die in der manifest.json definiert sein sollte.
+	- Gesucht wird eine vom Entwickler vorgesehene feste ID, die in der `manifest.json` definiert sein sollte.
 	- Unter `about:debugging#/runtime/this-firefox` wird die Erweiterungs-ID benötigt.
-	- Wenn das nicht zu Erfolg führt, kann die auch aus der Manifest.json gelesen werden, dafür immer noch unter `about:debugging#/runtime/this-firefox` auf die `Manifest-Adresse klicken` und dort nach der ID suchen.
+	- Wenn das nicht zu Erfolg führt, kann die auch aus der `Manifest.json` gelesen werden, dafür immer noch unter `about:debugging#/runtime/this-firefox` auf die `Manifest-Adresse klicken` und dort nach der ID suchen.
 
 - Beispiel:
 	- Für [uBlock Origin](https://ublockorigin.com/de) ist die ID: uBlock0@raymondhill.net
@@ -128,10 +129,10 @@
 
 
 # 2. Lesezeichen per GPO hinzufügen (ohne vorhandene zu entfernen)
-- Im Gruppenrichtlinienverwaltungs-Editor
+- Lesezeichen hinzufügen
+	- Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Lesezeichen`
 	- Ein Lesezeichenslot auswählen, beginnend mit 01
-	- `Rechtsklick`, `Bearbeiten`
 	- Kommentar hinzufügen
 	- `Aktiviert` auswählen
 	- Titel, Adresse (http://... \ https://...) & ggf. Favicon Adresse eingeben
@@ -139,10 +140,9 @@
 	- `Übernehmen`, `OK`
 
 - Lesezeichenleiste immer anzeigen
-- Im Gruppenrichtlinienverwaltungs-Editor
+	- Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Lesezeichen-Symbolleiste anzeigen`
 	- `Windows-Zertifikatesspeicher benutzen`
-	- `Rechtsklick`, `Bearbeiten`
 	- Kommentar hinzufügen
 	- `Aktiviert` auswählen (Immer anzeigen)
 	- `Übernehmen`, `OK`
@@ -152,7 +152,6 @@
 - Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Zertifikate`
 	- `Windows-Zertifikatesspeicher benutzen`
-	- `Rechtsklick`, `Bearbeiten`
 	- Kommentar hinzufügen
 	- `Aktiviert` auswählen
 	- `Übernehmen`, `OK`
@@ -162,7 +161,6 @@
 - Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Alle Einstellungen`
 	- `Telemetrie deaktivieren`
-	- `Rechtsklick`, `Bearbeiten`
 	- `Aktiviert` auswählen
 
 
@@ -192,8 +190,9 @@
 	- `Aktiviert` auswählen
 
 
-# 7. Firefox-Konto deaktivieren
-- Im Gruppenrichtlinienverwaltungs-Editor
+# 7. Firefox-Konto-Funktion im Browser deaktivieren
+- Verhindern, dass Nutzer sich mit Firefox-Konto anmelden können
+	- Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox`
 	- `Firefox-Konto deaktivieren`
 	- `Aktiviert` auswählen
@@ -203,7 +202,6 @@
 - Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Tracking-Schutz`
 	- `Aktiviert`
-	- `Rechtsklick`, `Bearbeiten`
 	- `Aktiviert` auswählen
 
 - ggf. zusätzlich noch `Cryptomining`, `Fingerprinter` & `E-Mail-Verfolgung` Schutzeinstellungen `Aktivieren`, um Schutzeinstellungen im Browser auf "Benutzerdefiniert" zu setzen
@@ -216,7 +214,6 @@
 - Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Cookies`
 	- `Cookie-Verhalten`
-	- `Rechtsklick`, `Bearbeiten`
 	- `Aktiviert` auswählen
 	- Optionen: z.B. `Cookies von Drittanbietern ablehnen` wählen, um Third-Party-Cookies abzulehnen
 
@@ -229,13 +226,11 @@
 - Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Benutzer-Benachrichtigungen`
 	- `Mehr von Mozilla`
-	- `Rechtsklick`, `Bearbeiten`
 	- `Deaktiviert` auswählen
 
 - Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Benutzer-Benachrichtigungen`
 	- `Onboarding`
-	- `Rechtsklick`, `Bearbeiten`
 	- `Aktiviert` auswählen
 
 
@@ -243,7 +238,6 @@
 - Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Alle Einstellungen`
 	- `Automatische Updates`
-	- `Rechtsklick`, `Bearbeiten`
 	- `Aktiviert` auswählen
 
 
@@ -251,11 +245,23 @@
 - Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Alle Einstellungen`
 	- `Windows SSO`
-	- `Rechtsklick`, `Bearbeiten`
 	- `Deaktiviert` auswählen
 
 
+# 13. Nur HTTPS-Modus in Fireox aktivieren
+- Im Gruppenrichtlinienverwaltungs-Editor
+	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Alle Einstellungen`
+	- `Nur HTTPS-Modus`
+	- `Aktiviert` auswählen
+	- Empfohlen: `Standardmäßig eingeschaltet` oder `Eingeschaltet und gesperrt`
 
+
+# 14. Willkommensseite (Seite beim allerersten Start von Firefox)
+- Im Gruppenrichtlinienverwaltungs-Editor
+	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Firefox` → `Alle Einstellungen`
+	- `Willkommensseite ändern`
+	- `Aktiviert` auswählen
+	- URL zur gewünschten Seite einfügen
 
 
 -------------------------------------------------------------------------------------------------------------
