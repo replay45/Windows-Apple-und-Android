@@ -273,7 +273,7 @@ Außerdem kann separat eingestellt werden, was passieren soll, wenn der USB-Stic
 
 `getestete Windows Version: Win11 24H2`
 
-- Dafür Terminal als Admin öffnen oder als Admin in Windows anmelden und Terminal öffnen.
+- Dafür `Terminal` als `Admin` öffnen oder als Admin in Windows anmelden und Terminal öffnen.
 - Systemsprache püfen und entsprechnden Befehl nutzen oder Gruppenname anzeigen lassen und Befehl ggf. anpassen.
 
 
@@ -299,11 +299,17 @@ $ net localgroup
 $ Get-LocalGroup
 ```
 
+### Benutzer aus Remote Desktop Gruppe wieder entfernen
+- Systemsprache auf `Deutsch`:
+```
+$ net localgroup "Remotedesktopbenutzer" "domäne\user" /delete
+```
+
 
 -----------------------------------------------------------------------------
 
 
-# 11. Microsoft Edge auf Windows 10 deinstallieren
+# 12. Microsoft Edge auf Windows 10 deinstallieren
 
 ## WICHTIG - Der Beitrag ist nicht mehr aktuell !
 
