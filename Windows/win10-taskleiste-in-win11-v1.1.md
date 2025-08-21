@@ -25,7 +25,7 @@ Die Nutzung des Programms ist auf eigene Gefahr !
 
 ## a) Was ist [Windhawk](https://windhawk.net/) ?
 
-Windhawk ist ein open-Source Programm über das man Mods, die ebenfalls Open Source sind, installieren und verwalten kann, um Windows personalisieren und anpassen zu können.
+Windhawk ist ein [Open Source](https://de.wikipedia.org/wiki/Open_Source) Programm über das man Mods, die ebenfalls [Open Source](https://de.wikipedia.org/wiki/Open_Source) sind, installieren und verwalten kann, um Windows personalisieren und anpassen zu können.
 Man kann u.a. auch die Taskleiste und das Startmenü anpassen.
 Es ist außerdem möglich, Windhawk als portable Version zu nutzen.
 
