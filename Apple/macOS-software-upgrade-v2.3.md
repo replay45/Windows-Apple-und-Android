@@ -3,8 +3,7 @@
 - Aktuelle MacOS-Version auf einem älteren Mac installieren, um auch auf nicht mehr von Apple unterstützten Macs die aktuellen MacOS-Versionen nutzen zu können.
 
 
-`Getestet auf einem MacBookAir 6,1 - 13,3" (2013) mit MacOS BigSur als letzte offiziell unterstützte Version.
-Upgrade auf MacOS Sonoma erfolgreich durchgeführt.`
+`Getestet auf einem MacBookAir 6,1 - 13,3" (2013) mit MacOS BigSur als letzte offiziell unterstützte Version. - Upgrade auf MacOS Sonoma erfolgreich durchgeführt.`
 
 
 `Anleitung verfasst am 8.12.2023`
@@ -32,10 +31,9 @@ patched allerdings diese Stelle und somit kann danach auch eine inoffizielle Ver
 
 ## Disclaimer
 
-Das Upgrade erfolgt auf eigene Gefahr und der Autor der Anleitung haftet nicht für entstandene Schäden !
-Es ist nicht ausgeschlossen, dass es zu Datenverlust, Fehlern in MacOS oder Kompatibilitätsproblemen kommen könnte, 
-da das Upgrade inoffiziell durchgeführt wird.
-Daher empfiehlt es sich, nochmal zu überprüfen, ob jeglicher Support & Garantie für das entsprechende Gerät abgelaufen sind.
+- Die Verwendung des [OpenCore-Legacy-Patchers](https://dortania.github.io/OpenCore-Legacy-Patcher/START.html) und das Ausführen von Softwareupdates/Softwareupgrades erfolgt auf eigene Gefahr, der Autor der Anleitung haftet nicht für Schäden !
+- Es ist nicht ausgeschlossen, dass es zu Datenverlust, Fehlern in MacOS oder Kompatibilitätsproblemen kommen könnte, da das Upgrade inoffiziell durchgeführt wird.
+- Daher empfiehlt es sich, nochmal zu überprüfen, ob jeglicher Support & Garantie für das entsprechende Gerät abgelaufen sind.
 
 
 ----------------------------------------------------------------------------------------------------------------
@@ -44,11 +42,14 @@ Daher empfiehlt es sich, nochmal zu überprüfen, ob jeglicher Support & Garanti
 ## Software-Updates & Upgrades
 
 ### Software Upgrades
-Wenn ein weiteres MacOS-Upgrade durchgeführt werden soll (z.B. von MacOS 14 auf 15), muss dies wieder mit dem OpenCore-Legacy-Patcher geschehen. 
+Wenn ein weiteres MacOS-Upgrade durchgeführt werden soll (z.B. von MacOS 14 auf 15), muss dies wieder mit dem OpenCore-Legacy-Patcher geschehen.
 Dieser muss davor jedoch auch geupdatet werden.
 
 ### Software-Updates
-Auch wenn Software Updates innerhalb einer Version (z.B. von MacOS 14.1 auf 14.2.) in den meisten Fällen keine Probleme bereiten sollten, `empfiehlt` es sich jedoch trotzdem, diese `nur gewissenhaft zu installieren` und um Fehler zu vermeiden, sollten unbedingt die `automatischen Updates in den Einstellungen ausgeschaltet werden`.
+Auch wenn Software Updates innerhalb einer Version (z.B. von MacOS 14.1 auf 14.2.) in den meisten Fällen keine Probleme bereiten sollten, `empfiehlt` es sich jedoch trotzdem, diese `nur gewissenhaft zu installieren`.
+
+### automatische Updates deaktivieren
+- Grundsätzlich ist bei der Nutzung vom OpenCore-Legacy-Patcher empfohlen, `automatische Updates zu deaktivieren !`
 
 
 ----------------------------------------------------------------------------------------------------------------
@@ -148,3 +149,27 @@ Version kopieren und auf der verlinkten Kompatibilitätsliste prüfen.
 
 
 ----------------------------------------------------------------------------------------------------------------
+
+
+# 9. Software Updates und Upgrades
+1. OpenCore-Legacy-Patcher aktualisieren
+	- die Aktuelle Veriosn des OpenCore-Legacy-Patchers [herunterladen](https://dortania.github.io/OpenCore-Legacy-Patcher/START.html)
+	- Installer auspacken und installieren
+	- Der Patcher zeigt ggf. einen Hinweis, wenn der Bootloadre auch akltualisiert werden muss
+	- Danach `Build and Install OpenCore` wählen
+	- nun auf `Build OpenCore` klicken
+	- und zuletzt `Install OpenCore` auswählen
+	- Mac neu starten
+2. Software Update/Upgrade herunterladen
+	- entweder über die Systemsteuerung
+	- oder manuell über das Terminal.
+	- Anleitung zu den Terminal-Befehlen in diesem Ordner in der entsprechenden Anleitung
+3. Post-Install Root Patch (Treiber)
+	- OpenCore-Legacy-Patcher öffnen
+	- `Post-Install Root Patch` und danach `Start Root Patching` auswählen und mit `Yes` bestätigen.
+	- Nach dem erfolgreichen Patchen den Mac neu starten.
+4. Version überprüfen
+	- Links oben auf das Apple-Symbol klciken und `Über diesen Mac` auswählen.
+
+----------------------------------------------------------------------------------------------------------------
+
