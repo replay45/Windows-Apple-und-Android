@@ -5,6 +5,11 @@
 
 # Inhaltsverzeichnis
 1. Entwicklermodus in den Einstellungen aktivieren
+	- Was ist der Entwicklermodus ?
+	- Ausführliche WLAN-Protokollierung & Scan-Drosselung (Samsung)
+	- Animationsfaktor (Animationen im System verkürzen/deaktivieren)
+	- Einsehen der Aktiven Dienste (App RAM Nutzung einsehen)
+	- Logger Buffer Size / Logger-Puffergrößen
 2. Sicherer Ordner (Samsung)
 3. Gerätewartung & App-Sicherheit (Samsung)
 4. Akkuschutz
@@ -51,14 +56,32 @@ Dort können z.B. Debugging Optionen genutzt werden.
     - Um den Entwicklermodus zu deaktivieren, in die Entwickleroptionen gehen und den Regler auf `Aus` stellen.
 
 
-### nützliche Optionen aus dem Entwicklermodus (Samsung)
-- ausführliche WLAN-Protokollierung & Scan-Drosselung
-    - Mehr Details wie Verbindungsinformationen im WLAN-Menü anzeigen.
-    - Scan-Drosselung verbessert die Netzwerkleistung und spart Akkuladung.
+### Ausführliche WLAN-Protokollierung & Scan-Drosselung (Samsung)
+- Option `Ausführliche WLAN-Protokollierung & Scan-Drosselung` aktivieren
+- Dadurch werden mehr Details zu den Verbindungsinformationen im WLAN-Menü angezeigt, darunter z.B. `Rssi`.
+- `Scan-Drosselung`/ `Drosselung der WLAN Suche` verbessert die Netzwerkleistung und reduziert den Akkuverbrauch.
 
-- Animationsfaktor (Animationen im System verkürzen/deaktivieren)
-    - Unter `Fensteranimationsfaktor`, `Übergangsanimationsfaktor` & `Animationsdauerfaktor` können die Faktoren für die Animationen eingestellt werden. Mit `aus` werden die Animationen deaktiviert, was häufig bei älteren Geräten dafür sorgt, dass sich das Gerät etwas schneller anfühlt.
 
+### Animationsfaktor (Animationen im System verkürzen/deaktivieren)
+- Unter `Fensteranimationsfaktor`, `Übergangsanimationsfaktor` & `Animationsdauerfaktor` können die Faktoren für die Animationen eingestellt werden. Mit `aus` werden die Animationen deaktiviert, was häufig bei älteren Geräten dafür sorgt, dass sich das Gerät etwas schneller anfühlt.
+
+
+### Einsehen der Aktiven Dienste (App RAM Nutzung einsehen)
+- Aktive Dienste öffnen: zu `Aktive Dienste` scrollen
+- Informationen einsehen: Hier kann nun eingesehen werden, welche Dienste aktiv sind und wie viel RAM durch diese belegt wird. Diese können ggf. auch beendet werden.
+
+### Logger Buffer Size / Logger-Puffergrößen
+- Was ist Logger Buffer Size ?
+	- Die Logger Buffer Size bestimmt, wie viel RAM von Android für das Zwischenspeichern von Log-Medlungen im Logcat-Puffer reservieren darf.
+	- Im Log Buffer werden z.B. Debug, Fehler oder Warnmeldungen gespeichert, wenn der Puffer voll ist, werden ältere Einträge überschrieben
+
+- Wann den Puffer erhöhen ?
+	- Wenn Apps entwickelt werden, Fehler analysiert werden sollen oder Custom-ROMs, Rott-Modding genutzt werden, kann es sinnvoll sein, den Log Puffer zu erhöhen.
+	- Das Erhöhen des Puffers macht jedoch NICHT dierekt das Android-System performanter.
+
+- Wo kann man die Logger-Puffergrößen einstellen ?
+	- In den `Entwickleroptionen`, unter dem Reiter `Debugging` nach `Logger Buffer Size` (en) oder `Logger-Puffergrößen` (de) suchen.
+	- Entsprechende Puffergröße festlegen.
 
 
 -----------------------------------------------------------------------------------------------------------------
