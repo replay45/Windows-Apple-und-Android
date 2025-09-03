@@ -261,6 +261,8 @@
 - `Parameter fpr Funktion zur bildgesteuerten Suche für Standardsuchanbieter` -> Aktiviert
 - Wert: `entsprechender Wert`
 - z.B. Startpage: `https://www.startpage.com/images?q={searchTerms}`
+- z.B. Qwant: `https://www.qwant.com/search/images?q={searchTerms}`
+- z.B. DuckDuckGo: `https://duckduckgo.com/?q={searchTerms}&iax=images&ia=images`
 - z.B. Ecosia: `https://www.ecosia.org/images?q={searchTerms}`
 
 
@@ -288,7 +290,11 @@
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Google > Google Chrome > Standardsuchmaschine`
 - `Such-URL der Standardsuchmaschine` -> Aktiviert
-- Wert: z.B. `https://www.startpage.com/search?q={searchTerms}` oder `https://www.ecosia.org/search?q={searchTerms}`
+- Wert: `entsprechender Wert`
+- z.B. Startpage: `https://www.startpage.com/search?q={searchTerms}`
+- z.B. Qwant: `https://www.qwant.com/search?q={searchTerms}`
+- z.B. DuckDuckGo: `https://duckduckgo.com/?q={searchTerms}`
+- z.B. Ecosia: `https://www.ecosia.org/search?q={searchTerms}`
 
 
 ### Vorschlags-URL für die Standardsuchmaschine
