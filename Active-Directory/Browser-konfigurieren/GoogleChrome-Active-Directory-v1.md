@@ -80,12 +80,12 @@
 - `Verwaltungseinstellungen für Erweiterungen` -> Aktiviert
 - Wert (JSON-Code)
 
-- Beispielwert - Hinzufügen von Erweiterungen durch Nutzer nicht zulassen & Installation von [uBlockOrigin Light](https://ublockorigin.com/de) erzwingen:
+- Beispielwert - Hinzufügen von Erweiterungen durch Nutzer nicht zulassen & Installation von [uBlockOrigin Lite](https://ublockorigin.com/de) erzwingen:
 ```
 {"*":{"installation_mode":"blocked","blocked_install_message":"Die Installation von Erweiterungen ist nicht erlaubt."},"ddkjiahejlhfcafbddmgiahcphecmpfh":{"installation_mode":"force_installed","update_url":"https://clients2.google.com/service/update2/crx"}}
 ```
 
-- Beispielwert - Hinzufügen von Erweiterungen durch Nutzer nicht zulassen & Installation von [uBlockOrigin Light](https://ublockorigin.com/de) & dem [Privacy Badger](https://privacybadger.org/) erzwingen:
+- Beispielwert - Hinzufügen von Erweiterungen durch Nutzer nicht zulassen & Installation von [uBlockOrigin Lite](https://ublockorigin.com/de) & dem [Privacy Badger](https://privacybadger.org/) erzwingen:
 ```
 {"*":{"installation_mode":"blocked","blocked_install_message":"Die Installation von Erweiterungen ist nicht erlaubt."},"ddkjiahejlhfcafbddmgiahcphecmpfh":{"installation_mode":"force_installed","update_url":"https://clients2.google.com/service/update2/crx"},"pkehgijcmpdhfbdbbnkijodmdjhbjlgp":{"installation_mode":"force_installed","update_url":"https://clients2.google.com/service/update2/crx"}}
 ```
@@ -96,16 +96,16 @@
 - Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Google > Google Chrome > Erweiterungen`
 - `Zulassungsliste für Installation von Erweiterungen konfigurieren` -> Aktiviert
 - Wert: `entsprechene ID der Erweiterung`
-	- [Privacy Badger](https://privacybadger.org/): pkehgijcmpdhfbdbbnkijodmdjhbjlgp
-	- [uBlockOrigin Light](https://ublockorigin.com/de): ddkjiahejlhfcafbddmgiahcphecmpfh
-	- Dark Reader: eimadpbcbfnmbkopoojfekhnkhdbieeh
-	- Dark Mode: dmghijelimhndkbmpgbldicpogfkceaj
-	- KeePassXC-Browser: oboonakemofpalcgghocfoadofidjkkk
-	- ChromeKeePass: dphoaaiomekdhacmfoblfblmncpnbahm
-	- Bitwarden Passwortmanager: nngceckbapebfimnlniiiahkandclblb
-	- Startpage - Datenschutz-Suchmaschine: fgmjlmbojbkmdpofahffgcpkhkngfpef
-	- NoScript: doojmbjmlfjjnbmnoijecmcbfeoakpjm
-	- Canvas Blocker - Fingerprint Protect: nomnklagbgmgghhjidfhnoelnjfndfpd
+	- [Privacy Badger](https://chromewebstore.google.com/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp): pkehgijcmpdhfbdbbnkijodmdjhbjlgp
+	- [uBlockOrigin Lite](https://chromewebstore.google.com/detail/ublock-origin-lite/ddkjiahejlhfcafbddmgiahcphecmpfh): ddkjiahejlhfcafbddmgiahcphecmpfh
+	- [Dark Reader](https://chromewebstore.google.com/detail/dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh): eimadpbcbfnmbkopoojfekhnkhdbieeh
+	- [Dark Mode](https://chromewebstore.google.com/detail/dark-mode/dmghijelimhndkbmpgbldicpogfkceaj): dmghijelimhndkbmpgbldicpogfkceaj
+	- [KeePassXC-Browser](https://chromewebstore.google.com/detail/keepassxc-browser/oboonakemofpalcgghocfoadofidjkkk): oboonakemofpalcgghocfoadofidjkkk
+	- [ChromeKeePass](https://chromewebstore.google.com/detail/chromekeepass/dphoaaiomekdhacmfoblfblmncpnbahm): dphoaaiomekdhacmfoblfblmncpnbahm
+	- [Bitwarden Passwortmanager](https://chromewebstore.google.com/detail/bitwarden-password-manage/nngceckbapebfimnlniiiahkandclblb): nngceckbapebfimnlniiiahkandclblb
+	- [Startpage - Datenschutz-Suchmaschine](https://chromewebstore.google.com/detail/startpage-%E2%80%94-private-searc/fgmjlmbojbkmdpofahffgcpkhkngfpef): fgmjlmbojbkmdpofahffgcpkhkngfpef
+	- [NoScript](https://chromewebstore.google.com/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm): doojmbjmlfjjnbmnoijecmcbfeoakpjm
+	- [Canvas Blocker - Fingerprint Protect](https://chromewebstore.google.com/detail/canvas-blocker-fingerprin/nomnklagbgmgghhjidfhnoelnjfndfpd): nomnklagbgmgghhjidfhnoelnjfndfpd
 
 
 -------------------------------------------------------------------------------------------------------------
