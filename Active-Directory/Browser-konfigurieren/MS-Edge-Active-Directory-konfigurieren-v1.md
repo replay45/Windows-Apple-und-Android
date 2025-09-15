@@ -9,7 +9,7 @@
 
 
 ## MS-Edge zentral von allen Clients entfernen/ Ausführung des Programms verbieten
-- Wie der Microsoft Edge über GPO Richtlinie auf allen Clients deinstalliert werden kann oder die Ausführung für alle/nur bestimmte Benutzergruppen blockiert werden kann, wird in der Anleitung [MS-Edge über GPO Richtlinie deinstallieren](https://github.com/replay45/Windows-Apple-und-Android/tree/main/Active-Directory) erklärt.
+- Wie der Microsoft Edge über GPO Richtlinie auf allen Clients deinstalliert werden kann oder die Ausführung für alle/nur bestimmte Benutzergruppen blockiert werden kann, wird in der Anleitung [MS-Edge über GPO Richtlinie deinstallieren](https://github.com/replay45/Windows-Apple-und-Android/tree/main/Active-Directory/Browser-konfigurieren) erklärt.
 
 
 -------------------------------------------------------------------------------------------------------------
