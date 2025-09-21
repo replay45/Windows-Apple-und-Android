@@ -1,4 +1,4 @@
-# Brave über GPO-Richtlinien konfigurieren - Active Directory
+# [Brave](https://brave.com/) über GPO-Richtlinien konfigurieren - Active Directory
 
 `Anleitung verfasst am 14.9.2025`
 
