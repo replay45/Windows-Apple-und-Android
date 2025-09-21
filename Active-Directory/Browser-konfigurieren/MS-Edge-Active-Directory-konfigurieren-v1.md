@@ -1,4 +1,4 @@
-# MS-Edge über GPO Richtlinien konfigurieren - Active Directory
+# [MS-Edge](https://www.microsoft.com/de-de/edge/download?ch=1&form=MA13FJ) über GPO Richtlinien konfigurieren - Active Directory
 
 `Anleitung verfasst am 8.4.2025`
 
@@ -52,7 +52,7 @@
 
 
 ### Richtlinien in Edge überprüfen
-- Die Richtlinien können in Edge unter `chrome://policy` bzw. `edge://policy/` eingesehen werden.
+- Die Richtlinien können in Edge unter `chrome://policy` bzw. `edge://policy` eingesehen werden.
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -85,8 +85,9 @@
 	- ID+URL für die GPO muss nach folgendem Schema aussehen: `ErweiterungsID;https://edge.microsoft.com/extensionwebstorebase/v1/crx`
 
 - Beispiele:
-	- ErweiterungsID vom [uBlockOrigin Light](https://ublockorigin.com/de): `cimighlppcgcoapaliogpjjdehbnofhn;https://edge.microsoft.com/extensionwebstorebase/v1/crx`
+	- ErweiterungsID vom [uBlockOrigin Lite](https://ublockorigin.com/de): `cimighlppcgcoapaliogpjjdehbnofhn;https://edge.microsoft.com/extensionwebstorebase/v1/crx`
 	- ErweiterungsID vom [Privacy Badger](https://privacybadger.org/): `mkejgcgkdlddbggjhhflekkondicpnop;https://edge.microsoft.com/extensionwebstorebase/v1/crx`
+	- ErweiterungsID vom - [Canvas Blocker - Fingerprint Protect](https://microsoftedge.microsoft.com/addons/detail/canvas-blocker-fingerpr/ahiddppepedlomdleppkbljnmkchlmdc?hl=de): `ahiddppepedlomdleppkbljnmkchlmdc;https://edge.microsoft.com/extensionwebstorebase/v1/crx`
 
 
 - Gruppenrichtlinien-Editor öffnen
@@ -109,7 +110,7 @@
 - Wert: `Verfügbarkeit des Entwicklermodus auf der Erweiterungsseite steuern`
 
 
-### Hinzufügen von Erweiterungen nicht zulassen
+### Hinzufügen von Erweiterungen durch Nutzer nicht zulassen
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Microsoft Edge > Erweiterungen`
 - `Einstellungen für Erweiterungsverwaltung konfigurieren` -> Aktiviert
@@ -119,6 +120,22 @@
 ```
 {"*":{"installation_mode":"blocked","blocked_install_message":"Die Installation von Erweiterungen ist nicht erlaubt. Bitte wenden Sie sich an den Administrator."}}
 ```
+
+### Installation bestimmter Erweiterungen zulassen (whitelist) 
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Microsoft Edge > Erweiterungen`
+- `Installation bestimmter Erweiterungen zulassen` -> Aktiviert
+- Wert: `entsprechene ID der Erweiterung`
+	- [Privacy Badger](https://microsoftedge.microsoft.com/addons/detail/privacy-badger/mkejgcgkdlddbggjhhflekkondicpnop?hl=de): mkejgcgkdlddbggjhhflekkondicpnop
+	- [uBlockOrigin Lite](https://microsoftedge.microsoft.com/addons/detail/ublock-origin-lite/cimighlppcgcoapaliogpjjdehbnofhn?hl=de): cimighlppcgcoapaliogpjjdehbnofhn
+	- [Dark Reader](https://microsoftedge.microsoft.com/addons/detail/dark-reader/ifoakfbpdcdoeenechcleahebpibofpc?hl=de): ifoakfbpdcdoeenechcleahebpibofpc
+	- [Dark Mode](https://microsoftedge.microsoft.com/addons/detail/dark-mode/boldmdfoencgjfblcelefkjfafmpiahm?hl=de): boldmdfoencgjfblcelefkjfafmpiahm
+	- [KeePassXC-Browser](https://microsoftedge.microsoft.com/addons/detail/keepassxcbrowser/pdffhmdngciaglkoonimfcmckehcpafo?hl=de): pdffhmdngciaglkoonimfcmckehcpafo
+	- [EdgeKeePass](https://microsoftedge.microsoft.com/addons/detail/edgekeepass/jnhjknbfnclancjpknceboifoegiompf?hl=de): jnhjknbfnclancjpknceboifoegiompf
+	- [Bitwarden Passwortmanager](https://microsoftedge.microsoft.com/addons/detail/bitwarden-passwortmanager/jbkfoedolllekgbhcbcoahefnbanhhlh?hl=de): jbkfoedolllekgbhcbcoahefnbanhhlh
+	- [Startpage - Datenschutz-Suchmaschine](https://microsoftedge.microsoft.com/addons/detail/startpage-%E2%80%94-datenschutzs/jogphcaagccljpbnoddeknjjngefidmm?hl=de): jogphcaagccljpbnoddeknjjngefidmm?
+	- [NoScript](https://microsoftedge.microsoft.com/addons/detail/noscript/debdhlbmgmkkfjpcglcbjadbhhekgfjh?hl=de): debdhlbmgmkkfjpcglcbjadbhhekgfjh
+	- [Canvas Blocker - Fingerprint Protect](https://microsoftedge.microsoft.com/addons/detail/canvas-blocker-fingerpr/ahiddppepedlomdleppkbljnmkchlmdc?hl=de): ahiddppepedlomdleppkbljnmkchlmdc
 
 
 -------------------------------------------------------------------------------------------------------------
