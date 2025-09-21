@@ -1,4 +1,4 @@
-# Google-Chrome über GPO-Richtlinien konfigurieren - Active Directory
+# [Google-Chrome](https://www.google.com/chrome/) über GPO-Richtlinien konfigurieren - Active Directory
 
 `Anleitung verfasst am 2.9.2025`
 
