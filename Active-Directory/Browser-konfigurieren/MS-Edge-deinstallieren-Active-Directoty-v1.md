@@ -1,4 +1,4 @@
-# MS-Edge über GPO Richtlinie deinstallieren - Active Directory
+# [MS-Edge](https://www.microsoft.com/de-de/edge/download?ch=1&form=MA13FJ) über GPO Richtlinie deinstallieren - Active Directory
 
 `Anleitung verfasst am 2.9.2025`
 
