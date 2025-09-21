@@ -1,4 +1,4 @@
-# Windows Updates über Active Directory konfigurieren
+# Windows Update-Richtlinien über Active Directory konfigurieren
 
 `Anleitung verfasst am 25.6.2025`
 
