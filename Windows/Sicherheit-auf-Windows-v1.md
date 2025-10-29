@@ -22,7 +22,7 @@
 ### Datenschutz & Tracking
 - Datenminimierung: Nur personenbezogene Daten angeben, wenn unbedingt notwendig.
 - Man sollte sich nur in online-Accounts einloggen, wenn notwendig.
-- Die `Werbe-ID löschen` & `personalisierte Werbung deaktivieren`, um Tracking zu minimieren und zu erschweren.
+- Die `Werbe-ID löschen` & `personalisierte Werbung deaktivieren`, um Tracking zu minimieren.
 - Cloud-Dienste meiden - eigene Cloud, wie Nextcloud oder NAS im Heimnetz nutzen.
 - Sichere und datenschutzfreundliche DNS-Server nutzen.
 
@@ -30,7 +30,8 @@
 - Acht geben, auf was im Internet heruntergeladen wird und welche Webseiten besucht werden.
 - Einen sicheren Browser, wie [Firefox](https://www.mozilla.org/de/firefox/new/) oder den [Brave-Browser](https://brave.com/de/) verwenden.
 - Browser datenschutzfreundlich einstellen und Cookies von Dritt-Anbietern blockieren.
-- AdBlocker verwenden - [uBlock Origin](https://ublockorigin.com/de)
+- Datenschutzorientierte Suchmaschine verwenden, z.B. [Startpage](https://www.startpage.com/), [DuckDuckGo](https://duckduckgo.com/) oder [Ecosia](https://www.ecosia.org/)
+- AdBlocker verwenden - [uBlock Origin](https://ublockorigin.com/de) & [Privacy Badger](https://privacybadger.org/)
 
 ### E-Mail
 - Vorsicht vor Scam-E-Mails und schädlichen Anhängen.
@@ -47,12 +48,12 @@
 - Nicht mehr benötigte Programme entfernen.
 - Backups erstellen.
 
-### Betriebsystem spezifisch (Windows)
+### Betriebssystem spezifisch (hier Windows)
 - Keine unbekannten Befehle im Terminal ausführen.
 - Ein lokales Nutzerkonto verwenden - KEIN Microsoft-Konto nutzen, um Cloudzwang und Tracking zu minimieren ! 
 
 
-#### Mehr zu `sicher & anonym im Internet surfen` unter [ethical hacking & Cyber Security/Cyber-Security/anonym & sicher im Internet surfen](https://github.com/replay45/ethical-hacking-und-cybersecurity/tree/main/browser-%26-sicher-surfen)
+#### Mehr zu `sicher-&-datenschutzorientiert-surfen` unter [ethical hacking & Cyber Security/Cyber-Security/sicher-&-datenschutzorientiert-surfen](https://github.com/replay45/ethical-hacking-und-cybersecurity/tree/main/cyber-security)
 
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
