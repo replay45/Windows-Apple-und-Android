@@ -1,6 +1,6 @@
 # Sicherheit auf Android
 
-`Anleitung erstellt am 8.12.2024, zuletzt bearbeitet am 11.6.2025`
+`Anleitung erstellt am 8.12.2024, zuletzt bearbeitet am 29.10.2025`
 
 ## Inhaltsverzeichnis
 1. grundlegende Sicherheitstipps
@@ -23,43 +23,49 @@
 
 
 # 1. grundlegende Sicherheitstipps
-- die Grundlagen & allgemeies Verhalten
-    - Absolute Sicherheit gibt es nie ! - Aufklärung ist der beste Schutz !
-    - Man sollte immer den gesunden Menschenverstand einschalten.
-    - Ein gewisses Maß an Skepsis ist immer gut.
-    - Sicherung von Systemen gegen Diebstahl oder Manipulationen.
-    - Keine unbekannten/ vermeindlich gefundenen USB-Sticks verwenden !
 
-- Datenschutz & Tracking
-    - Datenminimierung: Nur personenbezogene Daten angeben, wenn unbedingt notwendig.
-    - Man sollte sich nur in online-Accounts einloggen, wenn notwendig.
-    - Die `Werbe-ID löschen` & `personalisierte Werbung deaktivieren`, um Tracking zu minimieren und zu erschweren.
-    - Cloud-Dienste meiden - eigene Cloud oder [NAS (Homeserver)](https://de.wikipedia.org/wiki/Network_Attached_Storage) nutzen.
-    - Sichere und datenschutzfreundliche DNS-Server nutzen.
+### die Grundlagen & allgemeies Verhalten
+- Absolute Sicherheit gibt es nie ! - Aufklärung ist der beste Schutz !
+- Man sollte immer den gesunden Menschenverstand einschalten.
+- Ein gewisses Maß an Skepsis ist immer gut.
+- Sicherung von Systemen gegen Diebstahl oder Manipulationen.
+- Keine unbekannten/ vermeindlich gefundenen USB-Sticks verwenden !
 
-- Browser & Verhalten im Internet
-    - Acht geben, auf was im Internet heruntergeladen wird und welche Webseiten besucht werden.
-    - Einen sicheren Browser, wie [Firefox](https://www.mozilla.org/de/firefox/new/) oder den [Brave-Browser](https://brave.com/de/) verwenden.
-    - Browser datenschutzfreundlich einstellen und Cookies von Dritt-Anbietern blockieren.
-    - AdBlocker verwenden - [uBlock Origin](https://ublockorigin.com/de)
+### Datenschutz & Tracking
+- Datenminimierung: Nur personenbezogene Daten angeben, wenn unbedingt notwendig.
+- Man sollte sich nur in online-Accounts einloggen, wenn notwendig.
+- Die `Werbe-ID löschen` & `personalisierte Werbung deaktivieren`, um Tracking zu minimieren.
+- Cloud-Dienste meiden - eigene Cloud, wie Nextcloud oder NAS im Heimnetz nutzen.
+- Sichere und datenschutzfreundliche DNS-Server nutzen.
 
-- E-Mail
-    - Vorsicht vor Scam-E-Mails und schädlichen Anhängen.
-    - Einen sicheren E-Mail-Client ohne Tracker nutzen - [Thunderbird](https://www.thunderbird.net/de/) & [K-9](https://k9mail.app/).
+### Browser & Verhalten im Internet
+- Acht geben, auf was im Internet heruntergeladen wird und welche Webseiten besucht werden.
+- Einen sicheren Browser, wie [Firefox](https://www.mozilla.org/de/firefox/new/) oder den [Brave-Browser](https://brave.com/de/) verwenden.
+- Browser datenschutzfreundlich einstellen und Cookies von Dritt-Anbietern blockieren.
+- Datenschutzorientierte Suchmaschine verwenden, z.B. [Startpage](https://www.startpage.com/), [DuckDuckGo](https://duckduckgo.com/) oder [Ecosia](https://www.ecosia.org/)
+- AdBlocker verwenden - [uBlock Origin](https://ublockorigin.com/de) & [Privacy Badger](https://privacybadger.org/)
 
-- Authentifizierung & Verschlüsselung
-    - Festplatten-/ Geräteverschlüsselung aktivieren & Passwortsperre nutzen.
-    - Passwortmanager mit starken Passwörtern nutzen - empfohlen: [KeePassXC](https://keepassxc.org/) oder [BitWarden](https://bitwarden.com/de-de/)
-    - 2‑Faktor-Authentifizierung nutzen - [2FAS](https://2fas.com/)
+### E-Mail
+- Vorsicht vor Scam-E-Mails und schädlichen Anhängen.
+- Einen sicheren E-Mail-Client ohne Tracker nutzen - [Thunderbird](https://www.thunderbird.net/de/) & [K-9](https://k9mail.app/).
 
-- Software & Daten schützen
-    - [Open Source](https://de.wikipedia.org/wiki/Open_Source) Software bevorzugen.
-    - Regelmäßiges Installieren von Updates.
-    - Nicht mehr benötigte Programme entfernen.
-    - Backups erstellen.
-    - Keine unbekannten Befehle in einem Terminal (wie z.B. [Termux](https://termux.dev/en/)) ausführen.
+### Authentifizierung & Verschlüsselung
+- Festplatten-/ Geräteverschlüsselung aktivieren & Passwortsperre nutzen.
+- Passwortmanager mit starken Passwörtern nutzen - empfohlen: [KeePassXC](https://keepassxc.org/) oder [BitWarden](https://bitwarden.com/de-de/)
+- 2‑Faktor-Authentifizierung nutzen - [2FAS](https://2fas.com/)
 
-- Mehr zu `sicher & anonym im Internet surfen` unter [ethical hacking & Cyber Security/Cyber-Security/anonym & sicher im Internet surfen](https://github.com/replay45/ethical-hacking-und-cybersecurity/tree/main/cyber-security)
+### Software & Daten schützen
+- [Open Source](https://de.wikipedia.org/wiki/Open_Source) Software bevorzugen.
+- Regelmäßiges Installieren von Updates.
+- Nicht mehr benötigte Programme entfernen.
+- Backups erstellen.
+
+### Betriebssystem spezifisch (hier Android)
+- Passwortsperre nutzen (zur automatischen Geräteverschlüsselung bei Android).
+- Keine unbekannten Befehle in einem Terminal (wie z.B. [Termux](https://termux.dev/en/)) ausführen.
+
+
+#### Mehr zu `sicher-&-datenschutzorientiert-surfen` unter [ethical hacking & Cyber Security/Cyber-Security/sicher-&-datenschutzorientiert-surfen](https://github.com/replay45/ethical-hacking-und-cybersecurity/tree/main/cyber-security)
 
 
 -----------------------------------------------------------------------------------------------------------------
