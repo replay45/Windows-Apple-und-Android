@@ -9,14 +9,15 @@
 
 -------------------------------------------------------------------------------------------------------------
 
+
 ## Ziel dieser Anleitung
 - Ziel ist es Standardprogramme bei der Erstanmeldung eines Active Directory Benutzers zu setzen, z.B. den von der Organisation vorgeschriebenen/empfohlenen Browser.
-- Nutzer können diese nach der Anmeldung natürlich in ihrem eigenen Profil ändern
-- Funktioniert auch mit Windows 11 Pro
+- Nutzer können die gesetzten Stanardprogramme nach der Anmeldung natürlich in ihrem eigenen Profil ändern.
+- Funktioniert auch mit Windows 11 Pro.
 
 ## Einschränkungen
-- Die Richtlinie wird nur angewendet, wenn sich ein Nutzer das erste mal auf dem Client mit seinem Active-Directory-Benutzer anmeldet !
-- Bei bestehenden Profilen, auf Clietns ist diese Richtlinie wirkungslos !
+- Die Richtlinie wird `nur angewendet`, wenn sich ein `Nutzer das erste Mal` auf dem Client mit seinem Active-Directory-Benutzer `anmeldet` !
+- Bei bestehenden Profilen, (auf den Clients im AD) ist diese Richtlinie wirkungslos !
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -35,6 +36,7 @@ $ Dism /Online /Export-DefaultAppAssociations:C:\StandardApps.xml
 ### 2. xml-Datei ggf. bearbeiten
 - xml-Datei mit Editor öffnen und ggf. einige Zeilen löschen, wenn ein gesetztes Programm gar nicht auf allen Clients installiert ist, oder nicht als Standard gesetzt werden soll.
 - speichern
+- Beispiel XML-Vorlage ist unten zu finden.
 
 
 ### 3. xml-Datei auf Active-Directory-Server speichern
@@ -75,5 +77,25 @@ $ gpupdate /force
 - Prüfen ob entsprechende Programme als Standard gesetzt wurden.
 
 
+### 6. Beispiel XML-Vorlage
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<DefaultAssociations>
+  <Association Identifier=".htm" ProgId="FirefoxHTML-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier=".html" ProgId="FirefoxHTML-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier=".mht" ProgId="Applications\firefox.exe" ApplicationName="Firefox" />
+  <Association Identifier=".mhtml" ProgId="Applications\firefox.exe" ApplicationName="Firefox" />
+  <Association Identifier=".pdf" ProgId="FirefoxPDF-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier=".shtml" ProgId="FirefoxHTML-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier=".svg" ProgId="FirefoxHTML-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier=".xht" ProgId="FirefoxHTML-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier=".xhtml" ProgId="FirefoxHTML-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier=".xml" ProgId="Applications\firefox.exe" ApplicationName="Firefox" />
+  <Association Identifier="http" ProgId="FirefoxURL-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier="https" ProgId="FirefoxURL-308046B0AF4A39CB" ApplicationName="Firefox" />
+</DefaultAssociations>
+```
+
 -------------------------------------------------------------------------------------------------------------
 
+- Für Libre Offce muss xml manuell erstellt werden
