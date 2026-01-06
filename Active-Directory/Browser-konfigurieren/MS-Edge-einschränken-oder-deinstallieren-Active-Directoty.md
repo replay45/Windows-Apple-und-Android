@@ -122,7 +122,7 @@
 -------------------------------------------------------------------------------------------------------------
 
 
-# um MS-Edge einzuschränken ("Kiosk-Modus" selber bauen)
+# um MS-Edge einzuschränken: "Kiosk-Modus" selber bauen
 
 - Um den MS-Edge einzuschränken, können folgende Richtlinien verwendet werden:
     - `InPrivate-Modus deaktivieren` > Der Private Modus sollte deaktiviert werden, damit Nutzer nicht den Privaten Modus verweden können, um die Einschränkungen zu umgehen.
@@ -156,7 +156,7 @@
 ### Alle Domains blockieren/bestimmte Domains blockieren - URL-Blocklist
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Microsoft Edge`
-- `` -> Aktiviert
+- `Zugriff auf eine Liste von URLs blockieren` -> Aktiviert
 - Wert: `*` um ALLE Domains zu blockieren, um bestimmte Domains zu erlauben die Richtlinie `Liste zulässiger URLs` verwenden
 - Wert: `entsprechende URL... z.B. "Domain.de"` um nur bestimmte Domains auf die Blacklist zu setzen
 
