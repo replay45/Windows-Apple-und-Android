@@ -1,6 +1,6 @@
 # [MS-Edge](https://www.microsoft.com/de-de/edge/download?ch=1&form=MA13FJ) über GPO Richtlinien konfigurieren - Active Directory
 
-`Anleitung verfasst am 8.4.2025`
+`Anleitung verfasst am 8.4.2025, zuletzt bearbeitet am 6.1.2026`
 
 `Windows-Server - Active Directory`
 
@@ -9,7 +9,10 @@
 
 
 ## MS-Edge zentral von allen Clients entfernen/ Ausführung des Programms verbieten
-- Wie der Microsoft Edge über GPO Richtlinie auf allen Clients deinstalliert werden kann oder die Ausführung für alle/nur bestimmte Benutzergruppen blockiert werden kann, wird in der Anleitung [MS-Edge über GPO Richtlinie deinstallieren](https://github.com/replay45/Windows-Apple-und-Android/tree/main/Active-Directory/Browser-konfigurieren) erklärt.
+
+- Wie der Microsoft Edge über GPO Richtlinie auf allen Clients `deinstalliert` oder in eine `Art "Kiosk-Modus"` versetzt werden kann, wird in der Anleitung [MS-Edge einschränken oder deinstallieren](https://github.com/replay45/Windows-Apple-und-Android/tree/main/Active-Directory/Browser-konfigurieren) erklärt.
+
+- Wie man die Ausführung bestimmter Programme verhindern kann, wird in der Anleitung [Ausführung-von-Programmen-verhindern](https://github.com/replay45/Windows-Apple-und-Android/tree/main/Active-Directory/Software-%26-Programme) erklärt.
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -136,6 +139,13 @@
 	- [Startpage - Datenschutz-Suchmaschine](https://microsoftedge.microsoft.com/addons/detail/startpage-%E2%80%94-datenschutzs/jogphcaagccljpbnoddeknjjngefidmm?hl=de): jogphcaagccljpbnoddeknjjngefidmm?
 	- [NoScript](https://microsoftedge.microsoft.com/addons/detail/noscript/debdhlbmgmkkfjpcglcbjadbhhekgfjh?hl=de): debdhlbmgmkkfjpcglcbjadbhhekgfjh
 	- [Canvas Blocker - Fingerprint Protect](https://microsoftedge.microsoft.com/addons/detail/canvas-blocker-fingerpr/ahiddppepedlomdleppkbljnmkchlmdc?hl=de): ahiddppepedlomdleppkbljnmkchlmdc
+
+
+### Privaten-Modus deaktivieren (da Erweiterungen standardmäßig nicht im privaten Modus aktiv sind)
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Microsoft Edge`
+- `Verwaltbarkeit des InPrivate-Modus konfigurieren` -> Aktiviert
+- Wert: `InPrivate-Modus deaktiviert`
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -414,6 +424,12 @@
 - `Microsoft Defender SmartScreen konfigurieren` -> Aktiviert
 
 
+### Teilen von Webseiten vom Smartphone zum Desktop
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Microsoft Edge`
+- `Hochladen von Dateien von Mobilgeräten in Microsoft Edge-Desktop aktivieren` -> Deaktiviert
+
+
 -------------------------------------------------------------------------------------------------------------
 
 
@@ -504,6 +520,13 @@ oder
 - `Aktiviert das Microsoft Edge Minimenü` -> Deaktiviert
 
 
+### URL zur "neue Tabseite" konfigurieren
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Microsoft Edge > Start, Startseite und neue Tabs`
+- `URL für die neue Tabseite konfigurieren` -> Aktiviert
+- Wert: Die entsprechende URL zur gewünschten Webseite
+
+
 -------------------------------------------------------------------------------------------------------------
 
 
@@ -527,29 +550,24 @@ oder
 - `Suchmaschienen verwalten` -> Aktiviert
 - Wert:
 
-Startpage:
+[Startpage](https://www.startpage.com/):
 ```
 [{"encoding":"UTF-8","is_default":true,"keyword":"startpage.com","name":"Startpage","search_url":"https://www.startpage.com/do/dsearch?query={searchTerms}","suggest_url":"https://www.startpage.com/do/suggest?q={searchTerms}"}]
 ```
 
-Qwant:
+[Qwant](https://www.qwant.com/):
 ```
 [{"encoding":"UTF-8","is_default":true,"keyword":"qwant.com","name":"Qwant","search_url":"https://www.qwant.com/?q={searchTerms}","suggest_url":"https://api.qwant.com/api/suggest/?q={searchTerms}"}]
 ```
 
-DuckDuckGo:
+[DuckDuckGo](https://duckduckgo.com/):
 ```
 [{"encoding":"UTF-8","is_default":true,"keyword":"duckduckgo.com","name":"DuckDuckGo","search_url":"https://duckduckgo.com/?q={searchTerms}","suggest_url":"https://duckduckgo.com/ac/?q={searchTerms}"}]
 ```
 
-Ecosia:
+[Ecosia](https://www.ecosia.org/):
 ```
 [{"encoding":"UTF-8","is_default":true,"keyword":"ecosia.org","name":"Ecosia","search_url":"https://www.ecosia.org/search?q={searchTerms}","suggest_url":"https://ac.ecosia.org/autocomplete?q={searchTerms}"}]
-```
-
-Google:
-```
-[{"encoding":"UTF-8","is_default":true,"keyword":"google.com","name":"Google","search_url":"https://www.google.com/search?q={searchTerms}","suggest_url":"https://www.google.com/complete/search?output=firefox&q={searchTerms}"}]
 ```
 
 
@@ -569,6 +587,12 @@ Google:
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Microsoft Edge`
 - `Zusätzliches Suchfeld im Browser aktivieren` -> Deaktiviert
+
+
+### Browserdaten aus MS-Edge in der Suchlesite in der Taskleiste
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Microsoft Edge`
+- `Windows die Suche nach lokalen Microsoft Edge Browserdaten ermöglichen` -> Deaktiviert
 
 
 -------------------------------------------------------------------------------------------------------------
