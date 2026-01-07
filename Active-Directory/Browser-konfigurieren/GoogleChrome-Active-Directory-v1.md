@@ -1,6 +1,6 @@
 # [Google-Chrome](https://www.google.com/chrome/) über GPO-Richtlinien konfigurieren - Active Directory
 
-`Anleitung verfasst am 2.9.2025`
+`Anleitung verfasst am 2.9.2025, zuletzt bearbeitet am 6.1.2026`
 
 `Windows-Server - Active Directory`
 
@@ -106,6 +106,13 @@
 	- [Startpage - Datenschutz-Suchmaschine](https://chromewebstore.google.com/detail/startpage-%E2%80%94-private-searc/fgmjlmbojbkmdpofahffgcpkhkngfpef): fgmjlmbojbkmdpofahffgcpkhkngfpef
 	- [NoScript](https://chromewebstore.google.com/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm): doojmbjmlfjjnbmnoijecmcbfeoakpjm
 	- [Canvas Blocker - Fingerprint Protect](https://chromewebstore.google.com/detail/canvas-blocker-fingerprin/nomnklagbgmgghhjidfhnoelnjfndfpd): nomnklagbgmgghhjidfhnoelnjfndfpd
+
+
+### Inkognitomodus deaktivieren (da Erweiterungen standardmäßig nicht im Inkognitomodus aktiv sind)
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Google > Google Chrome`
+- `Inkognitomodus - Verfügbarkeit` -> Aktiviert
+- Wert: `Inkognitomodus deaktiviert`
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -289,10 +296,10 @@
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Google > Google Chrome > Standardsuchmaschine`
 - `Parameter für Funktion zur bildgesteuerten Suche für Standardsuchanbieter` -> Aktiviert
 - Wert: `entsprechender Wert`
-- z.B. Startpage: `https://www.startpage.com/images?q={searchTerms}`
-- z.B. Qwant: `https://www.qwant.com/search/images?q={searchTerms}`
-- z.B. DuckDuckGo: `https://duckduckgo.com/?q={searchTerms}&iax=images&ia=images`
-- z.B. Ecosia: `https://www.ecosia.org/images?q={searchTerms}`
+- z.B. [Startpage](https://www.startpage.com/): `https://www.startpage.com/images?q={searchTerms}`
+- z.B. [Qwant](https://www.qwant.com/): `https://www.qwant.com/search/images?q={searchTerms}`
+- z.B. [DuckDuckGo](https://duckduckgo.com/): `https://duckduckgo.com/?q={searchTerms}&iax=images&ia=images`
+- z.B. [Ecosia](https://www.ecosia.org/): `https://www.ecosia.org/images?q={searchTerms}`
 
 
 ### Standardsuchmaschine aktivieren
@@ -320,10 +327,10 @@
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Google > Google Chrome > Standardsuchmaschine`
 - `Such-URL der Standardsuchmaschine` -> Aktiviert
 - Wert: `entsprechender Wert`
-- z.B. Startpage: `https://www.startpage.com/search?q={searchTerms}`
-- z.B. Qwant: `https://www.qwant.com/search?q={searchTerms}`
-- z.B. DuckDuckGo: `https://duckduckgo.com/?q={searchTerms}`
-- z.B. Ecosia: `https://www.ecosia.org/search?q={searchTerms}`
+- z.B. [Startpage](https://www.startpage.com/): `https://www.startpage.com/search?q={searchTerms}`
+- z.B. [Qwant](https://www.qwant.com/): `https://www.qwant.com/search?q={searchTerms}`
+- z.B. [DuckDuckGo](https://duckduckgo.com/): `https://duckduckgo.com/?q={searchTerms}`
+- z.B. [Ecosia](https://www.ecosia.org/): `https://www.ecosia.org/search?q={searchTerms}`
 
 
 ### Vorschlags-URL für die Standardsuchmaschine
@@ -573,6 +580,58 @@
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Google > Google Chrome`
 - `Websites erlauben, verfügbare Zahlungsmethoden abzufragen.` -> Deaktiviert
+
+
+-------------------------------------------------------------------------------------------------------------
+
+
+# um Google Chrome einzuschränken: "Kiosk-Modus" selber bauen
+
+- Um den Google Chrome einzuschränken, können folgende Richtlinien verwendet werden:
+    - `Inkognitomodus deaktivieren` > Der Private Modus sollte deaktiviert werden, damit Nutzer nicht den Privaten Modus verweden können, um die Einschränkungen zu umgehen.
+    - `URL für die neue Tabseite konfigurieren` > Legt die Seite fest, die beim Öffnen des Browsers erscheint.
+    - `leere Suchmaschine hinzufügen` > Da man die Adressleiste in Google Chrome nicht so wie in MS-Edge deaktivieren/Sperren kann, kann man als Alternative eine "leere" Suchmaschine hinzufügen, da man in Chromium-basierten Browsern mindestens eine "Suchmaschine" benötigt. Durch die "leere"-Suchmaschine können keine Suchanfragen verarbeitet werden, da ja keine echte Suchmaschine, sondern nur ein Platzhalter eingestellt ist.
+    - `Alle Domains blockieren/bestimmte Domains blockieren` > Damit können entweder alle Domains oder nur bestimmte Domains blockiert werden.
+    - `Nur bestimmte Websites zulassen - Liste zulässiger URLs` > Hier können dann z.B. erlaubte Seiten, wie Seiten aus dem Intranet oder Seiten der Organisation etc. eingetragen werden.
+
+
+### Inkognitomodus deaktivieren
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Google > Google Chrome`
+- `Inkognitomodus - Verfügbarkeit` -> Aktiviert
+- Wert: `Inkognitomodus deaktiviert`
+
+
+### URL für "Neuer Tab"-Seite konfigurieren
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Google > Google Chrome > Start, Startseite und Seite "Neuer Tab"`
+- `URL für "Neuer Tab"-Seite konfigurieren` -> Aktiviert
+- Wert: Die entsprechende URL zur gewünschten Webseite, z.B. Seite aus dem Intranet oder Firmens-/Organisations-Webseite
+
+
+### leere Suchmaschine hinzufügen (optional)
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Google > Google Chrome > Standardsuchmaschine`
+- `Such-URL der Standardsuchmaschine` -> Aktiviert
+- Wert: `entsprechender Wert`
+- z.B.
+    - Name: `blank`
+    - URL: `https://about.blank?q=%s`
+
+
+### Alle Domains blockieren/bestimmte Domains blockieren - URL-Blocklist
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Google > Google Chrome`
+- `Zugriff auf aufgelistete URLs blockieren` -> Aktiviert
+- Wert: `*` um ALLE Domains zu blockieren, um bestimmte Domains zu erlauben die Richtlinie `Zugriff auf eine Liste mit URLs erlauben` verwenden
+- Wert: `entsprechende URL... z.B. "Domain.de"` um nur bestimmte Domains auf die Blacklist zu setzen
+
+
+### Nur bestimmte Websites zulassen - Zugriff auf eine Liste mit URLs erlauben
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Google > Google Chrome`
+- `Zugriff auf eine Liste mit URLs erlauben` -> Aktiviert
+- Wert: `entsprechende URL... z.B. "Domain.de"`
 
 
 -------------------------------------------------------------------------------------------------------------
