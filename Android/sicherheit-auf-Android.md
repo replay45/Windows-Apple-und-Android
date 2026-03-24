@@ -1,6 +1,6 @@
 # Sicherheit auf Android
 
-`Anleitung erstellt am 8.12.2024, zuletzt bearbeitet am 29.10.2025`
+`Anleitung erstellt am 8.12.2024, zuletzt bearbeitet am 24.3.2026`
 
 ## Inhaltsverzeichnis
 1. grundlegende Sicherheitstipps
@@ -65,7 +65,7 @@
 - Keine unbekannten Befehle in einem Terminal (wie z.B. [Termux](https://termux.dev/en/)) ausführen.
 
 
-#### Mehr zu `sicher-&-datenschutzorientiert-surfen` unter [ethical hacking & Cyber Security/Cyber-Security/sicher-&-datenschutzorientiert-surfen](https://github.com/replay45/ethical-hacking-und-cybersecurity/tree/main/cyber-security)
+#### Mehr zu `sicher-&-datenschutzorientiert-surfen` unter [ethical hacking & Cyber Security/Cyber-Security/sicher-&-datenschutzorientiert-surfen](https://github.com/replay45/ethical-hacking-und-cybersecurity/blob/main/cyber-security/sicher-%26-datenschutzorientiert-surfen.md)
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -73,7 +73,7 @@
 
 # 2. DNS-Server auf Android
 
-`Zuletzt getestete Android-Version: 14 / 15`
+`Zuletzt getestete Android-Version: 14 / 15 / 16`
 
 - Hinweis: 
     - Das Ändern des DNS-Servers zu einem sicheren Anbieter, verhindert ohne Implementierung einer Verschlüsselung oder Signierung keine [Man-in-the-Middle-Angriffe](https://de.wikipedia.org/wiki/Man-in-the-Middle-Angriff) oder Tracking !
@@ -85,9 +85,9 @@ Außerdem gibt es nicht genügend verfügbare IPv4-Adressen, daher können diese
 
 
 ### Wieso den DNS-Server ändern ?
-- Standardmäßig nutzt man die DNS-Server des Internetanbieters, diese sind jedoch häufig eher langsamer und wenn man `verhindern` möchte, dass der `Internetprovider bzw. Mobilfunkanbieter einsehen kann, welche Domains man aufruft`, ist es sehr ratsam, einen datenschutzfreundlichen Anbieter zu wählen (z.B. [Cloudflare](https://www.cloudflare.com/) oder [Quad9](https://www.quad9.net/de/)).
+- Standardmäßig nutzt man die DNS-Server des Internetanbieters, diese sind jedoch häufig eher langsamer und wenn man `verhindern` möchte, dass der `Internetprovider bzw. Mobilfunkanbieter einsehen kann, welche DNS-Anfragen man stellt`, ist es sehr ratsam, einen datenschutzfreundlichen Anbieter zu wählen (z.B. [Cloudflare](https://www.cloudflare.com/) oder [Quad9](https://www.quad9.net/de/)).
 - Den DNS-Server kann man auf allen gänigen Desktop-Betriebsystemen sowie auf dem Smartphone, als auch in vielen gänigen Routern ändern.
-- Wie man seinen eigenen kleinen DNS-Server mit [Pi hole](https://pi-hole.net/) erstellen kann, wird unter [Raspberry-Pi/Pi-hole](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/raspberry-pi) gezeigt.
+- Wie man seinen eigenen kleinen DNS-Server mit [Pi hole](https://pi-hole.net/) erstellen kann, wird unter [DNS-Server/Pi-hole](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/dns-server) gezeigt.
 - [Cloudflare](https://www.cloudflare.com/) legt dabei den `Fokus` auf `Datenschutz & Sicherheit`, verspricht `kein Logging` von Daten die zur Identifizierung genutzt werden können und bietet dennoch sehr `schnelle DNS-Server`.
 - Alternativ empfiehlt sich [Quad9](https://www.quad9.net/de/), eine Non-Profit-Organisation aus der Schweiz, ebenfalls mit dem `Fokus` auf `Datenschutz & Sicherheit`.
 
@@ -135,7 +135,7 @@ Für wen eignet sich diese Option ?
 - Wer selber einen DNS-Server im Heimnetz hosten möchte, kann das z.B. mit [Pi hole](https://pi-hole.net/) tun.
 - Der [Pi hole](https://pi-hole.net/) kann u.a. als standard-DNS-Server im Router eingestellt werden und über `VPN` in das Heimnetzwerk, kann dieser auch von überall genutzt werden.
 - Eine VPN-Verbindung bietet u.a. mehrere Vorteile, wie z.B. eine sichere Verbindung in das Heimnetzwerk, bei unsicheren WLAN-Verbindungen oder Zugriff auf Geräte in Heimnetzwerk, wie ein NAS/Homeserver.
-- Eine weitere Möglichkeit wäre z.B. [Pi hole](https://pi-hole.net/) über Dyn-DNS aus dem Internet erreichbar zu machen/ extern zu hosten, um Pi hole als DNS-Server für die Option `Privates DNS` einzustellen.
+- Eine weitere Möglichkeit wäre z.B. [Pi hole](https://pi-hole.net/) über [DynDNS](https://de.wikipedia.org/wiki/Dynamisches_DNS) aus dem Internet erreichbar zu machen/ extern zu hosten, um Pi hole als DNS-Server für die Option `Privates DNS` einzustellen.
 
 
 ### Fazit - die optimalen Einstellungen treffen
@@ -149,7 +149,7 @@ Für wen eignet sich diese Option ?
     - Eine andere Möglichkeit wäre z.B. [Pi hole](https://pi-hole.net/) über Dyn-DNS aus dem Internet erreichbar zu machen/ extern zu hosten, um Pi hole als DNS-Server einzustellen (nur für sehr erfahrene Nutzer geeignet).
 
 
-### Mehr zu DNS-Servern und Pi hole unter [Linux-RaspberryPI-NextCloud/Raspberry-Pi](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/raspberry-pi)
+> Mehr zu DNS-Servern und Pi hole unter [DNS-Server/Pi-hole](https://github.com/replay45/Linux-RaspberryPI-NextCloud/tree/main/dns-server)
 
 
 -----------------------------------------------------------------------------------------------------------------
@@ -157,7 +157,7 @@ Für wen eignet sich diese Option ?
 
 # 3. Spionageschutz: Kamera, Mikrofon & Sensoren vollständig & systemweit blockieren (Sicherheitsrichtlinie)
 
-`Zuletzt getestete Android-Version: 14 / 15`
+`Zuletzt getestete Android-Version: 14 / 15 / 16`
 
 ### Kamera, Mikrofon & andere Sensoren über das QuickPanel nach Belieben deaktivieren und wieder aktivieren
 - Was bringt die Funktion (Sicherheitsrichtline)
@@ -182,7 +182,7 @@ Für wen eignet sich diese Option ?
 
 # 4. Googles WerbeID löschen & Diagnosedaten deaktivieren (Google auf Android)
 
-`Zuletzt getestete Android-Version: 14 / 15`
+`Zuletzt getestete Android-Version: 14 / 15 / 16`
 
 ## Was ist die Werbe-ID und wieso sollte man sie löschen ?
 - Die Werbe-ID ist eine `ID zur Identifizierung` eines `Android-Smartphones` - "Google Advertising ID" (GAID) und bei Apple „Identifier for Advertisers“ (IDFA), ähnlich wie ein Nummernschild, die für `Werbezwecke` genutzt wird.
@@ -212,7 +212,7 @@ Für wen eignet sich diese Option ?
 
 # 5. Einstellungen: Sicherheit und Datenschutz (Samsung)
 
-`Zuletzt getestete Android-Version: 14 / 15`
+`Zuletzt getestete Android-Version: 14 / 15 / 16`
 
 ### Sicherheit und Datenschutz
 - Unter diesem Reiter können einige Optionen zur Sicherheit und zum Datenschutz in einer Übersicht eingesehen werden.
@@ -250,7 +250,7 @@ Für wen eignet sich diese Option ?
 
 # 6. "Passwörter sichtbar machen" - Funktion deaktivieren
 
-`Zuletzt getestete Android-Version: 14 / 15`
+`Zuletzt getestete Android-Version: 14 / 15 / 16`
 
 ### Was ist die "Passwörter sichtbar machen" Option ?
 Wenn die Funktion aktiviert ist, wird bei der Eingabe von Passwörtern die Eingabe kurz angezeigt, bevor sie mit einem Punkt "verdeckt" wird.
@@ -265,7 +265,7 @@ In den Einstellungen unter `Sicherheit und Datenschutz`, `Weitere Sicherheitsein
 
 # 7. Sperrbildschirm: Verhindern, dass Netzwerk- & Sicherheitseinstellungen geändert werden können (Samsung)
 
-`Zuletzt getestete Android-Version: 14 / 15`
+`Zuletzt getestete Android-Version: 14 / 15 / 16`
 
 - Die Funktion sollte standardmäßig aktiv sein.
 
@@ -313,7 +313,7 @@ In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sp
 
 # 9. Für Apps zugelassene Netzwerke (WLAN/MOBILE-DATEN) (Samsung)
 
-`Zuletzt getestete Android-Version: 14 / 15`
+`Zuletzt getestete Android-Version: 14 / 15 / 16`
 
 - Hier kann festgelegt werden, welche Netzwerke eine App verwenden darf.
     - `Einstellungen` öffnen
@@ -328,7 +328,7 @@ In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sp
 
 # 10. Spezieller Zugriff & Berechtigungsverwaltung für Apps (Samsung)
 
-`Zuletzt getestete Android-Version: 14 / 15`
+`Zuletzt getestete Android-Version: 14 / 15 / 16`
 
 ### Berechtigungen setzen
 - Allgemein gilt: So `wenige Berechtigung wie möglich` und so `viele wie nötig`.
@@ -356,7 +356,7 @@ In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sp
 
 # 11. App-Sicherheit: auf schädliche Apps prüfen (PlayStore & Gerätewartung)
 
-`Zuletzt getestete Android-Version: 14 / 15`
+`Zuletzt getestete Android-Version: 14 / 15 / 16`
 
 - Man kann sowohl im PlayStore als auch in der Gerätewartung alle Apps auf `"schädliche Apps"` prüfen.
 - `App Schutz` (Gerätewartung):
@@ -377,7 +377,7 @@ In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sp
 
 # 12. Standort: Scan-Optionen ausschalten (WLAN & Bluetooth)
 
-`Zuletzt getestete Android-Version: 14 / 15`
+`Zuletzt getestete Android-Version: 14 / 15 / 16`
 
 # Wieso diese Optionen deaktivieren ?
 - Wenn die Optionen zur Verbesserung der Genauigkeit nicht ausgeschaltet sind, werden WLAN & Bluetooth nie richtig abgeschaltet, auch wenn man sie manuell im Quick-Panel deaktiviert.
@@ -400,7 +400,7 @@ In den Einstellungen zu `Sperrbildschirm und AOD` wechseln und unter `Sichere Sp
 
 # 13. Galaxy-AI - Verarbeitung nur auf dem Gerät (Samsung)
 
-`getestete Android-Version: 14 mit OneUI 6.1.1  / 15 mit OneUI 7.0`
+`getestete Android-Version: 14 mit OneUI 6.1.1  / 15 mit OneUI 7.0 / 16 mit OneUI 8.0`
 
 ### Wieso sollte man die Option "Daten nur auf Gerät verarbeiten" aktivieren ?
 - Beim aktivieren der Option, werden Inhalte nur noch auf dem Gerät, also lokal verarbeitet.
