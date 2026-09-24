@@ -1,10 +1,11 @@
 # [Firefox](https://www.mozilla.org/de/firefox/new/) über Active Directory konfigurieren - Active Directory
 
-`Anleitung erstellt am 13.2.2025, zuletzt bearbeitet am 16.9.2025`
+`Anleitung erstellt am 13.2.2025, zuletzt bearbeitet am 24.9.2026`
 
 `Windows-Server - Active Directory`
 
 - Funktioniert für Standard-Firefox & Firefox ESR
+    - Bei dem konfigurieren von Erweiterungen kann es beim Standard-Firefox zu Fehlern kommen (stand 09.2026) -> empfohlen Firefox-ESR zu verwenden.
 
 ---
 
@@ -12,13 +13,13 @@
 
 - Offizielle Mozilla-Richtlinien: [github.com/mozilla/policy-templates](https://github.com/mozilla/policy-templates)
 - folgende Dateien aus dem Pfad werden benötigt 
-  - Windows/firefox.admx
-  - Windows/de-DE/firefox.adml
+  - firefox.admx
+  - de-DE/firefox.adml
 - Wofür sind die beiden Dateien ? 
   - firefox.admx → Enthält die eigentlichen Richtlinien (Regeln & Einstellungen).
   - firefox.adml → Enthält die sprachspezifischen Beschreibungen für die Benutzeroberfläche
 - Für eine Domäne (Active Directory): 
-  - Windows Explorer auf AD-Server öffnen
+  - Den Windows-Explorer auf dem AD-Server/Domain-Controler öffnen
   - Wenn der Ordner `PolicyDefinitions` in dem einzufügenden Pfad fehlt, einfach anlegen und innerhalb des Ordners den Ordner `de-DE` erstellen.
   - Nach dem Herunterladen die `firefox.admx` in folgenden Pfad kopieren: `\\DomainController\SYSVOL\Domain\Policies\PolicyDefinitions\`
   - Nach dem Herunterladen die `firefox.adml` in folgenden Pfad kopieren: `\\DomainController\SYSVOL\Domain\Policies\PolicyDefinitions\de-DE\`
@@ -210,34 +211,13 @@
 
 # Namen und IDs bekannter und nützlicher Erweiterungen
 
-- Diese Werte können z.B. entsprechend in den JSON-Code eingefügt werden 
-  - [Privacy Badger]()
-    - ID: jid1-MnnxcxisBPnSXQ@jetpack
-    - Link:
+- Diese Werte können z.B. entsprechend in den JSON-Code eingefügt werden:
   - [uBlock Origin](https://ublockorigin.com/de)
     - ID: uBlock0@raymondhill.net
     - Link: https://addons.mozilla.org/firefox/downloads/latest/ublock-origin/latest.xpi
-  - [Dark Reader]()
-    - ID: addon@darkreader.org
-    - Link:
   - [KeePassXC-Browser](https://keepassxc.org/)
     - ID: keepassxc-browser@keepassxc.org
     - Link: https://addons.mozilla.org/firefox/downloads/latest/keepassxc-browser/latest.xpi
-  - [KeePass]()
-    - ID:
-    - Link:
-  - [Bitwarden Passwortmanager]()
-    - ID: {446900e4-71c2-419f-a6a7-df9c091e268b}
-    - Link:
-  - [Startpage - Datenschutz-Suchmaschine]()
-    - ID: 20fc2e06-e3e4-4b2b-812b-ab431220cada
-    - Link:
-  - [NoScript]()
-    - ID: {73a6fe31-595d-460b-a920-fcc0f8843232}
-    - Link:
-  - [Canvas Blocker - Fingerprint Protect]()
-    - ID: CanvasBlocker@kkapsner.de
-    - Link:
 
 ---
 
@@ -315,6 +295,19 @@
 - Im Gruppenrichtlinienverwaltungs-Editor 
   - `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Firefox > Firefox Suggest`
   - `Vorschläge aus dem Internet` -> Deaktiviert
+
+---
+
+# Generative KI
+
+- Generative KI deaktivieren
+  - Im Gruppenrichtlinienverwaltungs-Editor
+  - `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Firefox > Generative KI`
+  - `Chatbot` -> `Deaktiviert`
+  - `Aktiviert` -> `Deaktiviert` (deaktiviert alle KI-Funktionen)
+  - `Linkvorschauen` -> `Deaktiviert`
+  - `Änderung von Einstellungen nicht zulassen` -> `Aktiviert`
+  - `Tab-Gruppen` -> `Deaktiviert`
 
 ---
 
@@ -437,10 +430,18 @@
 
 - Im Gruppenrichtlinienverwaltungs-Editor 
   - `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Firefox > Tracking-Schutz`
-  - `Tracking-Schutz`
-  - `Aktiviert` -> Aktiviert
-- ggf. zusätzlich noch `Cryptomining`, `Fingerprinter` & `E-Mail-Verfolgung` Schutzeinstellungen `Aktivieren`, um Schutzeinstellungen im Browser auf `"Benutzerdefiniert"` zu setzen
-- Um das Ändern von den Einstellungen durch den Benutzer verhindern, die Einstellung `Änderungen an den Einstellungen ... verbieten` auswählen (Optional).
+  - `Aktiviert` -> Aktiviert (aktiviert den Tracking-Schutz)
+
+- ggf. zusätzlich noch folgende Schutzeinstellungen `Aktivieren`, um Schutzeinstellungen im Browser auf `"Benutzerdefiniert"` zu setzen
+    - `Cryptomining`
+    - `Fingerprinter`
+    - `E-Mail-Verfolgung`
+
+- Um das Ändern von den Einstellungen durch den Benutzer verhindern, die Einstellung `Änderungen an den Einstellungen zum Schutz vor Aktivitätenverfolgung verbieten` auswählen (Optional).
+
+- automatische Ausnahmen durch Firefox erlauben, deaktivieren
+    - `Grundlegende Ausnahmen` -> Deaktiviert (für "schwerwiegende Probleme")
+    - `Komfortausnahmen` -> Deaktiviert (für "kleinere Probleme")
 
 ---
 
