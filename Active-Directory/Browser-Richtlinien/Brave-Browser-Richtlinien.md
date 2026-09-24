@@ -1,6 +1,6 @@
 # [Brave](https://brave.com/) über GPO-Richtlinien konfigurieren - Active Directory
 
-`Anleitung verfasst am 14.9.2025`
+`Anleitung verfasst am 14.9.2025, zuletzt bearbeitet am 26.02.2026`
 
 `Windows-Server - Active Directory`
 
@@ -15,7 +15,6 @@
 - Wofür sind die Dateien ?
 	- .admx → Enthält die eigentlichen Richtlinien (Regeln & Einstellungen)
 	- .adml → Enthält die sprachspezifischen Beschreibungen für die Benutzeroberfläche
-
 - Für eine Domäne (Active Directory):
 	- Windows Explorer auf AD-Server öffnen
 	- Wenn der Ordner `PolicyDefinitions` in dem einzufügenden Pfad fehlt, einfach anlegen und innerhalb des Ordners den Ordner `de-DE` erstellen.
@@ -23,7 +22,6 @@
 	- folgenden Pfad aus der entpackten Datei öffnen: `/policy_templates/windows/adm/de-DE`
 	- alle `.admx`-Dateien in folgenden Pfad kopieren: `\\DomainController\SYSVOL\Domain\Policies\PolicyDefinitions\`
 	- alle `.adml`-Dateien in folgenden Pfad kopieren: `\\DomainController\SYSVOL\Domain\Policies\PolicyDefinitions\de-DE\`
-
 
 
 ### Gruppenrichtlinienverwaltung öffnen
@@ -35,11 +33,9 @@
 	- Rechtsklick auf das erstellte Objekt
 	- `Bearbeiten`
 	- Es sollte sich der Gruppenrichtlinienverwaltungs-Editor öffnen.
-
 - Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Brave`
 	- Hier sind nun alle Vorlagen.
-
 - zurück zur `Gruppenrichtlinienverwaltung`
 	- Unter `Domain.local` -> `Domäne` auswählen, `Rechtsklick` und `vorhandenes Gruppenrichtlinienobjekt verknüpfen`
 	- Zum Verknüpfen das gewünschte Objekt auswählen
@@ -56,16 +52,42 @@
 - Diese Einstellungen werden in den Vorlagen, die Google für die Chrome basierten Browsern zur Verfügung stellt, von Brave ergänzt.
 
 
-### Disable AI Chat
+### Control De-AMP feature to bypass Google-hosted AMP pages
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Brave > Brave Software settings`
-- `Disable AI Chat` -> Aktiviert
+- `Control De-AMP feature to bypass Google-hosted AMP pages` -> Aktiviert
+
+
+### Control HTTPS upgrade behavior
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Brave > Brave Software settings`
+- `Control HTTPS upgrade behavior` -> Aktiviert
+    - Wert: `Require HTTPS`
+
+
+### Default Brave fingerprinting protection setting
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Brave > Brave Software settings`
+- `Default Brave fingerprinting protection setting` -> Aktiviert
+    - Wert: `Enable fingerprinting protection standard mode`
+
+
+### Disable Brave News
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Brave > Brave Software settings`
+- `Disable Brave News` -> Aktiviert
 
 
 ### Disable Brave Rewards
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Brave > Brave Software settings`
 - `Disable Brave Rewards` -> Aktiviert
+
+
+### Disable Brave Talk
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Brave > Brave Software settings`
+- `Disable Brave Talk` -> Aktiviert
 
 
 ### Disable Brave VPN
@@ -84,6 +106,30 @@
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Brave > Brave Software settings`
 - `Disable Tor Connectivity` -> Aktiviert
+
+
+### Enable AI Chat
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Brave > Brave Software settings`
+- `Disable AI Chat` -> Deaktiviert
+
+
+### Enable Privacy Preserving Product Analytics (P3A)
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Brave > Brave Software settings`
+- `Enable Privacy Preserving Product Analytics (P3A)` -> Deaktiviert
+
+
+### Enable Stats Usage Ping
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Brave > Brave Software settings`
+- `Enable Stats Usage Ping` -> Deaktiviert
+
+
+### Prevent sites from fingerprinting based on language preferences
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Brave > Brave Software settings`
+- `Prevent sites from fingerprinting based on language preferences` -> Aktiviert
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -175,18 +221,39 @@
 - Wert: `Tab Compare nicht zulasssen`
 
 
-### Einstellungen für "KI-basierte Verlaufssuche"
+### Einstellungen für das erweiterte Autofill
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave > Generative KI`
+- `Einstellungen für das erweiterte Autofill` -> Aktiviert
+- Wert: `Erweiterte Autofill nicht zulasssen`
+
+
+### Einstellungen für die auf generativer KI basierten Funktionen der Chrome DevTools
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave > Generative KI`
+- `Einstellungen für die auf generativer KI basierten Funktionen der Chrome DevTools` -> Aktiviert
+- Wert: `Auf generativer KI basierende Funktionen der Entwicklertools nicht zulasssen`
+
+
+### Einstellungen für die Gemini-Integration
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave > Generative KI`
+- `Einstellungen für die Gemini-Integration` -> Aktiviert
+- Wert: `Gemini-Integrationen nicht zulasssen`
+
+
+### Einstellungen für KI-basierte Verlaufssuche
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave > Generative KI`
 - `Einstellungen für die KI-basierte Verlaufssuche` -> Aktiviert
 - Wert: `KI-basierte Verlaufssuche nicht zulasssen`
 
 
-### Einstellungen für generative KI-Funktionen in den Entwicklertools
+### Einstellungen für die KI-Modus-Integrationen von Google in der Adressleiste und im Suchfeld der Seite "Neuer Tab"
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave > Generative KI`
-- `Einstellungen für generative KI-Funktionen in den Entwicklertools` -> Aktiviert
-- Wert: `Auf generativer KI basierende Funktionen der Entwicklertools nicht zulasssen`
+- `Einstellungen für die KI-Modus-Integrationen von Google in der Adressleiste und im Suchfeld der Seite "Neuer Tab"` -> Aktiviert
+- Wert: `KI-Modus-Integrationen nicht zulassen`
 
 
 ### Einstellungen für lokales Foundation Model für generative KI
@@ -194,6 +261,20 @@
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave > Generative KI`
 - `Einstellungen für lokales Foundation Model für generative KI` -> Aktiviert
 - Wert: `Modell nicht herunterladen`
+
+
+### Ermöglicht es Gemini-App-Integrationen, Aktionen direkt auf Webseiten auszuführen
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave > Generative KI`
+- `Ermöglicht es Gemini-App-Integrationen, Aktionen direkt auf Webseiten auszuführen` -> Aktiviert
+- Wert: `Nicht zulassen, dass die Gemini App Aktionen auf Webseiten auszuführt`
+
+
+### Teilen von Inhalten mit Google AI Mode- und Lens-Integrationen aktivieren
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave > Generative KI`
+- `Teilen von Inhalten mit Google AI Mode- und Lens-Integrationen aktivieren` -> Aktiviert
+- Wert: `Teilen von Inhalten mit Google AI Mode-Integrationen nicht zulassen`
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -241,6 +322,13 @@
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave > Inhaltseinstellungen`
 - `Standardeinstellungen für Cookies` -> Aktiviert
 - Wert: `Cookies für die Dauer der Sitzung beibehlaten`
+
+
+### Verwendung von JavaScript-Optimierung steuern
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave > Inhaltseinstellungen`
+- `Verwendung von JavaScript-Optimierung steuern` -> Aktiviert
+- Wert: `Erweiterte JavaScript-Optimierungen auf allen Webseites blockieren`
 
 
 -------------------------------------------------------------------------------------------------------------
@@ -571,6 +659,24 @@
 - `Google Search Side Panel aktivieren` -> Deaktiviert
 
 
+### Karte mit Outlook-Kalender auf der Seite "Neuer Tab" anzeigen
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave`
+- `Karte mit Outlook-Kalender auf der Seite "Neuer Tab" anzeigen` -> Deaktiviert
+
+
+### Karte mit SharePoint- und OneDrive-Dateien auf der Seite "Neuer Tab" anzeigen
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave`
+- `Karte mit Outlook-Kalender auf der Seite "Neuer Tab" anzeigen` -> Deaktiviert
+
+
+### Karten auf der "Neuer Tab"-Seite anzeigen
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave`
+- `Karte mit Outlook-Kalender auf der Seite "Neuer Tab" anzeigen` -> Deaktiviert
+
+
 ### Nutzerfeedack zulassen
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave`
@@ -611,6 +717,7 @@
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Brave`
 - `Websites erlauben, verfügbare Zahlungsmethoden abzufragen.` -> Deaktiviert
+
 
 
 -------------------------------------------------------------------------------------------------------------
