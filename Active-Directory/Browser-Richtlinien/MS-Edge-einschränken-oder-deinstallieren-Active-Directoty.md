@@ -34,11 +34,9 @@
 	- Rechtsklick auf das erstellte Objekt
 	- `Bearbeiten`
 	- Es sollte sich der Gruppenrichtlinienverwaltungs-Editor öffnen.
-
 - Im Gruppenrichtlinienverwaltungs-Editor
 	- `Computerkonfiguration` → `Richtlinien` → `Administrative Vorlagen` → `Microsoft Edge`
 	- Hier sind nun alle Vorlagen.
-
 - zurück zur `Gruppenrichtlinienverwaltung`
 	- Unter `Domain.local` -> `Domäne` auswählen, `Rechtsklick` und `vorhandenes Gruppenrichtlinienobjekt verknüpfen`
 	- Zum Verknüpfen das gewünschte Objekt auswählen
@@ -55,7 +53,7 @@
 
 
 ### Desktopverknüpfung standardmäßig bei der Installation erstellen
-- Hat keine Auswirkung wenn Edge bereits installiert ist
+Hat keine Auswirkung wenn Edge bereits installiert ist
 
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Richtlinien > Administrative Vorlagen > Microsoft Edge-Update > Anwendungen`
@@ -73,7 +71,6 @@
 
 
 # MS-Edge über GPO Richtline auf allen Clients deinstallieren
-
 - Das ist nur auf Geräten im EWR-Wirtschaftsraum möglich, da die Gesetzeslage im EWR-Raum Microsoft dazu zwingt, eine Möglichkeit anzubieten MS-Edge zu deinstallieren.
 - Die Richtlinien werden beim nächsten Update von Edge aktiv.
 
@@ -123,7 +120,6 @@
 
 
 # um MS-Edge einzuschränken: "Kiosk-Modus" selber bauen
-
 - Um den MS-Edge einzuschränken, können folgende Richtlinien verwendet werden:
     - `InPrivate-Modus deaktivieren` > Der Private Modus sollte deaktiviert werden, damit Nutzer nicht den Privaten Modus verweden können, um die Einschränkungen zu umgehen.
     - `URL für die neue Tabseite konfigurieren` > Legt die Seite fest, die beim Öffnen des Browsers erscheint.
