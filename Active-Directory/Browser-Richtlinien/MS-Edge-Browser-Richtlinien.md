@@ -12,7 +12,7 @@
 
 - Wie der Microsoft Edge über GPO Richtlinie auf allen Clients `deinstalliert` oder in eine `Art "Kiosk-Modus"` versetzt werden kann, wird in der Anleitung [MS-Edge einschränken oder deinstallieren](https://github.com/replay45/Windows-Apple-und-Android/tree/main/Active-Directory/Browser-konfigurieren) erklärt.
 
-- Wie man die Ausführung bestimmter Programme verhindern kann, wird in der Anleitung [Ausführung-von-Programmen-verhindern](https://github.com/replay45/Windows-Apple-und-Android/tree/main/Active-Directory/Software-%26-Programme) erklärt.
+- Wie man die Ausführung bestimmter Programme verhindern kann, wird in der Anleitung [Ausführung-von-Programmen-verhindern](https://github.com/replay45/Windows-Apple-und-Android/blob/main/Active-Directory/Software-%26-Programme-Richtlinien/Ausf%C3%BChrung-von-Programmen-verhindern.md) erklärt.
 
 
 -------------------------------------------------------------------------------------------------------------
