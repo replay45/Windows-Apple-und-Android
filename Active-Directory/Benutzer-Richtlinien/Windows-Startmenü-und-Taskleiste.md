@@ -1,6 +1,6 @@
 # Startmenü und Taskleiste-Richtlinien
 
-`Anleitung verfasst am 19.1.2026`
+`Anleitung verfasst am 19.1.2026, zuletzt bearbeitet am 2.3.2026`
 
 `Windows-Server - Active Directory`
 
@@ -9,7 +9,7 @@
 # ADMX-Vorlagen von Microsoft installieren
 
 - Nach der neusten ADMX-Vorlage suchen und von der offiziellen Microsoft Seite herunterladen.
-- Diese ist meist in einem .msi Paket
+- Diese ist meist in einem .msi Paket.
 - Dieses auf dem Windows-Server installieren.
 - Nach der Installation sind die Dateien hier: `C:\Program Files (x86)\Microsoft Group Policy\Windows-Version\PolicyDefinitions`
 - Nun alle `.admx-Vorlagen` in die folgenden Pfad kopieren:`\\DomainController\SYSVOL\Domain\Policies\PolicyDefinitions\`
@@ -51,6 +51,11 @@
 ### Personalisierte Website-Empfehlungen aus dem Abschnitt "Empfohlen" im Startmenü entfernen
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Startmenü und Taskleiste`
 - `Personalisierte Website-Empfehlungen aus dem Abschnitt "Empfohlen" im Startmenü entfernen` -> Aktiviert
+
+### vorinstallierte Microsoft-App-Pakete aus dem Microsoft Store entfernen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Windows-Komponenten > Bereitstellung von App-Paketen`
+- `Entfernen Sie Microsoft Store-Standardpakete aus dem System` -> Aktiviert
+- Wert: entsprechende Haken setzten bei den App-Paketen, die entfernt werden sollen, es ist empfohlen, Apps, die mit 2 Sternchen markiert sind, NICHT zu entfernen.
 
 ### Startmenü
 - Das Layout im Startmenü lässt sich unter Windows 11 nicht mehr so wie in Windows 10 anpassen.
