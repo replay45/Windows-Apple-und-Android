@@ -1,6 +1,6 @@
 # [MS-Edge](https://www.microsoft.com/de-de/edge/download?ch=1&form=MA13FJ) über GPO Richtlinien konfigurieren - Active Directory
 
-`Anleitung verfasst am 8.4.2025, zuletzt bearbeitet am 6.1.2026`
+`Anleitung verfasst am 8.4.2025, zuletzt bearbeitet am 7.6.2026`
 
 `Windows-Server - Active Directory`
 
@@ -459,6 +459,18 @@
 - Gruppenrichtlinien-Editor öffnen
 - Pfad: `Computerkonfiguration > Administrative Vorlagen > Microsoft Edge`
 - `Spracherkennung konfigurieren` -> Deaktiviert
+
+
+### Copilot in Randleiste deaktivieren
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Microsoft Edge`
+- `Hubs-Seitenleiste anzegen` -> Deaktiviert
+
+
+### Copilot im Schreib-Assistenten abschalten
+- Gruppenrichtlinien-Editor öffnen
+- Pfad: `Computerkonfiguration > Administrative Vorlagen > Microsoft Edge`
+- `Verfassen ist für das Schreiben im Web aktiviert` -> Deaktiviert
 
 
 -------------------------------------------------------------------------------------------------------------
